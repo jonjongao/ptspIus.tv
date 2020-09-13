@@ -1,0 +1,27 @@
+<script type="text/javascript">
+    var app = new Vue({
+        el: '#app',
+        data: {
+            loginName: '琪',
+            ctn1: 1,
+            ctn2: 1,
+            ctnActiveClass: 'tabbar_active',
+            ctnDeactiveClass: '',
+            ctnErrorClass: '',
+            trySearch: ''
+        },
+        methods: {
+            toggle: function() {
+                this.a1 = !this.a1;
+            },
+            onSearch: function() {
+                console.log("hey " + this.trySearch);
+                if (this.trySearch == '車廂') {
+                    window.location.href = 'http://www.google.com';
+                }
+                this.trySearch = '';
+            }
+        }
+    });
+
+</script>
