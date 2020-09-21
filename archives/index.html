@@ -41,6 +41,12 @@
     
 <script src="/ptspIus.tv/js/vue.js"></script>
 
+    
+<script src="/ptspIus.tv/js/app.js"></script>
+
+    
+<script src="/ptspIus.tv/js/vue-cookies.js"></script>
+
 <meta name="generator" content="Hexo 5.1.1"></head>
 
 
@@ -102,13 +108,13 @@
     <article class="archive-article archive-type-post">
   <div class="archive-article-inner">
     <header class="archive-article-header">
-      <a href="/ptspIus.tv/2020/09/19/hello-world/" class="archive-article-date">
-  <time datetime="2020-09-19T16:46:33.777Z" itemprop="datePublished">Sep 19</time>
+      <a href="/ptspIus.tv/2020/09/21/hello-world/" class="archive-article-date">
+  <time datetime="2020-09-21T17:18:03.097Z" itemprop="datePublished">Sep 21</time>
 </a>
       
   
     <h1 itemprop="name">
-      <a class="archive-article-title" href="/ptspIus.tv/2020/09/19/hello-world/">Hello World</a>
+      <a class="archive-article-title" href="/ptspIus.tv/2020/09/21/hello-world/">Hello World</a>
     </h1>
   
 
@@ -178,6 +184,15 @@
         </app-root>
     </div>
     <script type="text/javascript">
+    Vue.component('ep2', {
+        template: '<div>{{ text }}</div>',
+        data() {
+            return {
+                text: '乘客 ep2'
+            }
+        }
+    });
+    
     var app = new Vue({
         el: '#app',
         data: {
@@ -194,7 +209,9 @@
                 this.a1 = !this.a1;
             },
             onSearch: function() {
+                console.log("prev " + this.$cookies.get("search"));
                 console.log("hey " + this.trySearch);
+                this.$cookies.set("search",this.trySearch,10);
                 if (this.trySearch == '車廂') {
                     window.location.href = 'http://www.google.com';
                 }
@@ -202,6 +219,8 @@
             }
         }
     });
+
+    Vue.$cookies.config('1d');
 
 </script>
 
