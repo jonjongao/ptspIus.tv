@@ -34,7 +34,14 @@
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js" integrity="sha384-smHYKdLADwkXOn1EmN1qk/HfnUcbVRZyYmZ4qpPea6sjB/pTJ0euyQp0Mk8ck+5T" crossorigin="anonymous"></script>
     <!--<link rel="prefetch" href="https://d0ad4d8278a53b9d8ad07314958ca246.safeframe.googlesyndication.com/safeframe/1-0-37/html/container.html">-->
     <!--<link rel="prefetch" href="https://tpc.googlesyndication.com/safeframe/1-0-37/html/container.html">-->
-    <%- js('js/vue.js') %>
-    <%- js('js/app.js') %>
+    <%- css('css/video-js.min.css') %>
+    <%- js('js/video.min.js') %>
+    <%- js('js/Youtube.min.js') %>
+    <%- js('js/vue.min.js') %>
+    <%- js('js/vue-video-player.js') %>
     <%- js('js/vue-cookies.js') %>
+    <%- js('js/app.js') %>
+    <script type="text/javascript">
+        Vue.use(window.VueVideoPlayer)
+    </script>
 </head>
