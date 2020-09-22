@@ -39,14 +39,29 @@
     <!--<link rel="prefetch" href="https://d0ad4d8278a53b9d8ad07314958ca246.safeframe.googlesyndication.com/safeframe/1-0-37/html/container.html">-->
     <!--<link rel="prefetch" href="https://tpc.googlesyndication.com/safeframe/1-0-37/html/container.html">-->
     
-<script src="/ptspIus.tv/js/vue.js"></script>
+<link rel="stylesheet" href="/ptspIus.tv/css/video-js.min.css">
 
     
-<script src="/ptspIus.tv/js/app.js"></script>
+<script src="/ptspIus.tv/js/video.min.js"></script>
+
+    
+<script src="/ptspIus.tv/js/Youtube.min.js"></script>
+
+    
+<script src="/ptspIus.tv/js/vue.min.js"></script>
+
+    
+<script src="/ptspIus.tv/js/vue-video-player.js"></script>
 
     
 <script src="/ptspIus.tv/js/vue-cookies.js"></script>
 
+    
+<script src="/ptspIus.tv/js/app.js"></script>
+
+    <script type="text/javascript">
+        Vue.use(window.VueVideoPlayer)
+    </script>
 <meta name="generator" content="Hexo 5.1.1"></head>
 
 
@@ -179,44 +194,7 @@
         </app-root>
     </div>
     <script type="text/javascript">
-    Vue.component('ep2', {
-        template: '<div>{{ text }}</div>',
-        data() {
-            return {
-                text: '乘客 ep2'
-            }
-        }
-    });
     
-    var app = new Vue({
-        el: '#app',
-        data: {
-            loginName: '琪',
-            ctn1: 1,
-            ctn2: 1,
-            ctnActiveClass: 'tabbar_active',
-            ctnDeactiveClass: '',
-            ctnErrorClass: '',
-            trySearch: ''
-        },
-        methods: {
-            toggle: function() {
-                this.a1 = !this.a1;
-            },
-            onSearch: function() {
-                console.log("prev " + this.$cookies.get("search"));
-                console.log("hey " + this.trySearch);
-                this.$cookies.set("search",this.trySearch,10);
-                if (this.trySearch == '車廂') {
-                    window.location.href = 'http://www.google.com';
-                }
-                this.trySearch = '';
-            }
-        }
-    });
-
-    Vue.$cookies.config('1d');
-
 </script>
 
 </body>
