@@ -42,26 +42,6 @@
 <link rel="stylesheet" href="/ptspIus.tv/css/video-js.min.css">
 
     
-<script src="/ptspIus.tv/js/video.min.js"></script>
-
-    
-<script src="/ptspIus.tv/js/Youtube.min.js"></script>
-
-    
-<script src="/ptspIus.tv/js/vue.min.js"></script>
-
-    
-<script src="/ptspIus.tv/js/vue-video-player.js"></script>
-
-    
-<script src="/ptspIus.tv/js/vue-cookies.js"></script>
-
-    
-<script src="/ptspIus.tv/js/app.js"></script>
-
-    <script type="text/javascript">
-        Vue.use(window.VueVideoPlayer)
-    </script>
 <meta name="generator" content="Hexo 5.1.1"></head>
 
 
@@ -107,8 +87,19 @@
     </header>
 </app-header>
 
-                <video id="vid1" class="video-js vjs-default-skin" controls autoplay width="640" height="264" data-setup='{ "techOrder": ["youtube"], "sources": [{ "type": "video/youtube", "src": "https://www.youtube.com/watch?v=xjS6SftYQaQ"}] }'>
+                <video id="vid1" class="video-js vjs-default-skin vjs-big-play-centered" data-setup='{ "techOrder": ["youtube"], "sources": [{ "type": "video/youtube", "src": "https://www.youtube.com/watch?v=LGrpsZ7BsQA"}] }'>
 </video>
+
+<div class="menuContainer">
+    <div class="menuWrapper">
+        <div class="container-fluid h-100">
+            <div class="row h-100">
+                <video id="vid2" class="video-js vjs-default-skin vjs-big-play-centered" data-setup='{"fluid": true, "techOrder": ["youtube"], "sources": [{ "type": "video/youtube", "src": "https://www.youtube.com/watch?v=ggrkh-IX34Q"}] }'>
+                </video>
+            </div>
+        </div>
+    </div>
+</div>
 
 <main _ngcontent-c11="" class="video_page">
     <div _ngcontent-c11="" class="container">
@@ -386,9 +377,23 @@
             </app-home>
         </app-root>
     </div>
-    <script type="text/javascript">
     
-</script>
+<script src="/ptspIus.tv/js/video.min.js"></script>
+
+
+<script src="/ptspIus.tv/js/Youtube.min.js"></script>
+
+
+<script src="/ptspIus.tv/js/vue.min.js"></script>
+
+
+<script src="/ptspIus.tv/js/vue-video-player.js"></script>
+
+
+<script src="/ptspIus.tv/js/vue-cookies.js"></script>
+
+
+<script src="/ptspIus.tv/js/app.js"></script>
 
 </body>
 

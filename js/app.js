@@ -36,4 +36,45 @@ var app = new Vue({
 
 Vue.$cookies.config('1d');
 
+var showCall = false;
+var options = {
+    controls: true,
+    width: 825,
+    height: 464,
+};
+var player = videojs('vid1', options, function onPlayerReady() {
+    videojs.log('Your player is ready!');
 
+    // In this context, `this` is the player that was created by Video.js.
+    this.play();
+
+    // How about an event listener?
+    this.on('ended', function () {
+        videojs.log('Awww...over so soon?!');
+    });
+    this.on('timeupdate', function () {
+        videojs.log(this.player_.currentTime());
+        if (this.player_.currentTime() >= 10 && showCall == false) {
+            videojs.log('show call');
+            this.player_.pause();
+            this.player_.hide();
+            
+            p2.player_.show();
+            //p2.player_.requestFullScreen();
+            p2.player_.play();
+            showCall = true;
+        }
+    });
+});
+
+var opt2 = {
+    controls: true,
+    preload: 'auto'
+}
+var p2 = videojs('vid2', opt2, function onPlayerReady() {
+    this.player_.hide();
+    
+    this.on('play',function(){
+        
+    });
+});
