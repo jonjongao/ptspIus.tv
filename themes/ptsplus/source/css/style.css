@@ -1,0 +1,16 @@
+.disabled_href {
+  cursor: not-allowed !important;
+}
+
+img {
+  -webkit-filter: grayscale(1);
+  /* Webkit */
+  filter: gray;
+  /* IE6-9 */
+  filter: grayscale(1);
+  /* W3C */
+}
+
+.btn-outline-primary a {
+  color: #E7437B;
+}
