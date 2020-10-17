@@ -180,6 +180,7 @@ export default {
     getEpisodeURL: function(item) {
       if (item.url == "javascript:void(0)" || item.url == "#")
         return "/season/" + this.$route.params.id;
+      else if (item.url == "/") return { name: "Home" };
       else
         return {
           name: "Episode",

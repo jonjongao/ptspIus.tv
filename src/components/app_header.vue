@@ -55,7 +55,11 @@
               <a _ngcontent-c2="" class="nav-link disabled_href">
                 <div _ngcontent-c2="" class="member_info">
                   <div _ngcontent-c2="" class="profile_image">
-                    <img _ngcontent-c2="" alt="" src="/static/member_profile_image.png" />
+                    <img
+                      _ngcontent-c2=""
+                      alt=""
+                      src="/static/member_profile_image.png"
+                    />
                   </div>
                   <div _ngcontent-c2="" class="member_name">
                     {{ loginName }}
@@ -64,7 +68,12 @@
               </a>
             </li>
             <li _ngcontent-c2="" class="nav-item btn_vip_plan">
-              <router-link _ngcontent-c2="" to="/payment-step-1" class="nav-link">方案介紹</router-link>
+              <router-link
+                _ngcontent-c2=""
+                to="/payment-step-1"
+                class="nav-link"
+                >方案介紹</router-link
+              >
             </li>
           </ul>
         </div>
@@ -76,14 +85,17 @@
 <script>
 export default {
   name: "Header",
-  props:['loginName'],
-  data:function(){
-return{
-  trySearch: '',
-}
+  props: ["loginName"],
+  data: function() {
+    return {
+      trySearch: ""
+    };
   },
-  methods:{
-    
+  methods: {
+    onSearch: function() {
+      this.$bus.$emit("trySearch", this.trySearch);
+      this.trySearch='';
+    }
   }
 };
 </script>

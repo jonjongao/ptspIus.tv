@@ -71,145 +71,6 @@
                 </div>
               </div>
             </div>
-
-            <div
-              _ngcontent-c6=""
-              aria-hidden="true"
-              aria-labelledby="checkLoginPopupModalLabel"
-              class="modal fade"
-              id="checkLoginPopupModal"
-              role="dialog"
-              tabindex="-1"
-            >
-              <div _ngcontent-c6="" class="modal-dialog" role="document">
-                <div _ngcontent-c6="" class="modal-content">
-                  <div _ngcontent-c6="" class="modal-header">
-                    <h5
-                      _ngcontent-c6=""
-                      class="modal-title"
-                      id="checkLoginPopupModalLabel"
-                    >
-                      尚未登入
-                    </h5>
-                    <button
-                      _ngcontent-c6=""
-                      aria-label="Close"
-                      class="close"
-                      data-dismiss="modal"
-                      type="button"
-                    >
-                      <span _ngcontent-c6="" aria-hidden="true"></span>
-                    </button>
-                  </div>
-                  <div _ngcontent-c6="" class="modal-body">
-                    <p _ngcontent-c6="">請問您要登入嗎？</p>
-                  </div>
-                  <div _ngcontent-c6="" class="modal-footer">
-                    <button
-                      _ngcontent-c6=""
-                      class="btn btn-outline-primary"
-                      data-dismiss="modal"
-                      tabindex="0"
-                    >
-                      是
-                    </button>
-                    <button
-                      _ngcontent-c6=""
-                      class="btn btn-outline-primary"
-                      data-dismiss="modal"
-                    >
-                      否
-                    </button>
-                  </div>
-                </div>
-              </div>
-            </div>
-
-            <div
-              _ngcontent-c6=""
-              aria-hidden="true"
-              aria-labelledby="errorPopupModalLabel"
-              class="modal fade"
-              id="errorPopupModal"
-              role="dialog"
-              tabindex="-1"
-            >
-              <div _ngcontent-c6="" class="modal-dialog" role="document">
-                <div _ngcontent-c6="" class="modal-content">
-                  <div _ngcontent-c6="" class="modal-header">
-                    <h5
-                      _ngcontent-c6=""
-                      class="modal-title"
-                      id="errorPopupModalLabel"
-                    ></h5>
-                  </div>
-                  <div _ngcontent-c6="" class="modal-body">
-                    <p _ngcontent-c6=""></p>
-                  </div>
-                  <div _ngcontent-c6="" class="modal-footer">
-                    <button
-                      _ngcontent-c6=""
-                      class="btn btn-outline-primary"
-                      data-dismiss="modal"
-                    >
-                      確定
-                    </button>
-                  </div>
-                </div>
-              </div>
-            </div>
-
-            <app-remind-update-email-dialog _ngcontent-c6="" _nghost-c7="">
-              <div
-                _ngcontent-c7=""
-                aria-hidden="true"
-                aria-labelledby="emailValidPopupModalLabel"
-                class="modal fade"
-                id="emailValidPopupModal"
-                role="dialog"
-                tabindex="-1"
-              >
-                <div _ngcontent-c7="" class="modal-dialog" role="document">
-                  <div _ngcontent-c7="" class="modal-content">
-                    <div _ngcontent-c7="" class="modal-header">
-                      <h5
-                        _ngcontent-c7=""
-                        class="modal-title"
-                        id="emailValidPopupModalLabel"
-                      >
-                        尚未驗證
-                      </h5>
-                      <button
-                        _ngcontent-c7=""
-                        aria-label="Close"
-                        class="close"
-                        data-dismiss="modal"
-                        type="button"
-                      >
-                        <span _ngcontent-c7="" aria-hidden="true"></span>
-                      </button>
-                    </div>
-                    <div _ngcontent-c7="" class="modal-body">
-                      <p _ngcontent-c7="">
-                        請進行 Email
-                        認證，按下『確定』後，將幫您轉至『個人資料』頁，方可更改
-                        Email，更改完畢後，系統將傳送一封認證信至您的信箱，再請您進行後續認證．
-                      </p>
-                    </div>
-                    <div _ngcontent-c7="" class="modal-footer">
-                      <button
-                        _ngcontent-c7=""
-                        class="btn btn-outline-primary"
-                        data-dismiss="modal"
-                        tabindex="0"
-                      >
-                        確定
-                      </button>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </app-remind-update-email-dialog>
           </app-live-player>
           <div _ngcontent-c5="" class="page_action">
             <div _ngcontent-c5="">
@@ -244,21 +105,18 @@
             <div _ngcontent-c5="" class="row item_lists">
               <!---->
               <div _ngcontent-c5="">
-                <a
-                  _ngcontent-c5=""
-                  href="/live/93610abd-7e7a-46eb-913d-14ec42fc6ccb"
-                >
+                <router-link _ngcontent-c5="" :to="{ name: 'Live' }">
                   <div _ngcontent-c5="" class="img_hover_effect">
                     <img
                       _ngcontent-c5=""
-                      src="ptspIus.tv/image/WebListPage_WebListPage_公視直播_直播列表Web.jpg"
+                      src="/static/WebListPage_WebListPage_公視直播_直播列表Web.jpg"
                       alt="公共電視 網路直播 PTS Live"
                     />
                   </div>
                   <div _ngcontent-c5="" class="item_info">
                     <p _ngcontent-c5="" class="item_name">救救我... Live</p>
                   </div>
-                </a>
+                </router-link>
               </div>
               <!--
                         <div _ngcontent-c5="">
@@ -296,11 +154,10 @@
 export default {
   name: "Live",
   components: {},
-  data: function () {
+  data: function() {
     return {};
-  },
+  }
 };
 </script>
 
-<style scoped>
-</style>>
+<style scoped></style>>
