@@ -50,6 +50,7 @@ new Vue({
     console.log("current env="+process.env.NODE_ENV);
     console.log("host="+window.location.hostname);
     console.log("href="+window.location.href);
+    console.log("pathname="+window.location.pathname);
     this.$store.commit(
       "setBaseURL",
       process.env.NODE_ENV === "production"
