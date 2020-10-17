@@ -30,13 +30,15 @@
         :key="s.id"
         :class="s.id == 100 ? 'carousel-item active' : 'carousel-item'"
       >
-        
-        <router-link _ngcontent-c1="" :to="{ name: 'Season', params: { id: s.id }}">
+        <router-link
+          _ngcontent-c1=""
+          :to="{ name: 'Season', params: { id: s.id } }"
+        >
           <div _ngcontent-c1="" class="carousel_image_crop">
             <img
               _ngcontent-c1=""
               class="d-block w-100"
-              :src="s.imgSrc"
+              :src="getImgSrc(s.imgSrc)"
               :alt="s.title"
             />
           </div>
@@ -101,7 +103,7 @@ import ctn from "../assets/season.json";
 export default {
   name: "Carousel",
   computed: {
-    getCarousel: function () {
+    getCarousel: function() {
       var posts = [];
       for (var i = 0; i < this.show.length; i++) {
         if (this.isCarousel(this.show[i].id)) {
@@ -109,15 +111,15 @@ export default {
         }
       }
       return posts;
-    },
+    }
   },
-  data: function () {
+  data: function() {
     return {
-      show: ctn,
+      show: ctn
     };
   },
   methods: {
-    isCarousel: function (id) {
+    isCarousel: function(id) {
       var i = parseInt(id, 10);
       switch (i) {
         case 100:
@@ -130,16 +132,24 @@ export default {
       }
       return false;
     },
-    isID: function (id) {
+    isID: function(id) {
       var i = parseInt(id, 10);
       return true;
     },
-  },
+    getImgSrc: function(src) {
+
+      if (src.includes("http")) return src;
+      else
+        return process.env.NODE_ENV === "production"
+          ? process.env.PUBLIC_PATH + src
+          : '/' + src;
+    }
+  }
 };
 </script>
 
 <style scoped>
-.carousel-caption p{
-    white-space: pre-wrap;
+.carousel-caption p {
+  white-space: pre-wrap;
 }
 </style>

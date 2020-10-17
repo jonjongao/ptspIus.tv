@@ -24,7 +24,7 @@
         <a _ngcontent-c1="" appseasonlink="" :href="s.url">
           <div _ngcontent-c1="" class="img_hover_effect">
             <span _ngcontent-c1="" class=""></span>
-            <img _ngcontent-c1="" :src="s.imgSrc" :alt="s.title" />
+            <img _ngcontent-c1="" :src="getImgSrc(s.imgSrc)" :alt="s.title" />
           </div>
           <div _ngcontent-c1="" class="item_info">
             <p _ngcontent-c1="" class="item_name">{{ s.title }}</p>
@@ -62,6 +62,14 @@ export default {
     };
   },
   methods: {
+    getImgSrc: function(src) {
+
+      if (src.includes("http")) return src;
+      else
+        return process.env.NODE_ENV === "production"
+          ? process.env.PUBLIC_PATH + src
+          : '/' + src;
+    },
     isType: function (id) {
       var t = parseInt(this.type, 10);
       var i = parseInt(id, 10);

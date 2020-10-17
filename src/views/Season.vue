@@ -13,7 +13,7 @@
       <div _ngcontent-c1="" class="row">
         <div _ngcontent-c1="" class="col-md-9">
           <div _ngcontent-c1="" class="page_cover_image">
-            <img _ngcontent-c1="" :src="getMETA.imgSrc" :alt="getMETA.title" />
+            <img _ngcontent-c1="" :src="getImgSrc(getMETA.imgSrc)" :alt="getMETA.title" />
           </div>
           <div _ngcontent-c1="" class="page_action">
             <div _ngcontent-c1="">
@@ -241,6 +241,14 @@ export default {
           name: "Episode",
           params: { id: this.getMETA.id, ep: item.id }
         };
+    },
+    getImgSrc: function(src) {
+
+      if (src.includes("http")) return src;
+      else
+        return process.env.NODE_ENV === "production"
+          ? process.env.PUBLIC_PATH + src
+          : '/' + src;
     }
   }
 };

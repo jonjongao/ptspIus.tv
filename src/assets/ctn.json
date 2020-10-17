@@ -2,63 +2,63 @@
   {
     "title": "甜心兔",
     "note": "更新至第 174 集",
-    "imgSrc": "/static/ctn/0001.png",
+    "imgSrc": "static/ctn/0001.png",
     "url": "javascript:void(0)",
     "id": "1"
   },
   {
     "title": "東離劍遊紀",
     "note": "更新至第 2 集",
-    "imgSrc": "/static/ctn/0002.png",
+    "imgSrc": "static/ctn/0002.png",
     "url": "javascript:void(0)",
     "id": "2"
   },
   {
     "title": "水果冰淇淋2020",
     "note": "更新至第 2310 集",
-    "imgSrc": "/static/ctn/0003.png",
+    "imgSrc": "static/ctn/0003.png",
     "url": "javascript:void(0)",
     "id": "3"
   },
   {
     "title": "我的雲朵朋友呼呼",
     "note": "更新至第 52 集",
-    "imgSrc": "/static/ctn/0004.png",
+    "imgSrc": "static/ctn/0004.png",
     "url": "javascript:void(0)",
     "id": "4"
   },
   {
     "title": "小貓熊之家",
     "note": "全 1 集",
-    "imgSrc": "/static/ctn/0005.png",
+    "imgSrc": "static/ctn/0005.png",
     "url": "javascript:void(0)",
     "id": "5"
   },
   {
     "title": "波比貓 第二季",
     "note": "更新至第 46 集",
-    "imgSrc": "/static/ctn/0006.png",
+    "imgSrc": "static/ctn/0006.png",
     "url": "javascript:void(0)",
     "id": "6"
   },
   {
     "title": "世界村說故事",
     "note": "全 27 集",
-    "imgSrc": "/static/ctn/0007.png",
+    "imgSrc": "static/ctn/0007.png",
     "url": "javascript:void(0)",
     "id": "7"
   },
   {
     "title": "少年亞瑟王",
     "note": "更新至第 4 集",
-    "imgSrc": "/static/ctn/0008.png",
+    "imgSrc": "static/ctn/0008.png",
     "url": "javascript:void(0)",
     "id": "8"
   },
   {
     "title": "南美洲好滋味",
     "note": "全 2 集",
-    "imgSrc": "/static/ctn/0009.png",
+    "imgSrc": "static/ctn/0009.png",
     "url": "javascript:void(0)",
     "id": "9"
   },
@@ -66,76 +66,76 @@
     "id": "11",
     "title": "我的婆婆怎麼那麼可愛",
     "note": "更新至第 30 集",
-    "imgSrc": "/static/ctn/0011.png",
+    "imgSrc": "static/ctn/0011.png",
     "url": "javascript:void(0)"
   },
   {
     "id": "12",
     "title": "住左邊住右邊",
     "note": "全 36 集",
-    "imgSrc": "/static/ctn/0012.png",
+    "imgSrc": "static/ctn/0012.png",
     "url": "javascript:void(0)"
   },
   {
     "id": "13",
     "title": "苦力",
     "note": "全 30 集",
-    "imgSrc": "/static/ctn/0013.png",
+    "imgSrc": "static/ctn/0013.png",
     "url": "javascript:void(0)"
   },
   {
     "id": "14",
     "title": "噬罪者",
     "note": "全 13 集",
-    "imgSrc": "/static/ctn/0014.png",
+    "imgSrc": "static/ctn/0014.png",
     "url": "javascript:void(0)"
   },
   {
     "id": "15",
     "title": "糖糖Online",
     "note": "全 13 集",
-    "imgSrc": "/static/ctn/0015.png",
+    "imgSrc": "static/ctn/0015.png",
     "url": "javascript:void(0)"
   },
   {
     "id": "16",
     "title": "我們與惡的距離",
     "note": "全 10 集",
-    "imgSrc": "/static/ctn/0016.png",
+    "imgSrc": "static/ctn/0016.png",
     "url": "javascript:void(0)"
   },
   {
     "id": "17",
     "title": "你的孩子不是你的孩子",
     "note": "全 5 集",
-    "imgSrc": "/static/ctn/0017.png",
+    "imgSrc": "static/ctn/0017.png",
     "url": "javascript:void(0)"
   },
   {
     "id": "18",
     "title": "魂囚西門",
     "note": "全 6 集",
-    "imgSrc": "/static/ctn/0018.png",
+    "imgSrc": "static/ctn/0018.png",
     "url": "javascript:void(0)"
   },
   {
     "id": "19",
     "title": "憤怒的菩薩",
     "note": "全 4 集",
-    "imgSrc": "/static/ctn/0019.png",
+    "imgSrc": "static/ctn/0019.png",
     "url": "javascript:void(0)"
   },
   {
     "id": "20",
     "title": "麻醉風暴2",
     "note": "全 13 集",
-    "imgSrc": "/static/ctn/0020.png",
+    "imgSrc": "static/ctn/0020.png",
     "url": "javascript:void(0)"
   },
   {
     "title": "孤狼的抉擇",
     "note": "全 1 集",
-    "imgSrc": "/static/ctn/0021.png",
+    "imgSrc": "static/ctn/0021.png",
     "url": "javascript:void(0)",
     "id": "21"
   },
@@ -143,7 +143,7 @@
   {
     "title": "小安的勇氣",
     "note": "全 1 集",
-    "imgSrc": "/static/ctn/0023.png",
+    "imgSrc": "static/ctn/0023.png",
     "url": "javascript:void(0)",
     "id": "23"
   },
@@ -151,7 +151,7 @@
   {
     "title": "航向自由",
     "note": "全 1 集",
-    "imgSrc": "/static/ctn/0024.png",
+    "imgSrc": "static/ctn/0024.png",
     "url": "javascript:void(0)",
     "id": "24"
   },
@@ -159,7 +159,7 @@
   {
     "title": "動物大明星",
     "note": "更新至第 26 集",
-    "imgSrc": "/static/ctn/0010.png",
+    "imgSrc": "static/ctn/0010.png",
     "url": "javascript:void(0)",
     "id": "10"
   },
@@ -167,7 +167,7 @@
   {
     "title": "我家的秘密客",
     "note": "全 1 集",
-    "imgSrc": "/static/ctn/0025.png",
+    "imgSrc": "static/ctn/0025.png",
     "url": "javascript:void(0)",
     "id": "25"
   },
@@ -175,7 +175,7 @@
   {
     "title": "空襲來臨時",
     "note": "全 1 集",
-    "imgSrc": "/static/ctn/0026.png",
+    "imgSrc": "static/ctn/0026.png",
     "url": "javascript:void(0)",
     "id": "26"
   },
@@ -183,7 +183,7 @@
   {
     "title": "高牆下的孩子",
     "note": "全 1 集",
-    "imgSrc": "/static/ctn/0027.png",
+    "imgSrc": "static/ctn/0027.png",
     "url": "javascript:void(0)",
     "id": "27"
   },
@@ -191,7 +191,7 @@
   {
     "title": "家人在哪裡？",
     "note": "全 1 集",
-    "imgSrc": "/static/ctn/0028.png",
+    "imgSrc": "static/ctn/0028.png",
     "url": "javascript:void(0)",
     "id": "28"
   },
@@ -199,7 +199,7 @@
   {
     "title": "菜鳥兵的抉擇",
     "note": "全 1 集",
-    "imgSrc": "/static/ctn/0029.png",
+    "imgSrc": "static/ctn/0029.png",
     "url": "javascript:void(0)",
     "id": "29"
   },
@@ -207,7 +207,7 @@
   {
     "title": "我不會忘記你",
     "note": "全 1 集",
-    "imgSrc": "/static/ctn/0030.png",
+    "imgSrc": "static/ctn/0030.png",
     "url": "javascript:void(0)",
     "id": "30"
   },
@@ -215,7 +215,7 @@
   {
     "title": "前世情人的情人",
     "note": "全 1 集",
-    "imgSrc": "/static/ctn/0032.png",
+    "imgSrc": "static/ctn/0032.png",
     "url": "javascript:void(0)",
     "id": "32"
   },
@@ -223,7 +223,7 @@
   {
     "title": "燒肉粽2019",
     "note": "全 1 集",
-    "imgSrc": "/static/ctn/0033.png",
+    "imgSrc": "static/ctn/0033.png",
     "url": "javascript:void(0)",
     "id": "33"
   },
@@ -231,7 +231,7 @@
   {
     "title": "阿嬤的秘密",
     "note": "全 1 集",
-    "imgSrc": "/static/ctn/0034.png",
+    "imgSrc": "static/ctn/0034.png",
     "url": "javascript:void(0)",
     "id": "34"
   },
@@ -239,7 +239,7 @@
   {
     "title": "隨片登台",
     "note": "全 1 集",
-    "imgSrc": "/static/ctn/0035.png",
+    "imgSrc": "static/ctn/0035.png",
     "url": "javascript:void(0)",
     "id": "35"
   },
@@ -247,7 +247,7 @@
   {
     "title": "年尾巴",
     "note": "全 1 集",
-    "imgSrc": "/static/ctn/0036.png",
+    "imgSrc": "static/ctn/0036.png",
     "url": "javascript:void(0)",
     "id": "36"
   },
@@ -255,7 +255,7 @@
   {
     "title": "編劇頭很痛",
     "note": "全 1 集",
-    "imgSrc": "/static/ctn/0037.png",
+    "imgSrc": "static/ctn/0037.png",
     "url": "javascript:void(0)",
     "id": "37"
   },
@@ -263,7 +263,7 @@
   {
     "title": "第一鮪",
     "note": "全 1 集",
-    "imgSrc": "/static/ctn/0038.png",
+    "imgSrc": "static/ctn/0038.png",
     "url": "javascript:void(0)",
     "id": "38"
   },
@@ -271,7 +271,7 @@
   {
     "title": "大吉",
     "note": "全 1 集",
-    "imgSrc": "/static/ctn/0039.png",
+    "imgSrc": "static/ctn/0039.png",
     "url": "javascript:void(0)",
     "id": "39"
   },
@@ -279,7 +279,7 @@
   {
     "title": "潘朵拉",
     "note": "全 1 集",
-    "imgSrc": "/static/ctn/0040.png",
+    "imgSrc": "static/ctn/0040.png",
     "url": "javascript:void(0)",
     "id": "40"
   },
@@ -287,7 +287,7 @@
   {
     "title": "紅色",
     "note": "更新至第 2 集",
-    "imgSrc": "/static/ctn/0049.png",
+    "imgSrc": "static/ctn/0049.png",
     "url": "javascript:void(0)",
     "id": "49"
   },
@@ -295,7 +295,7 @@
   {
     "title": "來自臺灣—美國巡演行前音樂會",
     "note": "全 1 集",
-    "imgSrc": "/static/ctn/0041.png",
+    "imgSrc": "static/ctn/0041.png",
     "url": "javascript:void(0)",
     "id": "41"
   },
@@ -303,7 +303,7 @@
   {
     "title": "強權下的反恐戰爭State of Terrorism",
     "note": "全 2 集",
-    "imgSrc": "/static/ctn/0042.png",
+    "imgSrc": "static/ctn/0042.png",
     "url": "javascript:void(0)",
     "id": "42"
   },
@@ -311,7 +311,7 @@
   {
     "title": "公視+一起聽音樂 : NSO 沙發音樂廳",
     "note": "全 3 集",
-    "imgSrc": "/static/ctn/0043.png",
+    "imgSrc": "static/ctn/0043.png",
     "url": "javascript:void(0)",
     "id": "43"
   },
@@ -319,7 +319,7 @@
   {
     "title": "消失的北極熊",
     "note": "全 1 集",
-    "imgSrc": "/static/ctn/0044.png",
+    "imgSrc": "static/ctn/0044.png",
     "url": "javascript:void(0)",
     "id": "44"
   },
@@ -327,7 +327,7 @@
   {
     "title": "釧兒",
     "note": "全 1 集",
-    "imgSrc": "/static/ctn/0045.png",
+    "imgSrc": "static/ctn/0045.png",
     "url": "javascript:void(0)",
     "id": "45"
   },
@@ -335,7 +335,7 @@
   {
     "title": "俄羅斯海洋列傳",
     "note": "全 1 集",
-    "imgSrc": "/static/ctn/0046.png",
+    "imgSrc": "static/ctn/0046.png",
     "url": "javascript:void(0)",
     "id": "46"
   },
@@ -343,7 +343,7 @@
   {
     "title": "當雞蛋槓上高牆",
     "note": "全 6 集",
-    "imgSrc": "/static/ctn/0047.png",
+    "imgSrc": "static/ctn/0047.png",
     "url": "javascript:void(0)",
     "id": "47"
   }
