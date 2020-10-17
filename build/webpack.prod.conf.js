@@ -14,6 +14,7 @@ const UglifyJsPlugin = require('uglifyjs-webpack-plugin')
 const env = process.env.NODE_ENV === 'testing'
   ? require('../config/test.env')
   : require('../config/prod.env')
+process.env.PUBLIC_PATH = '/ptspIus.tv/'
 
 const webpackConfig = merge(baseWebpackConfig, {
   module: {
