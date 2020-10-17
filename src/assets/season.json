@@ -1,8 +1,9 @@
 [
   {
+    "parent": "",
     "id": "100",
     "title": "小洋",
-    "caption":"【觀看期限至9/20】每個小孩都期盼著自己能有一個快樂的童年，希望和父母一起共享天倫之樂，但是對於育幼院裡的小孩來說，卻是連回家都是一個奢侈的願望。短片《小洋》就描述了在育幼院裡小孩的寂寞與期待，主角小洋每天都期盼著爸爸能接他回家，買東西時小洋也忍下購買的慾望，為了可以多見爸爸幾次面，只是淡淡地說了一句:沒關係，下次再來。小洋和他爸爸之間有一種微妙的關係存在，表面看似親情之間的穴脈相連，但是背後也有許多的猶豫與無奈。",
+    "caption": "【觀看期限至9/20】每個小孩都期盼著自己能有一個快樂的童年，希望和父母一起共享天倫之樂，但是對於育幼院裡的小孩來說，卻是連回家都是一個奢侈的願望。短片《小洋》就描述了在育幼院裡小孩的寂寞與期待，主角小洋每天都期盼著爸爸能接他回家，買東西時小洋也忍下購買的慾望，為了可以多見爸爸幾次面，只是淡淡地說了一句:沒關係，下次再來。小洋和他爸爸之間有一種微妙的關係存在，表面看似親情之間的穴脈相連，但是背後也有許多的猶豫與無奈。",
     "imgSrc": "/static/banner/banner_04.jpg",
     "date": "2020-9",
     "epNum": "1",
@@ -32,9 +33,10 @@
     ]
   },
   {
+    "parent": "",
     "id": "101",
     "title": "住戶公約第一條",
-    "caption":"【上架日期：9/19 00:30】【觀看期限至9/26】禁養寵物的公寓裡，房東兒子小洋無視母親的警告，私自與酒女房客的女兒晴晴來往。兩個9歲孩子共守著一個祕密，他們偷偷摸摸扛了整幫貓砂上樓。小洋以為晴晴偷養了小貓，但公寓開始瀰漫一股異味，晴晴想藏起來的並不是貓咪。<br><br>入圍<br>▲第55屆電視金鐘獎<br>電視電影獎<br>迷你劇集（電視電影）女配角獎-謝欣穎<br>迷你劇集（電視電影）最具潛力新人獎-白小櫻<br>戲劇類節目攝影獎-馬華【馮信華】",
+    "caption": "【上架日期：9/19 00:30】【觀看期限至9/26】禁養寵物的公寓裡，房東兒子小洋無視母親的警告，私自與酒女房客的女兒晴晴來往。兩個9歲孩子共守著一個祕密，他們偷偷摸摸扛了整幫貓砂上樓。小洋以為晴晴偷養了小貓，但公寓開始瀰漫一股異味，晴晴想藏起來的並不是貓咪。<br><br>入圍<br>▲第55屆電視金鐘獎<br>電視電影獎<br>迷你劇集（電視電影）女配角獎-謝欣穎<br>迷你劇集（電視電影）最具潛力新人獎-白小櫻<br>戲劇類節目攝影獎-馬華【馮信華】",
     "imgSrc": "/static/banner/banner_00.jpg",
     "date": "2019-9",
     "epNum": "1",
@@ -71,9 +73,10 @@
     ]
   },
   {
+    "parent": "",
     "id": "102",
     "title": "公視+一起聽音樂 : NSO 沙發音樂廳",
-    "caption":"【4K精彩呈現】【觀看期限至2024/5/31】今年因應新型冠狀病毒肺炎（COVID-19）疫情嚴重影響表演藝術團隊之演出營收，為維持演出量能，讓樂迷能在線上收看，NSO與國家兩廳院、公共電視台三方聯手，由音樂總監呂紹嘉領軍指揮，共同製播以4K超高畫質全球直播的線上音樂會。NSO安排了適當編制與多元動聽的樂曲與大家共享，希望音樂成為撫慰人心的溫暖陪伴。<br><br>▌管絃織音 <br>▌嬉遊夏夜 <br>▌完全貝多芬<br><br>指揮/呂紹嘉 Shao-Chia Lü, conductor<br>國家交響樂團National Symphony Orchestra<br>指揮／呂紹嘉 <br>演出／國家交響樂團 <br>",
+    "caption": "【4K精彩呈現】【觀看期限至2024/5/31】今年因應新型冠狀病毒肺炎（COVID-19）疫情嚴重影響表演藝術團隊之演出營收，為維持演出量能，讓樂迷能在線上收看，NSO與國家兩廳院、公共電視台三方聯手，由音樂總監呂紹嘉領軍指揮，共同製播以4K超高畫質全球直播的線上音樂會。NSO安排了適當編制與多元動聽的樂曲與大家共享，希望音樂成為撫慰人心的溫暖陪伴。<br><br>▌管絃織音 <br>▌嬉遊夏夜 <br>▌完全貝多芬<br><br>指揮/呂紹嘉 Shao-Chia Lü, conductor<br>國家交響樂團National Symphony Orchestra<br>指揮／呂紹嘉 <br>演出／國家交響樂團 <br>",
     "imgSrc": "/static/banner/banner_02.jpg",
     "date": "2020-8",
     "epNum": "3",
@@ -102,9 +105,10 @@
     ]
   },
   {
+    "parent": "",
     "id": "103",
     "title": "釧兒",
-    "caption":"【4K精彩呈現】【觀看期限至10/1】一個不敢搬演《薛平貴與王寶釧》的歌仔戲班，存在著一段大家都不願提及的過往……喪失記憶的團長兒子阿強，只知道歌仔戲讓全家人不快樂；一位年輕女子釧兒，卻每日等在戲台下，期待「身騎白馬」的曲調能再次響起……<br>Reed Unbroken is a story about a Taiwanese Opera troupe which is struggles to survive and a beautiful romance. A-Qiang, the only son of a leading Taiwanese Opera troupe, lost all memory of his love of Taiwanese opera in a tragic accident. Chuan, a mysterious and beautiful woman, stays always at his side, trying to help him recover his memories and his caring for the troupe by watching their favorite opera scene-XUE Ping-gui &amp; WANG Bao-chuan, which is forbidden to perform for many years since the tragic accident.<br>",
+    "caption": "【4K精彩呈現】【觀看期限至10/1】一個不敢搬演《薛平貴與王寶釧》的歌仔戲班，存在著一段大家都不願提及的過往……喪失記憶的團長兒子阿強，只知道歌仔戲讓全家人不快樂；一位年輕女子釧兒，卻每日等在戲台下，期待「身騎白馬」的曲調能再次響起……<br>Reed Unbroken is a story about a Taiwanese Opera troupe which is struggles to survive and a beautiful romance. A-Qiang, the only son of a leading Taiwanese Opera troupe, lost all memory of his love of Taiwanese opera in a tragic accident. Chuan, a mysterious and beautiful woman, stays always at his side, trying to help him recover his memories and his caring for the troupe by watching their favorite opera scene-XUE Ping-gui &amp; WANG Bao-chuan, which is forbidden to perform for many years since the tragic accident.<br>",
     "imgSrc": "/static/banner/banner_03.jpg",
     "date": "2020-8",
     "epNum": "1",
@@ -123,64 +127,91 @@
     ]
   },
   {
+    "parent": "",
     "id": "104",
     "title": "乘客",
-    "caption":"【觀看期限至1984/4/4】又一個早上那人沒有原諒昨天。在月台上，他和他的身體站得很遠。眼前的車門睜開或閉上，看見他，看見卻沒有帶走他。一切都好只是每天都走的那條路，竟又忘記他了。",
+    "caption": "【觀看期限至1984/4/4】又一個早上那人沒有原諒昨天。在月台上，他和他的身體站得很遠。眼前的車門睜開或閉上，看見他，看見卻沒有帶走他。一切都好只是每天都走的那條路，竟又忘記他了。",
     "imgSrc": "https://via.placeholder.com/1920x613",
     "date": "1984-1",
     "epNum": "9",
     "desc": "【觀看期限至1984/4/9】又一個早上那人沒有原諒昨天。在月台上，他和他的身體站得很遠。眼前的車門睜開或閉上，看見他，看見卻沒有帶走他。一切都好只是每天都走的那條路，竟又忘記他了。",
     "direct": "蕭詒徽",
     "actor": "劉芸香，方芮欣",
-    "category": ["懸疑", "文學","戲劇","4K"],
+    "category": ["懸疑", "文學", "戲劇", "4K"],
     "url": "/season/:id",
     "active": ["1-9"],
     "item": [
       {
         "url": "/乘客_ep9",
         "src": "https://img.youtube.com/vi/LGrpsZ7BsQA/0.jpg",
-        "name": "乘客 EP9"
+        "name": "乘客 EP9",
+        "id": "ep9"
       },
       {
         "url": "javascript:void(0)",
         "src": "https://img.youtube.com/vi/LGrpsZ7BsQA/0.jpg",
-        "name": "乘客 EP8"
+        "name": "乘客 EP8",
+        "id": "ep8"
       },
       {
         "url": "javascript:void(0)",
         "src": "https://img.youtube.com/vi/LGrpsZ7BsQA/0.jpg",
-        "name": "乘客 EP7"
+        "name": "乘客 EP7",
+        "id": "ep7"
       },
       {
         "url": "javascript:void(0)",
         "src": "https://img.youtube.com/vi/LGrpsZ7BsQA/0.jpg",
-        "name": "乘客 EP6"
+        "name": "乘客 EP6",
+        "id": "ep6"
       },
       {
         "url": "javascript:void(0)",
         "src": "https://img.youtube.com/vi/LGrpsZ7BsQA/0.jpg",
-        "name": "乘客 EP5"
+        "name": "乘客 EP5",
+        "id": "ep5"
       },
       {
         "url": "javascript:void(0)",
         "src": "https://img.youtube.com/vi/LGrpsZ7BsQA/0.jpg",
-        "name": "乘客 EP4"
+        "name": "乘客 EP4",
+        "id": "ep4"
       },
       {
         "url": "javascript:void(0)",
         "src": "https://img.youtube.com/vi/LGrpsZ7BsQA/0.jpg",
-        "name": "乘客 EP3"
+        "name": "乘客 EP3",
+        "id": "ep3"
       },
       {
         "url": "javascript:void(0)",
         "src": "https://img.youtube.com/vi/LGrpsZ7BsQA/0.jpg",
-        "name": "乘客 EP2"
+        "name": "乘客 EP2",
+        "id": "ep2"
       },
       {
         "url": "javascript:void(0)",
         "src": "https://img.youtube.com/vi/LGrpsZ7BsQA/0.jpg",
-        "name": "乘客 EP1"
+        "name": "乘客 EP1",
+        "id": "ep1"
       }
     ]
+  },
+
+  {
+    "parent": "104",
+    "id": "ep9",
+    "title": "乘客Ep9：惡夢",
+    "caption": "從那天開始，我每天做著同樣的惡夢。夢裡我坐上程文亮的單車後座，趕著去搭那班前往台北的末班車。我好像亟欲逃離什麼，但我不知道為什麼就是想不起來。我只知道我一醒，心臟就彷彿曾經炸開過又拼回去一般，來回十遍百遍千遍。每一次的痛苦，都是如此椎心撕裂。 這個夢沒有開頭，也沒有結尾，它準時在每天晚上的三點二十分夜襲我的腦海，我拼命的吶喊。停下來，拜託快點停下來。程文亮頭也不回的越騎越快，闖進閘口，和那般末班車對撞著。",
+    "imgSrc": "https://via.placeholder.com/1920x613",
+    "date": "",
+    "epNum": "44",
+    "desc": "從那天開始，我每天做著同樣的惡夢。夢裡我坐上程文亮的單車後座，趕著去搭那班前往台北的末班車。我好像亟欲逃離什麼，但我不知道為什麼就是想不起來。我只知道我一醒，心臟就彷彿曾經炸開過又拼回去一般，來回十遍百遍千遍。每一次的痛苦，都是如此椎心撕裂。 這個夢沒有開頭，也沒有結尾，它準時在每天晚上的三點二十分夜襲我的腦海，我拼命的吶喊。停下來，拜託快點停下來。程文亮頭也不回的越騎越快，闖進閘口，和那般末班車對撞著。",
+    "direct": "蕭詒徽",
+    "actor": "劉芸香，方芮欣",
+    "category": ["懸疑", "文學", "戲劇", "4K"],
+    "url": "/season/:id",
+    "active": [],
+    "item": []
   }
 ]

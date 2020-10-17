@@ -83,8 +83,8 @@
                 _nghost-c3=""
                 ><!----><!---->
                 <!---->
-                <div _ngcontent-c3="" v-for="i in getMETA.item" :key="i">
-                  <router-link _ngcontent-c3="" :to="i.url">
+                <div _ngcontent-c3="" v-for="i in getMETA.item" :key="i.id">
+                  <router-link _ngcontent-c3="" :to="getEpisodeURL(i)">
                     <div _ngcontent-c3="" class="img_hover_effect">
                       <img _ngcontent-c3="" :src="i.src" :alt="i.name" />
                     </div>
@@ -230,6 +230,18 @@ export default {
     return {
       show: ctn
     };
+  },
+  methods: {
+    // ! item = season.item
+    getEpisodeURL: function(item) {
+      if (item.url == "javascript:void(0)" || item.url == "#")
+        return "/season/" + this.$route.params.id;
+      else
+        return {
+          name: "Episode",
+          params: { id: this.getMETA.id, ep: item.id }
+        };
+    }
   }
 };
 </script>

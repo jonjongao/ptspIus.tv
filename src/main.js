@@ -23,6 +23,9 @@ Vue.config.ignoredElements = [
   'app-google-ad-manager',
   'app-season-relation-list',
   'app-season-episode-side-list',
+  'app-video-player',
+  'app-episode-intro',
+  'app-episode-relation-list'
 ]
 
 Vue.config.productionTip = false
