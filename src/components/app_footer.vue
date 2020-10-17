@@ -5,7 +5,7 @@
         <div _ngcontent-c3="" class="row">
           <div _ngcontent-c3="" class="col-md-4 order-md-0 order-3">
             <div _ngcontent-c3="" class="pts_info">
-              <a _ngcontent-c3="" href="/" class="pts_info_logo"
+              <a _ngcontent-c3="" :href="this.$store.state.base" class="pts_info_logo"
                 ><img
                   _ngcontent-c3=""
                   alt=""

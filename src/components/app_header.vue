@@ -17,7 +17,7 @@
         >
           <span _ngcontent-c2="" class="navbar-toggler-icon"></span>
         </button>
-        <a _ngcontent-c2="" routerlink="/" href="/" class="navbar-brand"
+        <a _ngcontent-c2="" routerlink="/" :href="this.$store.state.base" class="navbar-brand"
           ><img
             _ngcontent-c2=""
             alt=""
