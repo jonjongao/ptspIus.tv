@@ -24,7 +24,7 @@
         <a _ngcontent-c1="" appseasonlink="" :href="s.url">
           <div _ngcontent-c1="" class="img_hover_effect">
             <span _ngcontent-c1="" class=""></span>
-            <img _ngcontent-c1="" :src="s.imgSrc" :alt="s.title" />
+            <img _ngcontent-c1="" :src="getImgSrc(s.imgSrc)" :alt="s.title" />
           </div>
           <div _ngcontent-c1="" class="item_info">
             <p _ngcontent-c1="" class="item_name">{{ s.title }}</p>
@@ -66,7 +66,7 @@ export default {
 
       if (src.includes("http")) return src;
       else
-        return src
+        return this.$store.state.base + src;
     },
     isType: function (id) {
       var t = parseInt(this.type, 10);

@@ -13,7 +13,7 @@
       <div _ngcontent-c1="" class="row">
         <div _ngcontent-c1="" class="col-md-9">
           <div _ngcontent-c1="" class="page_cover_image">
-            <img _ngcontent-c1="" :src="getMETA.imgSrc" :alt="getMETA.title" />
+            <img _ngcontent-c1="" :src="getImgSrc(getMETA.imgSrc)" :alt="getMETA.title" />
           </div>
           <div _ngcontent-c1="" class="page_action">
             <div _ngcontent-c1="">
@@ -246,7 +246,7 @@ export default {
 
       if (src.includes("http")) return src;
       else
-        return src;
+        return this.$store.state.base + src;
     }
   }
 };

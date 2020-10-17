@@ -47,15 +47,11 @@ new Vue({
     /**
      * * Vue初始化時觸發
      */
-    console.log("current env="+process.env.NODE_ENV);
-    console.log("host="+window.location.hostname);
-    console.log("href="+window.location.href);
-    console.log("pathname="+window.location.pathname);
+    var base = window.location.href.slice(0, -3);
+
     this.$store.commit(
       "setBaseURL",
-      process.env.NODE_ENV === "production"
-        ? process.env.PUBLIC_PATH
-        : '/'
+      process.env.NODE_ENV === "production" ? base : "/"
     );
   },
   mounted: function() {

@@ -38,7 +38,7 @@
             <img
               _ngcontent-c1=""
               class="d-block w-100"
-              :src="s.imgSrc"
+              :src="getImgSrc(s.imgSrc)"
               :alt="s.title"
             />
           </div>
@@ -140,7 +140,7 @@ export default {
 
       if (src.includes("http")) return src;
       else
-        return src;
+        return this.$store.state.base + src;
     }
   }
 };
