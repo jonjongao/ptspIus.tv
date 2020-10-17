@@ -1,4 +1,6 @@
 module.exports = {
+  publicPath: process.env.NODE_ENV === 'production' ?
+  process.env.PUBLIC_PATH : '/',
   chainWebpack: config => {
     config.module
       .rule("vue")
@@ -9,7 +11,5 @@ module.exports = {
         options.compilerOptions.whitespace = 'preserve';
         return options;
       });
-  },
-  publicPath: process.env.NODE_ENV === 'production' ?
-  process.env.PUBLIC_PATH : '/'
+  }
 };
