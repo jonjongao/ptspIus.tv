@@ -21,7 +21,7 @@
       "4K奢華影廳",
       "限時賞味"
     ],
-    "url": "javascript:void(0)",
+    "url": "/season/:id",
     "active": ["1-1"],
     "item": [
       {
@@ -60,7 +60,7 @@
       "金鐘經典",
       "限時賞味"
     ],
-    "url": "javascript:void(0)",
+    "url": "/season/:id",
     "active": ["1-1"],
     "item": [
       {
@@ -81,7 +81,7 @@
     "direct": "",
     "actor": "",
     "category": ["4K藝文饗宴", "藝文探索"],
-    "url": "javascript:void(0)",
+    "url": "/season/:id",
     "active": ["1-3"],
     "item": [
       {
@@ -112,7 +112,7 @@
     "direct": "曾慧誠 (故事原創：澎恰恰、音樂總監暨指揮：李哲藝)",
     "actor": "周宛怡,蔡昌憲,澎恰恰",
     "category": ["4K藝文饗宴", "藝文探索"],
-    "url": "javascript:void(0)",
+    "url": "/season/:id",
     "active": ["1-1"],
     "item": [
       {
@@ -133,7 +133,7 @@
     "direct": "蕭詒徽",
     "actor": "劉芸香，方芮欣",
     "category": ["懸疑", "文學","戲劇","4K"],
-    "url": "javascript:void(0)",
+    "url": "/season/:id",
     "active": ["1-9"],
     "item": [
       {

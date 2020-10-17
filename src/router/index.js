@@ -27,7 +27,7 @@ const routes = [
     component: Payment1
   },
   {
-    path: "/season",
+    path: "/season/:id",
     name: "Season",
     component: Season
   }

@@ -4,7 +4,7 @@
       <div _ngcontent-c1="" class="row">
         <div _ngcontent-c1="" class="col-md-9">
           <!---->
-          <h1 _ngcontent-c1="" class="series_name">小洋</h1>
+          <h1 _ngcontent-c1="" class="series_name">{{ getMETA.title }}</h1>
         </div>
       </div>
     </div>
@@ -13,21 +13,21 @@
       <div _ngcontent-c1="" class="row">
         <div _ngcontent-c1="" class="col-md-9">
           <div _ngcontent-c1="" class="page_cover_image">
-            <img
-              _ngcontent-c1=""
-              src="ptspIus.tv/image/banner/banner_04.jpg"
-              alt="小洋"
-            />
+            <img _ngcontent-c1="" :src="getMETA.imgSrc" :alt="getMETA.title" />
           </div>
           <div _ngcontent-c1="" class="page_action">
             <div _ngcontent-c1="">
-              <div _ngcontent-c1="" class="publish_date">2020-9</div>
-              <div _ngcontent-c1="" class="episode_num">全 1 集</div>
+              <div _ngcontent-c1="" class="publish_date">
+                {{ getMETA.date }}
+              </div>
+              <div _ngcontent-c1="" class="episode_num">
+                全 {{ getMETA.epNum }} 集
+              </div>
             </div>
             <div _ngcontent-c1="">
               <span _ngcontent-c1="" class=""></span>
 
-              <a _ngcontent-c1="" href="javascript:void(0)" target="popup">
+              <a _ngcontent-c1="" href="javascript:void(0)">
                 <div _ngcontent-c1="" class="btn_share"></div>
               </a>
 
@@ -36,60 +36,23 @@
           </div>
 
           <div _ngcontent-c1="" class="page_detail_info">
-            <div _ngcontent-c1="" class="series_description">
-              【觀看期限至9/20】每個小孩都期盼著自己能有一個快樂的童年，希望和父母一起共享天倫之樂，但是對於育幼院裡的小孩來說，卻是連回家都是一個奢侈的願望。短片《小洋》就描述了在育幼院裡小孩的寂寞與期待，主角小洋每天都期盼著爸爸能接他回家，買東西時小洋也忍下購買的慾望，為了可以多見爸爸幾次面，只是淡淡地說了一句:沒關係，下次再來。小洋和他爸爸之間有一種微妙的關係存在，表面看似親情之間的穴脈相連，但是背後也有許多的猶豫與無奈。
+            <div
+              _ngcontent-c1=""
+              class="series_description"
+              v-html="getMETA.desc"
+            >
+              {{ getMETA.desc }}
             </div>
             <!---->
-            <div _ngcontent-c1="" class="series_direct">王孔澂</div>
+            <div _ngcontent-c1="" class="series_direct">
+              {{ getMETA.direct }}
+            </div>
             <!---->
-            <div _ngcontent-c1="" class="series_actor">鄭有傑,朱宥丞</div>
+            <div _ngcontent-c1="" class="series_actor">{{ getMETA.actor }}</div>
             <ul _ngcontent-c1="" class="series_category">
               <!---->
-              <li _ngcontent-c1="">
-                <a _ngcontent-c1="" href="/channel/1/sub-genre/1-10">4X相識 </a>
-              </li>
-              <li _ngcontent-c1="">
-                <a _ngcontent-c1="" href="/channel/1/sub-genre/1-3"
-                  >新創電影
-                </a>
-              </li>
-              <li _ngcontent-c1="">
-                <a _ngcontent-c1="" href="/channel/1/sub-genre/1-4">連續劇 </a>
-              </li>
-              <li _ngcontent-c1="">
-                <a _ngcontent-c1="" href="/channel/1/sub-genre/1-6"
-                  >戲劇探索
-                </a>
-              </li>
-              <li _ngcontent-c1="">
-                <a _ngcontent-c1="" href="/channel/1/sub-genre/1-12"
-                  >客家劇場
-                </a>
-              </li>
-              <li _ngcontent-c1="">
-                <a _ngcontent-c1="" href="/channel/1/sub-genre/1-1"
-                  >人生劇展
-                </a>
-              </li>
-              <li _ngcontent-c1="">
-                <a _ngcontent-c1="" href="/channel/1/sub-genre/1-2"
-                  >學生劇展
-                </a>
-              </li>
-              <li _ngcontent-c1="">
-                <a _ngcontent-c1="" href="/channel/1/sub-genre/1-8"
-                  >移人影展
-                </a>
-              </li>
-              <li _ngcontent-c1="">
-                <a _ngcontent-c1="" href="/channel/1/sub-genre/1-5"
-                  >4K奢華影廳
-                </a>
-              </li>
-              <li _ngcontent-c1="">
-                <a _ngcontent-c1="" href="/channel/7/sub-genre/7-1"
-                  >限時賞味
-                </a>
+              <li _ngcontent-c1="" v-for="c in getMETA.category" :key="c">
+                <a _ngcontent-c1="" href="javascript:void(0)">{{ c }}</a>
               </li>
             </ul>
           </div>
@@ -109,7 +72,7 @@
                   <!---->
                   <li _ngcontent-c1="" class="active">
                     <a _ngcontent-c1="" href="javascript:void(0);">
-                      1-1
+                      {{ getMETA.active[0] }}
                     </a>
                   </li>
                 </ul>
@@ -120,22 +83,17 @@
                 _nghost-c3=""
                 ><!----><!---->
                 <!---->
-                <div _ngcontent-c3="">
-                  <a
-                    _ngcontent-c3=""
-                    href="/season/02ace0b7-c728-40c4-84b4-1333799c06d7/episode-type/Episode/1b921b77-3875-4b8d-b2a4-dddc54d20002"
-                  >
+                <div _ngcontent-c3="" v-for="i in getMETA.item" :key="i">
+                  <router-link _ngcontent-c3="" :to="i.url">
                     <div _ngcontent-c3="" class="img_hover_effect">
-                      <img
-                        _ngcontent-c3=""
-                        src="ptspIus.tv/image/banner/banner_04_01.jpg"
-                        alt="小洋"
-                      />
+                      <img _ngcontent-c3="" :src="i.src" :alt="i.name" />
                     </div>
                     <div _ngcontent-c3="" class="item_info">
-                      <p _ngcontent-c3="" class="item_name_override">小洋</p>
+                      <p _ngcontent-c3="" class="item_name_override">
+                        {{ i.name }}
+                      </p>
                     </div>
-                  </a>
+                  </router-link>
                 </div>
               </app-season-episode-side-list>
             </div>
@@ -260,8 +218,18 @@ import ctn from "../assets/season.json";
 export default {
   name: "Season",
   components: {},
+  computed: {
+    getMETA: function() {
+      for (var i = 0; i < ctn.length; i++) {
+        if (ctn[i].id == this.$route.params.id) return ctn[i];
+      }
+      return null;
+    }
+  },
   data: function() {
-    return {};
+    return {
+      show: ctn
+    };
   }
 };
 </script>

@@ -19,6 +19,10 @@ Vue.config.ignoredElements = [
   'app-home',
   'app-header',
   'app-footer',
+  'app-remind-update-email-dialog',
+  'app-google-ad-manager',
+  'app-season-relation-list',
+  'app-season-episode-side-list',
 ]
 
 Vue.config.productionTip = false

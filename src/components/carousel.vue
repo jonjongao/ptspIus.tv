@@ -30,7 +30,8 @@
         :key="s.id"
         :class="s.id == 100 ? 'carousel-item active' : 'carousel-item'"
       >
-        <a _ngcontent-c1="" :href="s.url">
+        
+        <router-link _ngcontent-c1="" :to="{ name: 'Season', params: { id: s.id }}">
           <div _ngcontent-c1="" class="carousel_image_crop">
             <img
               _ngcontent-c1=""
@@ -48,8 +49,8 @@
               </p>
             </div>
           </div>
-        </a>
-
+        </router-link>
+        <!--
         <a _ngcontent-c1="">
           <div _ngcontent-c1="" class="carousel-caption">
             <div _ngcontent-c1="">
@@ -61,6 +62,7 @@
             </div>
           </div>
         </a>
+        -->
       </div>
     </div>
     <a
