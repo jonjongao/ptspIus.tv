@@ -80,6 +80,8 @@ new Vue({
       } else if (text == "我是誰") {
         // ! 跳轉我是誰節目頁
         router.push({ name: "Season", params: { id: 200 } });
+      } else if (text == "換你幫我了") {
+        // ! 跳轉沈華的第一首詩彩蛋頁面
       }
     },
     setCookie: function(key, value) {
