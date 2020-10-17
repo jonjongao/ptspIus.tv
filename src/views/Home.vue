@@ -104,7 +104,7 @@
             <div _ngcontent-c5="" class="img_hover_effect">
               <img
                 _ngcontent-c5=""
-                src="/static/WebListPage_WebListPage_公視直播_直播列表Web.jpg"
+                :src="getImgSrc('/static/WebListPage_WebListPage_公視直播_直播列表Web.jpg')"
                 alt="公共電視 網路直播 PTS Live"
               />
             </div>
@@ -195,6 +195,10 @@ export default {
         name: target,
       });
     },
+    getImgSrc: function(src) {
+      if (src.includes("http")) return src;
+      else return this.$store.state.base + src;
+    }
   },
 };
 </script>

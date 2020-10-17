@@ -18,7 +18,10 @@
           <span _ngcontent-c2="" class="navbar-toggler-icon"></span>
         </button>
         <a _ngcontent-c2="" routerlink="/" href="/" class="navbar-brand"
-          ><img _ngcontent-c2="" alt="" src="/static/pts_logo_l.png"
+          ><img
+            _ngcontent-c2=""
+            alt=""
+            :src="getImgSrc('/static/pts_logo_l.png')"
         /></a>
         <div
           _ngcontent-c2=""
@@ -58,7 +61,7 @@
                     <img
                       _ngcontent-c2=""
                       alt=""
-                      src="/static/member_profile_image.png"
+                      :src="getImgSrc('/static/member_profile_image.png')"
                     />
                   </div>
                   <div _ngcontent-c2="" class="member_name">
@@ -94,7 +97,11 @@ export default {
   methods: {
     onSearch: function() {
       this.$bus.$emit("trySearch", this.trySearch);
-      this.trySearch='';
+      this.trySearch = "";
+    },
+    getImgSrc: function(src) {
+      if (src.includes("http")) return src;
+      else return this.$store.state.base + src;
     }
   }
 };

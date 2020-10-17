@@ -47,12 +47,17 @@ new Vue({
     /**
      * * Vue初始化時觸發
      */
-    var base = window.location.href.slice(0, -3);
+    var a = window.location.href.split("/");
+    var url = "";
+    for (var i = 0; i < a.length - 2; i++) {
+      if (i == 0) url += a[i] + "/";
+      else url += a[i] + "/";
+    }
+    var base = url.slice(0, -1);
 
-    this.$store.commit(
-      "setBaseURL",
-      process.env.NODE_ENV === "production" ? base : "/"
-    );
+    //var base = window.location.href.slice(0, -3);
+
+    this.$store.commit("setBaseURL", base);
   },
   mounted: function() {
     this.$bus.$on("trySearch", this.trySearch);
