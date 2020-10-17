@@ -64,7 +64,7 @@
               </a>
             </li>
             <li _ngcontent-c2="" class="nav-item btn_vip_plan">
-              <a _ngcontent-c2="" href="" class="nav-link">方案介紹</a>
+              <router-link _ngcontent-c2="" to="/payment-step-1" class="nav-link">方案介紹</router-link>
             </li>
           </ul>
         </div>

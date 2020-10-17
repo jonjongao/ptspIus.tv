@@ -14,29 +14,29 @@
                 <div _ngcontent-c3="" class="col-md-4 order-md-1 order-2">
                     <h6 _ngcontent-c3="">相關連結</h6>
                     <ul _ngcontent-c3="" class="footer_link">
-                        <li _ngcontent-c3=""><a _ngcontent-c3="" href="https://www.ptsplus.tv/terms">
+                        <li _ngcontent-c3=""><a _ngcontent-c3="" href="javascript:void(0)">
                                 公視+服務條款</a></li>
-                        <li _ngcontent-c3=""><a _ngcontent-c3="" href="https://www.ptsplus.tv/privacy">
+                        <li _ngcontent-c3=""><a _ngcontent-c3="" href="javascript:void(0)">
                                 隱私權政策</a></li>
-                        <li _ngcontent-c3=""><a _ngcontent-c3="" href="https://www.ptsplus.tv/subscriber">
+                        <li _ngcontent-c3=""><a _ngcontent-c3="" href="javascript:void(0)">
                                 iOS使用者需知</a></li>
-                        <li _ngcontent-c3=""><a _ngcontent-c3="" href="https://www.ptsplus.tv/media-question">
+                        <li _ngcontent-c3=""><a _ngcontent-c3="" href="javascript:void(0)">
                                 影音播放問題</a></li>
-                        <li _ngcontent-c3=""><a _ngcontent-c3="" href="https://www.ptsplus.tv/guide">
+                        <li _ngcontent-c3=""><a _ngcontent-c3="" href="javascript:void(0)">
                                 優惠代碼使用條款</a></li>
-                        <li _ngcontent-c3=""><a _ngcontent-c3="" href="https://www.ptsplus.tv/about">
+                        <li _ngcontent-c3=""><a _ngcontent-c3="" href="javascript:void(0)">
                                 關於公視+</a></li>
-                        <li _ngcontent-c3=""><a _ngcontent-c3="" href="https://www.ptsplus.tv/other-question">
+                        <li _ngcontent-c3=""><a _ngcontent-c3="" href="javascript:void(0)">
                                 其他常見問題</a></li>
-                        <li _ngcontent-c3=""><a _ngcontent-c3="" href="https://www.ptsplus.tv/site-service">
+                        <li _ngcontent-c3=""><a _ngcontent-c3="" href="javascript:void(0)">
                                 會員權利與義務</a></li>
-                        <li _ngcontent-c3=""><a _ngcontent-c3="" href="https://www.ptsplus.tv/member-rules">
+                        <li _ngcontent-c3=""><a _ngcontent-c3="" href="javascript:void(0)">
                                 個人資料保護政策</a></li>
                     </ul>
                 </div>
                 <div _ngcontent-c3="" class="col-md-2 order-md-2 order-0">
                     <h6 _ngcontent-c3="">下載APP</h6>
-                    <div _ngcontent-c3="" class="download_badge"><a _ngcontent-c3="" target="_blank" rel="noopener" href="https://play.google.com/store/apps/details?id=com.ptsplus.app"><img _ngcontent-c3="" alt="在google play下載公視＋" src="/static/google-play.png"></a> <a _ngcontent-c3="" href="#"><img _ngcontent-c3="" alt="在app store下載公視＋" src="/static/app-store.png"></a></div>
+                    <div _ngcontent-c3="" class="download_badge"><a _ngcontent-c3="" target="_blank" rel="noopener" href="https://play.google.com/store/apps/details?id=com.ptsplus.app"><img _ngcontent-c3="" alt="在google play下載公視＋" src="/static/google-play.png"></a> <a _ngcontent-c3="" href="javascript:void(0)"><img _ngcontent-c3="" alt="在app store下載公視＋" src="/static/app-store.png"></a></div>
                 </div>
                 <div _ngcontent-c3="" class="col-md-2 order-md-3 order-1">
                     <h6 _ngcontent-c3="">社群分享</h6>

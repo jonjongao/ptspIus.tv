@@ -98,7 +98,7 @@
     </div>
     <!---->
     <div _ngcontent-c5="" class="container live_series live_now">
-      <a _ngcontent-c5="" href="/live">
+      <router-link _ngcontent-c5="" to="/live">
         <div _ngcontent-c5="" class="row">
           <div _ngcontent-c5="" class="col-md-5">
             <div _ngcontent-c5="" class="img_hover_effect">
@@ -130,7 +130,7 @@
             </p>
           </div>
         </div>
-      </a>
+      </router-link>
     </div>
     <br _ngcontent-c5="" />
     <div
@@ -188,6 +188,13 @@ export default {
       ctnDeactiveClass: "",
       ctnErrorClass: "",
     };
+  },
+  methods: {
+    toPage: function (target) {
+      this.$router.push({
+        name: target,
+      });
+    },
   },
 };
 </script>
