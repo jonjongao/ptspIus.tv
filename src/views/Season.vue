@@ -86,7 +86,7 @@
                 <div _ngcontent-c3="" v-for="i in getMETA.item" :key="i.id">
                   <router-link _ngcontent-c3="" :to="getEpisodeURL(i)">
                     <div _ngcontent-c3="" class="img_hover_effect">
-                      <img _ngcontent-c3="" :src="i.src" :alt="i.name" />
+                      <img _ngcontent-c3="" :src="getImgSrc(i.src)" :alt="i.name" />
                     </div>
                     <div _ngcontent-c3="" class="item_info">
                       <p _ngcontent-c3="" class="item_name_override">
