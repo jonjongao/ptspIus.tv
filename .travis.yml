@@ -1,5 +1,7 @@
 sudo: false
 language: node_js
+env:
+  - PUBLIC_PATH = '/ptspIus.tv/'
 node_js:
   - 10
 cache: npm
