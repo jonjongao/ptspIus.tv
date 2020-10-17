@@ -246,9 +246,7 @@ export default {
 
       if (src.includes("http")) return src;
       else
-        return process.env.NODE_ENV === "production"
-          ? process.env.PUBLIC_PATH + src
-          : '/' + src;
+        return this.$store.state.base + src;
     }
   }
 };
