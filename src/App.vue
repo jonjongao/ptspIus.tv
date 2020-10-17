@@ -23,6 +23,5 @@ export default {
 </script>
 
 <style>
-@import "./assets/css/ptsweb.css";
-@import "./assets/css/style.css";
+
 </style>

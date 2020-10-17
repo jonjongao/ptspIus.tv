@@ -31,6 +31,9 @@ Vue.use(BootstrapVue);
 Vue.use(IconsPlugin);
 Vue.use(VueCookies);
 
+import "./assets/css/ptsweb.css";
+import "./assets/css/style.css";
+
 // set default config
 Vue.$cookies.config("1d");
 
