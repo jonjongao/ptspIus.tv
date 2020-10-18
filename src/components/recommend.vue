@@ -13,7 +13,7 @@
             <span _ngcontent-c5="" class=""></span>
             <img
               _ngcontent-c5=""
-              src="/static/WebListPage_a1.png"
+              :src="getImgSrc('/static/WebListPage_a1.png')"
               alt="不公平的遊戲：川普是如何贏的 Unfair Game: How Trump Won"
             />
           </div>
@@ -39,7 +39,7 @@
             <span _ngcontent-c5="" class=""></span>
             <img
               _ngcontent-c5=""
-              src="/static/WebListPage_ai1.png"
+              :src="getImgSrc('/static/WebListPage_ai1.png')"
               alt="我的AI家人 Life with Robots"
             />
           </div>
@@ -65,7 +65,7 @@
             <span _ngcontent-c5="" class=""></span>
             <img
               _ngcontent-c5=""
-              src="/static/WebListPage_36題愛上你_節目頁圖.png"
+              :src="getImgSrc('/static/WebListPage_36題愛上你_節目頁圖.png')"
               alt="36題愛上你"
             />
           </div>

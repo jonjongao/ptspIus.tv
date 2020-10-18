@@ -235,7 +235,7 @@
         </router-link>
       </div>
       <div _ngcontent-c1="">
-        <router-link _ngcontent-c1="" appseasonlink="" :to="{ name: 'StaticSeason', params: { id: 4000 } }">
+        <router-link _ngcontent-c1="" appseasonlink="" :to="{ name: 'StaticSeason', params: { id: 4000 } }" :disabled="!hasUnlock1" :event="hasUnlock1 ? 'click' : ''">
           <div _ngcontent-c1="" class="img_hover_effect">
             <span _ngcontent-c1="" class=""></span>
             <img _ngcontent-c1="" src="https://via.placeholder.com/165x93" alt="乘客" />
