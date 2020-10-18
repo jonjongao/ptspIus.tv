@@ -13,7 +13,7 @@
             <span _ngcontent-c1="" class=""></span>
             <img
               _ngcontent-c1=""
-              src="/static/WebListPage_01.jpg"
+              :src="getImgSrc('/static/WebListPage_01.jpg')"
               alt="野性大都會"
             />
           </div>
@@ -29,7 +29,7 @@
             <span _ngcontent-c1="" class=""></span>
             <img
               _ngcontent-c1=""
-              src="/static/WebListPage_5.jpg"
+              :src="getImgSrc('/static/WebListPage_5.jpg')"
               alt="東離劍遊紀"
             />
           </div>
@@ -45,7 +45,7 @@
             <span _ngcontent-c1="" class=""></span>
             <img
               _ngcontent-c1=""
-              src="/static/WebListPage_甜心兔.jpg"
+              :src="getImgSrc('/static/WebListPage_甜心兔.jpg')"
               alt="甜心兔"
             />
           </div>
@@ -61,7 +61,7 @@
             <span _ngcontent-c1="" class=""></span>
             <img
               _ngcontent-c1=""
-              src="/static/WebListPage_30.jpg"
+              :src="getImgSrc('/static/WebListPage_30.jpg')"
               alt="空中看日本"
             />
           </div>
@@ -77,7 +77,7 @@
             <span _ngcontent-c1="" class=""></span>
             <img
               _ngcontent-c1=""
-              src="/static/WebListPage_1.png"
+              :src="getImgSrc('/static/WebListPage_1.png')"
               alt="水果冰淇淋2020"
             />
           </div>
@@ -93,7 +93,7 @@
             <span _ngcontent-c1="" class=""></span>
             <img
               _ngcontent-c1=""
-              src="/static/WebListPage_1.jpg"
+              :src="getImgSrc('/static/WebListPage_1.jpg')"
               alt="少年亞瑟王"
             />
           </div>
@@ -109,7 +109,7 @@
             <span _ngcontent-c1="" class=""></span>
             <img
               _ngcontent-c1=""
-              src="/static/WebListPage_0.png"
+              :src="getImgSrc('/static/WebListPage_0.png')"
               alt="動物大明星"
             />
           </div>
@@ -125,7 +125,7 @@
             <span _ngcontent-c1="" class=""></span>
             <img
               _ngcontent-c1=""
-              src="/static/WebListPage_12.jpg"
+              :src="getImgSrc('/static/WebListPage_12.jpg')"
               alt="吉娃斯愛科學:新同學來了"
             />
           </div>
@@ -141,7 +141,7 @@
             <span _ngcontent-c1="" class=""></span>
             <img
               _ngcontent-c1=""
-              src="/static/WebListPage_606.jpg"
+              :src="getImgSrc('/static/WebListPage_606.jpg')"
               alt="大地之詩"
             />
           </div>
@@ -157,7 +157,7 @@
             <span _ngcontent-c1="" class=""></span>
             <img
               _ngcontent-c1=""
-              src="/static/WebListPage_40.jpg"
+              :src="getImgSrc('/static/WebListPage_40.jpg')"
               alt="顛覆街頭 班克斯"
             />
           </div>
@@ -176,7 +176,7 @@
             <span _ngcontent-c1="" class=""></span>
             <img
               _ngcontent-c1=""
-              src="/static/WebListPage_婆婆_節目頁.png"
+              :src="getImgSrc('/static/WebListPage_婆婆_節目頁.png')"
               alt="我的婆婆怎麼那麼可愛"
             />
           </div>
@@ -192,7 +192,7 @@
             <span _ngcontent-c1="" class=""></span>
             <img
               _ngcontent-c1=""
-              src="/static/WebListPage_12(1).jpg"
+              :src="getImgSrc('/static/WebListPage_12(1).jpg')"
               alt="住左邊住右邊"
             />
           </div>
@@ -208,7 +208,7 @@
             <span _ngcontent-c1="" class=""></span>
             <img
               _ngcontent-c1=""
-              src="/static/WebListPage_4.jpg"
+              :src="getImgSrc('/static/WebListPage_4.jpg')"
               alt="噬罪者"
             />
           </div>
@@ -224,7 +224,7 @@
             <span _ngcontent-c1="" class=""></span>
             <img
               _ngcontent-c1=""
-              src="/static/WebListPage_5(1).jpg"
+              :src="getImgSrc('/static/WebListPage_5(1).jpg')"
               alt="盲人阿清"
             />
           </div>
@@ -252,7 +252,7 @@
             <span _ngcontent-c1="" class=""></span>
             <img
               _ngcontent-c1=""
-              src="/static/WebListPage_13.jpg"
+              :src="getImgSrc('/static/WebListPage_13.jpg')"
               alt="我們與惡的距離"
             />
           </div>
@@ -268,7 +268,7 @@
             <span _ngcontent-c1="" class=""></span>
             <img
               _ngcontent-c1=""
-              src="/static/WebListPage_14.jpg"
+              :src="getImgSrc('/static/WebListPage_14.jpg')"
               alt="你的孩子不是你的孩子"
             />
           </div>
@@ -284,7 +284,7 @@
             <span _ngcontent-c1="" class=""></span>
             <img
               _ngcontent-c1=""
-              src="/static/WebListPage_12(2).jpg"
+              :src="getImgSrc('/static/WebListPage_12(2).jpg')"
               alt="糖糖Online"
             />
           </div>
@@ -300,7 +300,7 @@
             <span _ngcontent-c1="" class=""></span>
             <img
               _ngcontent-c1=""
-              src="/static/WebListPage_10.jpg"
+              :src="getImgSrc('/static/WebListPage_10.jpg')"
               alt="憤怒的菩薩"
             />
           </div>
@@ -316,7 +316,7 @@
             <span _ngcontent-c1="" class=""></span>
             <img
               _ngcontent-c1=""
-              src="/static/WebListPage_5.jpg"
+              :src="getImgSrc('/static/WebListPage_5.jpg')"
               alt="東離劍遊紀"
             />
           </div>
@@ -335,7 +335,7 @@
             <span _ngcontent-c1="" class=""></span>
             <img
               _ngcontent-c1=""
-              src="/static/WebListPage_12.jpg"
+              :src="getImgSrc('/static/WebListPage_12.jpg')"
               alt="吉娃斯愛科學:新同學來了"
             />
           </div>
@@ -351,7 +351,7 @@
             <span _ngcontent-c1="" class=""></span>
             <img
               _ngcontent-c1=""
-              src="/static/WebListPage_01(1).jpg"
+              :src="getImgSrc('/static/WebListPage_01(1).jpg')"
               alt="台泰由你遊-台灣篇"
             />
           </div>
@@ -367,7 +367,7 @@
             <span _ngcontent-c1="" class=""></span>
             <img
               _ngcontent-c1=""
-              src="/static/WebListPage_1.png"
+              :src="getImgSrc('/static/WebListPage_1.png')"
               alt="水果冰淇淋2020"
             />
           </div>
@@ -383,7 +383,7 @@
             <span _ngcontent-c1="" class=""></span>
             <img
               _ngcontent-c1=""
-              src="/static/WebListPage_1.jpg"
+              :src="getImgSrc('/static/WebListPage_1.jpg')"
               alt="少年亞瑟王"
             />
           </div>
@@ -399,7 +399,7 @@
             <span _ngcontent-c1="" class=""></span>
             <img
               _ngcontent-c1=""
-              src="/static/WebListPage_23.jpg"
+              :src="getImgSrc('/static/WebListPage_23.jpg')"
               alt="無事坐巴士2"
             />
           </div>
@@ -415,7 +415,7 @@
             <span _ngcontent-c1="" class=""></span>
             <img
               _ngcontent-c1=""
-              src="/static/WebListPage_19.jpg"
+              :src="getImgSrc('/static/WebListPage_19.jpg')"
               alt="全家有智慧3"
             />
           </div>
@@ -431,7 +431,7 @@
             <span _ngcontent-c1="" class=""></span>
             <img
               _ngcontent-c1=""
-              src="/static/WebListPage_0.png"
+              :src="getImgSrc('/static/WebListPage_0.png')"
               alt="動物大明星"
             />
           </div>
@@ -447,7 +447,7 @@
             <span _ngcontent-c1="" class=""></span>
             <img
               _ngcontent-c1=""
-              src="/static/WebListPage_溫泉屋小女將.jpg"
+              :src="getImgSrc('/static/WebListPage_溫泉屋小女將.jpg')"
               alt="溫泉屋小女將"
             />
           </div>
@@ -463,7 +463,7 @@
             <span _ngcontent-c1="" class=""></span>
             <img
               _ngcontent-c1=""
-              src="/static/WebListPage_36題愛上你_節目頁圖.png"
+              :src="getImgSrc('/static/WebListPage_36題愛上你_節目頁圖.png')"
               alt="36題愛上你"
             />
           </div>
@@ -479,7 +479,7 @@
             <span _ngcontent-c1="" class=""></span>
             <img
               _ngcontent-c1=""
-              src="/static/WebListPage_2.jpg"
+              :src="getImgSrc('/static/WebListPage_2.jpg')"
               alt="出發騎幻島"
             />
           </div>
@@ -498,7 +498,7 @@
             <span _ngcontent-c1="" class=""></span>
             <img
               _ngcontent-c1=""
-              src="/static/WebListPage_00.jpg"
+              :src="getImgSrc('/static/WebListPage_00.jpg')"
               alt="離巢"
             />
           </div>
@@ -514,7 +514,7 @@
             <span _ngcontent-c1="" class=""></span>
             <img
               _ngcontent-c1=""
-              src="/static/WebListPage_1(1).jpg"
+              :src="getImgSrc('/static/WebListPage_1(1).jpg')"
               alt="大吉"
             />
           </div>
@@ -530,7 +530,7 @@
             <span _ngcontent-c1="" class=""></span>
             <img
               _ngcontent-c1=""
-              src="/static/WebListPage_7.jpg"
+              :src="getImgSrc('/static/WebListPage_7.jpg')"
               alt="前世情人的情人"
             />
           </div>
@@ -546,7 +546,7 @@
             <span _ngcontent-c1="" class=""></span>
             <img
               _ngcontent-c1=""
-              src="/static/WebListPage_隨片登台_Banner_700.png"
+              :src="getImgSrc('/static/WebListPage_隨片登台_Banner_700.png')"
               alt="隨片登台"
             />
           </div>
@@ -562,7 +562,7 @@
             <span _ngcontent-c1="" class=""></span>
             <img
               _ngcontent-c1=""
-              src="/static/WebListPage_燒肉粽_Banner_700.png"
+              :src="getImgSrc('/static/WebListPage_燒肉粽_Banner_700.png')"
               alt="燒肉粽2019"
             />
           </div>
@@ -578,7 +578,7 @@
             <span _ngcontent-c1="" class=""></span>
             <img
               _ngcontent-c1=""
-              src="/static/WebListPage_阿嬤的秘密_Banner_700.png"
+              :src="getImgSrc('/static/WebListPage_阿嬤的秘密_Banner_700.png')"
               alt="阿嬤的秘密"
             />
           </div>
@@ -594,7 +594,7 @@
             <span _ngcontent-c1="" class=""></span>
             <img
               _ngcontent-c1=""
-              src="/static/WebListPage_編劇頭很痛.png"
+              :src="getImgSrc('/static/WebListPage_編劇頭很痛.png')"
               alt="編劇頭很痛"
             />
           </div>
@@ -610,7 +610,7 @@
             <span _ngcontent-c1="" class=""></span>
             <img
               _ngcontent-c1=""
-              src="/static/WebListPage_第一鮪.png"
+              :src="getImgSrc('/static/WebListPage_第一鮪.png')"
               alt="第一鮪"
             />
           </div>
@@ -626,7 +626,7 @@
             <span _ngcontent-c1="" class=""></span>
             <img
               _ngcontent-c1=""
-              src="/static/WebListPage_潘朵拉.png"
+              :src="getImgSrc('/static/WebListPage_潘朵拉.png')"
               alt="潘朵拉"
             />
           </div>
@@ -642,7 +642,7 @@
             <span _ngcontent-c1="" class=""></span>
             <img
               _ngcontent-c1=""
-              src="/static/WebListPage_年尾巴.png"
+              :src="getImgSrc('/static/WebListPage_年尾巴.png')"
               alt="年尾巴"
             />
           </div>
@@ -661,7 +661,7 @@
             <span _ngcontent-c1="" class=""></span>
             <img
               _ngcontent-c1=""
-              src="/static/WebListPage_40.jpg"
+              :src="getImgSrc('/static/WebListPage_40.jpg')"
               alt="顛覆街頭 班克斯"
             />
           </div>
@@ -677,7 +677,7 @@
             <span _ngcontent-c1="" class=""></span>
             <img
               _ngcontent-c1=""
-              src="/static/WebListPage_33.jpg"
+              :src="getImgSrc('/static/WebListPage_33.jpg')"
               alt="來自街頭 凱斯哈林"
             />
           </div>
@@ -693,7 +693,7 @@
             <span _ngcontent-c1="" class=""></span>
             <img
               _ngcontent-c1=""
-              src="/static/WebListPage_606.jpg"
+              :src="getImgSrc('/static/WebListPage_606.jpg')"
               alt="大地之詩"
             />
           </div>
@@ -709,7 +709,7 @@
             <span _ngcontent-c1="" class=""></span>
             <img
               _ngcontent-c1=""
-              src="/static/WebListPage_4(1).jpg"
+              :src="getImgSrc('/static/WebListPage_4(1).jpg')"
               alt="來自故鄉的思念—蕭泰然逝世五周年紀念系列"
             />
           </div>
@@ -727,7 +727,7 @@
             <span _ngcontent-c1="" class=""></span>
             <img
               _ngcontent-c1=""
-              src="/static/WebListPage_01(2).jpg"
+              :src="getImgSrc('/static/WebListPage_01(2).jpg')"
               alt="莫札特-費加洛的婚禮"
             />
           </div>
@@ -743,7 +743,7 @@
             <span _ngcontent-c1="" class=""></span>
             <img
               _ngcontent-c1=""
-              src="/static/WebListPage_22.jpg"
+              :src="getImgSrc('/static/WebListPage_22.jpg')"
               alt="咪咪貓的奇幻之旅"
             />
           </div>
@@ -759,7 +759,7 @@
             <span _ngcontent-c1="" class=""></span>
             <img
               _ngcontent-c1=""
-              src="/static/WebListPage_1(2).jpg"
+              :src="getImgSrc('/static/WebListPage_1(2).jpg')"
               alt="殺人之眾"
             />
           </div>
@@ -775,7 +775,7 @@
             <span _ngcontent-c1="" class=""></span>
             <img
               _ngcontent-c1=""
-              src="/static/WebListPage_13(1).jpg"
+              :src="getImgSrc('/static/WebListPage_13(1).jpg')"
               alt="天亮前的戀愛故事"
             />
           </div>
@@ -791,7 +791,7 @@
             <span _ngcontent-c1="" class=""></span>
             <img
               _ngcontent-c1=""
-              src="/static/WebListPage_4(2).jpg"
+              :src="getImgSrc('/static/WebListPage_4(2).jpg')"
               alt="地洞"
             />
           </div>
@@ -807,7 +807,7 @@
             <span _ngcontent-c1="" class=""></span>
             <img
               _ngcontent-c1=""
-              src="/static/WebListPage_6.jpg"
+              :src="getImgSrc('/static/WebListPage_6.jpg')"
               alt="神殿"
             />
           </div>
