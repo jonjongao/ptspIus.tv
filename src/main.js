@@ -23,7 +23,8 @@ Vue.config.ignoredElements = [
   "app-video-player",
   "app-episode-intro",
   "app-episode-relation-list",
-  "app-live-player"
+  "app-live-player",
+  "app-episode-side-list"
 ];
 
 Vue.config.productionTip = false;
@@ -61,12 +62,16 @@ new Vue({
     //var base = window.location.href.slice(0, -3);
 
     this.$store.commit("setBaseURL", base);
+
+    console.log($cookies.keys());
   },
   mounted: function() {
     this.$bus.$on("trySearch", this.trySearch);
+    this.$bus.$on("saveUnlock", this.saveUnlock);
   },
   beforeDestroy: function() {
     this.$bus.$off("trySearch", this.trySearch);
+    this.$bus.$off("saveUnlock", this.saveUnlock);
   },
   watch: {
     $route(to, from) {
@@ -83,24 +88,50 @@ new Vue({
     trySearch: function(text) {
       console.log("prev=" + this.$cookies.get("search"));
       console.log("current value:" + text);
-      this.setCookie("search", text);
-      if (text == "車廂") {
+      this.saveSearch(text);
+
+      if (text == "車廂" || text == "傷心的大象") {
         // ! 跳轉車廂EP2
-        router.push({ name: "Episode", params: { id: 600, ep: "ep2" } });
+        //router.push({ name: "Episode", params: { id: 600, ep: "ep2" } });
+        router.push({ name: "StaticSeason", params: { id: 4202 } });
       } else if (text == "只是傷心無法延續") {
         // ! 跳轉BBS
         console.log("跳轉BBS");
         window.location.href = "https://jonjongao.github.io/jbv_dev/";
       } else if (text == "我是誰") {
         // ! 跳轉我是誰節目頁
-        router.push({ name: "Season", params: { id: 200 } });
+        router.push({ name: "StaticSeason", params: { id: 4100 } });
       } else if (text == "換你幫我了") {
         // ! 跳轉沈華的第一首詩彩蛋頁面
+        router.push({ name: "StaticSeason", params: { id: 4300 } });
+      } else if (text == "cookie.clean") {
+        // ! 清除cookie
+        this.$cookies.remove("search");
+        this.$cookies.remove("unlock1");
+        this.$cookies.remove("unlock2");
+        this.$cookies.remove("unlock3");
+      }
+    },
+    saveSearch: function(value) {
+      this.setCookie("search", value);
+    },
+    saveUnlock: function(value) {
+      var i = parseInt(value, 10);
+      switch (i) {
+        case 1:
+          this.setCookie("unlock1", 1);
+          break;
+        case 2:
+          this.setCookie("unlock2", 1);
+          break;
+        case 3:
+          this.setCookie("unlock3", 1);
+          break;
       }
     },
     setCookie: function(key, value) {
       console.log("set cookie[" + key + "]=" + value);
-      var t = 10; // ! 以秒為單位
+      var t = 600; // ! 以秒為單位
       this.$cookies.set(key, value, t);
     }
   }

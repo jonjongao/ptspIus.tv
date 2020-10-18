@@ -5,12 +5,16 @@
         <div _ngcontent-c3="" class="row">
           <div _ngcontent-c3="" class="col-md-4 order-md-0 order-3">
             <div _ngcontent-c3="" class="pts_info">
-              <a _ngcontent-c3="" :href="this.$store.state.base" class="pts_info_logo"
+              <router-link
+                _ngcontent-c3=""
+                v-on:click.native="scrollToTop()"
+                to="/"
+                class="pts_info_logo"
                 ><img
                   _ngcontent-c3=""
                   alt=""
                   :src="getImgSrc('/static/pts_logo_l.png')"
-              /></a>
+              /></router-link>
               <h6 _ngcontent-c3="">財團法人公共電視文化事業基金會</h6>
               <p _ngcontent-c3="">
                 地址：114 台北市內湖區康寧路三段 75 巷 50 號
@@ -107,6 +111,9 @@ export default {
     getImgSrc: function(src) {
       if (src.includes("http")) return src;
       else return this.$store.state.base + src;
+    },
+    scrollToTop: function() {
+      window.scrollTo(0, 0);
     }
   }
 };

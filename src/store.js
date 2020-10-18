@@ -8,7 +8,10 @@ const store = new Vuex.Store({
   state: {
     base: "/",
     rowLastVisit1: 1,
-    rowLastVisit2: 1
+    rowLastVisit2: 1,
+    unlock1: false,
+    unlock2: false,
+    unlock3: false,
   },
   mutations: {
     setBaseURL(state, url) {
@@ -18,6 +21,14 @@ const store = new Vuex.Store({
     setRowVisit(state, data) {
       if (data[0] == 1) state.rowLastVisit1 = data[1];
       else if (data[0] == 2) state.rowLastVisit2 = data[1];
+    },
+    setUnlock(state, data){
+      switch(data[0])
+      {
+        case 1:state.unlock1 = data[1];break;
+        case 2:state.unlock2 = data[1];break;
+        case 3:state.unlock3 = data[1];break;
+      }
     }
   }
 });

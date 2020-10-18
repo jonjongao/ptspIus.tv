@@ -25,14 +25,14 @@
             <!--<span _ngcontent-c1=""></span>-->
             <p _ngcontent-c1="" class="card_subtitle">單點節目</p>
             <p _ngcontent-c1="" class="card_title">
-              （謊話）：藏在原子筆裡的涼菸
+              （真話）：藏在原子筆裡的涼菸
             </p>
             <p _ngcontent-c1="" class="card_description">
               如果是我，我會說真話，因為我也不想讓他誤會太多，但新同學總是要交個朋友。
             </p>
-            <button _ngcontent-c1="" class="btn btn-outline-primary">
-              <a href="/ptspIus.tv">購買此方案 1984元</a>
-            </button>
+            <router-link v-on:click.native="setUnlock(1)" to="/" tag="button" _ngcontent-c1="" class="btn btn-outline-primary">
+              購買此方案 1984元
+            </router-link>
           </div>
           <div _ngcontent-c1="" class="plan-card">
             <!--<span _ngcontent-c1=""></span>-->
@@ -43,9 +43,9 @@
             <p _ngcontent-c1="" class="card_description">
               如果是我，我會說謊話，因為我媽不知道我抽菸，我也不會讓他知道我抽菸。
             </p>
-            <button _ngcontent-c1="" class="btn btn-outline-primary">
-              <a href="/ptspIus.tv">購買此方案 1984元</a>
-            </button>
+            <router-link v-on:click.native="setUnlock(2)" to="/" tag="button" _ngcontent-c1="" class="btn btn-outline-primary">
+              購買此方案 1984元
+            </router-link>
           </div>
           <div _ngcontent-c1="" class="plan-card">
             <!--<span _ngcontent-c1=""></span>-->
@@ -56,9 +56,9 @@
             <p _ngcontent-c1="" class="card_description">
               有時候真話和謊話其實聽起來並沒有差別，我只希望他也會也抽菸，有時候，我多想跟她分享我的一切
             </p>
-            <button _ngcontent-c1="" class="btn btn-outline-primary">
-              <a href="/ptspIus.tv">購買此方案 1984元</a>
-            </button>
+            <router-link v-on:click.native="setUnlock(3)" to="/" tag="button" _ngcontent-c1="" class="btn btn-outline-primary">
+              購買此方案 1984元
+            </router-link>
           </div>
         </div>
       </div>
@@ -177,6 +177,12 @@ export default {
   data: function () {
     return {};
   },
+  methods:{
+    setUnlock:function(value){
+      this.$store.commit('setUnlock', [value, true])
+      this.$bus.$emit('saveUnlock', value);
+    }
+  }
 };
 </script>
 

@@ -17,12 +17,12 @@
         >
           <span _ngcontent-c2="" class="navbar-toggler-icon"></span>
         </button>
-        <a _ngcontent-c2="" routerlink="/" :href="this.$store.state.base" class="navbar-brand"
+        <router-link _ngcontent-c2="" to="/" class="navbar-brand"
           ><img
             _ngcontent-c2=""
             alt=""
             :src="getImgSrc('/static/pts_logo_l.png')"
-        /></a>
+        /></router-link>
         <div
           _ngcontent-c2=""
           id="navbarSupportedContent"

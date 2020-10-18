@@ -57,6 +57,13 @@
   <S2207 v-else-if="getID == 2207" />
   <S2208 v-else-if="getID == 2208" />
   <S2209 v-else-if="getID == 2209" />
+  <!---->
+  <S4000 v-else-if="getID == 4000"/>
+  <S4009 v-else-if="getID == 4009"/>
+  <S4100 v-else-if="getID == 4100"/>
+  <S4107 v-else-if="getID == 4107"/>
+  <S4202 v-else-if="getID == 4202"/>
+  <S4300 v-else-if="getID == 4300"/>
   <div v-else></div>
 </template>
 
@@ -120,6 +127,14 @@ import S2206 from "@/components/season_2206.vue";
 import S2207 from "@/components/season_2207.vue";
 import S2208 from "@/components/season_2208.vue";
 import S2209 from "@/components/season_2209.vue";
+// ! Comp for 自訂 section
+import S4000 from "@/components/season_4000.vue";
+import S4009 from "@/components/season_4009.vue";
+import S4100 from "@/components/season_4100.vue";
+import S4107 from "@/components/season_4107.vue";
+import S4200 from "@/components/season_4200.vue";
+import S4202 from "@/components/season_4202.vue";
+import S4300 from "@/components/season_4300.vue";
 
 export default {
   name: "StaticSeason",
@@ -137,6 +152,10 @@ export default {
     S2105,S2106,S2107,S2108,S2109,
     S2200,S2201,S2202,S2203,S2204,
     S2205,S2206,S2207,S2208,S2209,
+    S4000,S4009,
+    S4100,S4107,
+    S4200,S4202,
+    S4300,
   },
   computed: {
     getID: function() {

@@ -98,10 +98,15 @@
     </div>
     <!---->
     <div _ngcontent-c5="" class="container live_series live_now">
-      <router-link _ngcontent-c5="" to="/live">
+      <a _ngcontent-c5="">
         <div _ngcontent-c5="" class="row">
           <div _ngcontent-c5="" class="col-md-5">
-            <div _ngcontent-c5="" class="img_hover_effect">
+            <router-link
+              to="/live"
+              tag="div"
+              _ngcontent-c5=""
+              class="img_hover_effect"
+            >
               <img
                 _ngcontent-c5=""
                 :src="
@@ -111,7 +116,7 @@
                 "
                 alt="公共電視 網路直播 PTS Live"
               />
-            </div>
+            </router-link>
           </div>
           <div _ngcontent-c5="" class="col-md-7">
             <span _ngcontent-c5="" class="item_label"></span>
@@ -124,17 +129,19 @@
               網路直播節目表 https://goo.gl/4B0P3R
             </p>
             <p _ngcontent-c5="" class="text-right pt-md-3">
-              <button
+              <router-link
                 _ngcontent-c5=""
                 class="btn btn-outline-primary"
                 type="button"
+                to="/live"
+                tag="button"
               >
                 立即前往
-              </button>
+              </router-link>
             </p>
           </div>
         </div>
-      </router-link>
+      </a>
     </div>
     <br _ngcontent-c5="" />
     <div

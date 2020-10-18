@@ -40,7 +40,7 @@
         </router-link>
       </div>
       <div _ngcontent-c1="">
-        <router-link _ngcontent-c1="" appseasonlink="" :to="{ name: 'StaticSeason', params: { id: 1002 } }">
+        <router-link _ngcontent-c1="" appseasonlink="" :to="{ name: 'StaticSeason', params: { id: 1002 } }" :disabled="!hasUnlock1" :event="hasUnlock1 ? 'click' : ''">
           <div _ngcontent-c1="" class="img_hover_effect">
             <span _ngcontent-c1="" class=""></span>
             <img
@@ -235,13 +235,13 @@
         </router-link>
       </div>
       <div _ngcontent-c1="">
-        <router-link _ngcontent-c1="" appseasonlink="" :to="{ name: 'StaticSeason', params: { id: 1104 } }">
+        <router-link _ngcontent-c1="" appseasonlink="" :to="{ name: 'StaticSeason', params: { id: 4000 } }">
           <div _ngcontent-c1="" class="img_hover_effect">
             <span _ngcontent-c1="" class=""></span>
-            <img _ngcontent-c1="" src="/static/WebListPage_29.jpg" alt="苦力" />
+            <img _ngcontent-c1="" src="https://via.placeholder.com/165x93" alt="乘客" />
           </div>
           <div _ngcontent-c1="" class="item_info">
-            <p _ngcontent-c1="" class="item_name">苦力</p>
+            <p _ngcontent-c1="" class="item_name">乘客</p>
             <p _ngcontent-c1="" class="item_episode">全 30 集</p>
           </div>
         </router-link>
@@ -330,7 +330,7 @@
     <div v-if="this.type == 3" _ngcontent-c1="" class="row item_lists series">
       <!---->
       <div _ngcontent-c1="">
-        <router-link _ngcontent-c1="" appseasonlink="" :to="{ name: 'StaticSeason', params: { id: 1902 } }">
+        <router-link _ngcontent-c1="" appseasonlink="" :to="{ name: 'StaticSeason', params: { id: 2000 } }">
           <div _ngcontent-c1="" class="img_hover_effect">
             <span _ngcontent-c1="" class=""></span>
             <img
@@ -346,7 +346,7 @@
         </router-link>
       </div>
       <div _ngcontent-c1="">
-        <router-link _ngcontent-c1="" appseasonlink="" :to="{ name: 'StaticSeason', params: { id: 1902 } }">
+        <router-link _ngcontent-c1="" appseasonlink="" :to="{ name: 'StaticSeason', params: { id: 2001 } }">
           <div _ngcontent-c1="" class="img_hover_effect">
             <span _ngcontent-c1="" class=""></span>
             <img
@@ -362,7 +362,7 @@
         </router-link>
       </div>
       <div _ngcontent-c1="">
-        <router-link _ngcontent-c1="" appseasonlink="" :to="{ name: 'StaticSeason', params: { id: 1902 } }">
+        <router-link _ngcontent-c1="" appseasonlink="" :to="{ name: 'StaticSeason', params: { id: 2002 } }">
           <div _ngcontent-c1="" class="img_hover_effect">
             <span _ngcontent-c1="" class=""></span>
             <img
@@ -378,7 +378,7 @@
         </router-link>
       </div>
       <div _ngcontent-c1="">
-        <router-link _ngcontent-c1="" appseasonlink="" :to="{ name: 'StaticSeason', params: { id: 1902 } }">
+        <router-link _ngcontent-c1="" appseasonlink="" :to="{ name: 'StaticSeason', params: { id: 2003 } }">
           <div _ngcontent-c1="" class="img_hover_effect">
             <span _ngcontent-c1="" class=""></span>
             <img
@@ -394,7 +394,7 @@
         </router-link>
       </div>
       <div _ngcontent-c1="">
-        <router-link _ngcontent-c1="" appseasonlink="" :to="{ name: 'StaticSeason', params: { id: 1902 } }">
+        <router-link _ngcontent-c1="" appseasonlink="" :to="{ name: 'StaticSeason', params: { id: 2004 } }" :disabled="!hasUnlock2" :event="hasUnlock2 ? 'click' : ''">
           <div _ngcontent-c1="" class="img_hover_effect">
             <span _ngcontent-c1="" class=""></span>
             <img
@@ -410,7 +410,7 @@
         </router-link>
       </div>
       <div _ngcontent-c1="">
-        <router-link _ngcontent-c1="" appseasonlink="" :to="{ name: 'StaticSeason', params: { id: 1902 } }">
+        <router-link _ngcontent-c1="" appseasonlink="" :to="{ name: 'StaticSeason', params: { id: 2005 } }">
           <div _ngcontent-c1="" class="img_hover_effect">
             <span _ngcontent-c1="" class=""></span>
             <img
@@ -426,7 +426,7 @@
         </router-link>
       </div>
       <div _ngcontent-c1="">
-        <router-link _ngcontent-c1="" appseasonlink="" :to="{ name: 'StaticSeason', params: { id: 1902 } }">
+        <router-link _ngcontent-c1="" appseasonlink="" :to="{ name: 'StaticSeason', params: { id: 2006 } }">
           <div _ngcontent-c1="" class="img_hover_effect">
             <span _ngcontent-c1="" class=""></span>
             <img
@@ -442,7 +442,7 @@
         </router-link>
       </div>
       <div _ngcontent-c1="">
-        <router-link _ngcontent-c1="" appseasonlink="" :to="{ name: 'StaticSeason', params: { id: 1902 } }">
+        <router-link _ngcontent-c1="" appseasonlink="" :to="{ name: 'StaticSeason', params: { id: 2007 } }">
           <div _ngcontent-c1="" class="img_hover_effect">
             <span _ngcontent-c1="" class=""></span>
             <img
@@ -458,7 +458,7 @@
         </router-link>
       </div>
       <div _ngcontent-c1="">
-        <router-link _ngcontent-c1="" appseasonlink="" :to="{ name: 'StaticSeason', params: { id: 1902 } }">
+        <router-link _ngcontent-c1="" appseasonlink="" :to="{ name: 'StaticSeason', params: { id: 2008 } }">
           <div _ngcontent-c1="" class="img_hover_effect">
             <span _ngcontent-c1="" class=""></span>
             <img
@@ -474,7 +474,7 @@
         </router-link>
       </div>
       <div _ngcontent-c1="">
-        <router-link _ngcontent-c1="" appseasonlink="" :to="{ name: 'StaticSeason', params: { id: 1902 } }">
+        <router-link _ngcontent-c1="" appseasonlink="" :to="{ name: 'StaticSeason', params: { id: 2009 } }">
           <div _ngcontent-c1="" class="img_hover_effect">
             <span _ngcontent-c1="" class=""></span>
             <img
@@ -493,7 +493,7 @@
     <div v-if="this.type == 4" _ngcontent-c1="" class="row item_lists series">
       <!---->
       <div _ngcontent-c1="">
-        <router-link _ngcontent-c1="" appseasonlink="" :to="{ name: 'StaticSeason', params: { id: 1902 } }">
+        <router-link _ngcontent-c1="" appseasonlink="" :to="{ name: 'StaticSeason', params: { id: 2100 } }">
           <div _ngcontent-c1="" class="img_hover_effect">
             <span _ngcontent-c1="" class=""></span>
             <img
@@ -509,7 +509,7 @@
         </router-link>
       </div>
       <div _ngcontent-c1="">
-        <router-link _ngcontent-c1="" appseasonlink="" :to="{ name: 'StaticSeason', params: { id: 1902 } }">
+        <router-link _ngcontent-c1="" appseasonlink="" :to="{ name: 'StaticSeason', params: { id: 2101 } }">
           <div _ngcontent-c1="" class="img_hover_effect">
             <span _ngcontent-c1="" class=""></span>
             <img
@@ -525,7 +525,7 @@
         </router-link>
       </div>
       <div _ngcontent-c1="">
-        <router-link _ngcontent-c1="" appseasonlink="" :to="{ name: 'StaticSeason', params: { id: 1902 } }">
+        <router-link _ngcontent-c1="" appseasonlink="" :to="{ name: 'StaticSeason', params: { id: 2102 } }">
           <div _ngcontent-c1="" class="img_hover_effect">
             <span _ngcontent-c1="" class=""></span>
             <img
@@ -541,7 +541,7 @@
         </router-link>
       </div>
       <div _ngcontent-c1="">
-        <router-link _ngcontent-c1="" appseasonlink="" :to="{ name: 'StaticSeason', params: { id: 1902 } }">
+        <router-link _ngcontent-c1="" appseasonlink="" :to="{ name: 'StaticSeason', params: { id: 2103 } }">
           <div _ngcontent-c1="" class="img_hover_effect">
             <span _ngcontent-c1="" class=""></span>
             <img
@@ -557,7 +557,7 @@
         </router-link>
       </div>
       <div _ngcontent-c1="">
-        <router-link _ngcontent-c1="" appseasonlink="" :to="{ name: 'StaticSeason', params: { id: 1902 } }">
+        <router-link _ngcontent-c1="" appseasonlink="" :to="{ name: 'StaticSeason', params: { id: 2104 } }">
           <div _ngcontent-c1="" class="img_hover_effect">
             <span _ngcontent-c1="" class=""></span>
             <img
@@ -573,7 +573,7 @@
         </router-link>
       </div>
       <div _ngcontent-c1="">
-        <router-link _ngcontent-c1="" appseasonlink="" :to="{ name: 'StaticSeason', params: { id: 1902 } }">
+        <router-link _ngcontent-c1="" appseasonlink="" :to="{ name: 'StaticSeason', params: { id: 2105 } }">
           <div _ngcontent-c1="" class="img_hover_effect">
             <span _ngcontent-c1="" class=""></span>
             <img
@@ -589,7 +589,7 @@
         </router-link>
       </div>
       <div _ngcontent-c1="">
-        <router-link _ngcontent-c1="" appseasonlink="" :to="{ name: 'StaticSeason', params: { id: 1902 } }">
+        <router-link _ngcontent-c1="" appseasonlink="" :to="{ name: 'StaticSeason', params: { id: 2106 } }">
           <div _ngcontent-c1="" class="img_hover_effect">
             <span _ngcontent-c1="" class=""></span>
             <img
@@ -605,7 +605,7 @@
         </router-link>
       </div>
       <div _ngcontent-c1="">
-        <router-link _ngcontent-c1="" appseasonlink="" :to="{ name: 'StaticSeason', params: { id: 1902 } }">
+        <router-link _ngcontent-c1="" appseasonlink="" :to="{ name: 'StaticSeason', params: { id: 2107 } }">
           <div _ngcontent-c1="" class="img_hover_effect">
             <span _ngcontent-c1="" class=""></span>
             <img
@@ -621,7 +621,7 @@
         </router-link>
       </div>
       <div _ngcontent-c1="">
-        <router-link _ngcontent-c1="" appseasonlink="" :to="{ name: 'StaticSeason', params: { id: 1902 } }">
+        <router-link _ngcontent-c1="" appseasonlink="" :to="{ name: 'StaticSeason', params: { id: 2108 } }">
           <div _ngcontent-c1="" class="img_hover_effect">
             <span _ngcontent-c1="" class=""></span>
             <img
@@ -637,7 +637,7 @@
         </router-link>
       </div>
       <div _ngcontent-c1="">
-        <router-link _ngcontent-c1="" appseasonlink="" :to="{ name: 'StaticSeason', params: { id: 1902 } }">
+        <router-link _ngcontent-c1="" appseasonlink="" :to="{ name: 'StaticSeason', params: { id: 2109 } }">
           <div _ngcontent-c1="" class="img_hover_effect">
             <span _ngcontent-c1="" class=""></span>
             <img
@@ -656,7 +656,7 @@
     <div v-if="this.type == 5" _ngcontent-c1="" class="row item_lists series">
       <!---->
       <div _ngcontent-c1="">
-        <router-link _ngcontent-c1="" appseasonlink="" :to="{ name: 'StaticSeason', params: { id: 1902 } }">
+        <router-link _ngcontent-c1="" appseasonlink="" :to="{ name: 'StaticSeason', params: { id: 2200 } }">
           <div _ngcontent-c1="" class="img_hover_effect">
             <span _ngcontent-c1="" class=""></span>
             <img
@@ -672,7 +672,7 @@
         </router-link>
       </div>
       <div _ngcontent-c1="">
-        <router-link _ngcontent-c1="" appseasonlink="" :to="{ name: 'StaticSeason', params: { id: 1902 } }">
+        <router-link _ngcontent-c1="" appseasonlink="" :to="{ name: 'StaticSeason', params: { id: 2201 } }">
           <div _ngcontent-c1="" class="img_hover_effect">
             <span _ngcontent-c1="" class=""></span>
             <img
@@ -688,7 +688,7 @@
         </router-link>
       </div>
       <div _ngcontent-c1="">
-        <router-link _ngcontent-c1="" appseasonlink="" :to="{ name: 'StaticSeason', params: { id: 1902 } }">
+        <router-link _ngcontent-c1="" appseasonlink="" :to="{ name: 'StaticSeason', params: { id: 2202 } }">
           <div _ngcontent-c1="" class="img_hover_effect">
             <span _ngcontent-c1="" class=""></span>
             <img
@@ -704,7 +704,7 @@
         </router-link>
       </div>
       <div _ngcontent-c1="">
-        <router-link _ngcontent-c1="" appseasonlink="" :to="{ name: 'StaticSeason', params: { id: 1902 } }">
+        <router-link _ngcontent-c1="" appseasonlink="" :to="{ name: 'StaticSeason', params: { id: 2203 } }">
           <div _ngcontent-c1="" class="img_hover_effect">
             <span _ngcontent-c1="" class=""></span>
             <img
@@ -722,7 +722,7 @@
         </router-link>
       </div>
       <div _ngcontent-c1="">
-        <router-link _ngcontent-c1="" appseasonlink="" :to="{ name: 'StaticSeason', params: { id: 1902 } }">
+        <router-link _ngcontent-c1="" appseasonlink="" :to="{ name: 'StaticSeason', params: { id: 2204 } }">
           <div _ngcontent-c1="" class="img_hover_effect">
             <span _ngcontent-c1="" class=""></span>
             <img
@@ -738,7 +738,7 @@
         </router-link>
       </div>
       <div _ngcontent-c1="">
-        <router-link _ngcontent-c1="" appseasonlink="" :to="{ name: 'StaticSeason', params: { id: 1902 } }">
+        <router-link _ngcontent-c1="" appseasonlink="" :to="{ name: 'StaticSeason', params: { id: 2205 } }">
           <div _ngcontent-c1="" class="img_hover_effect">
             <span _ngcontent-c1="" class=""></span>
             <img
@@ -754,7 +754,7 @@
         </router-link>
       </div>
       <div _ngcontent-c1="">
-        <router-link _ngcontent-c1="" appseasonlink="" :to="{ name: 'StaticSeason', params: { id: 1902 } }">
+        <router-link _ngcontent-c1="" appseasonlink="" :to="{ name: 'StaticSeason', params: { id: 2206 } }" :disabled="!hasUnlock3" :event="hasUnlock3 ? 'click' : ''">
           <div _ngcontent-c1="" class="img_hover_effect">
             <span _ngcontent-c1="" class=""></span>
             <img
@@ -770,7 +770,7 @@
         </router-link>
       </div>
       <div _ngcontent-c1="">
-        <router-link _ngcontent-c1="" appseasonlink="" :to="{ name: 'StaticSeason', params: { id: 1902 } }">
+        <router-link _ngcontent-c1="" appseasonlink="" :to="{ name: 'StaticSeason', params: { id: 2207 } }">
           <div _ngcontent-c1="" class="img_hover_effect">
             <span _ngcontent-c1="" class=""></span>
             <img
@@ -786,7 +786,7 @@
         </router-link>
       </div>
       <div _ngcontent-c1="">
-        <router-link _ngcontent-c1="" appseasonlink="" :to="{ name: 'StaticSeason', params: { id: 1902 } }">
+        <router-link _ngcontent-c1="" appseasonlink="" :to="{ name: 'StaticSeason', params: { id: 2208 } }">
           <div _ngcontent-c1="" class="img_hover_effect">
             <span _ngcontent-c1="" class=""></span>
             <img
@@ -802,7 +802,7 @@
         </router-link>
       </div>
       <div _ngcontent-c1="">
-        <router-link _ngcontent-c1="" appseasonlink="" :to="{ name: 'StaticSeason', params: { id: 1902 } }">
+        <router-link _ngcontent-c1="" appseasonlink="" :to="{ name: 'StaticSeason', params: { id: 2209 } }">
           <div _ngcontent-c1="" class="img_hover_effect">
             <span _ngcontent-c1="" class=""></span>
             <img
@@ -830,6 +830,7 @@ export default {
   name: "ShowList",
   props: ["type"],
   components: {},
+  created:function(){},
   computed: {
     getListByType: function () {
       var posts = [];
@@ -840,6 +841,15 @@ export default {
       }
       return posts;
     },
+    hasUnlock1:function(){
+      return this.$store.state.unlock1;
+    },
+    hasUnlock2:function(){
+      return this.$store.state.unlock2;
+    },
+    hasUnlock3:function(){
+      return this.$store.state.unlock3;
+    }
   },
   data: function () {
     return {

@@ -32,7 +32,7 @@
       >
         <router-link
           _ngcontent-c1=""
-          :to="{ name: 'Season', params: { id: s.id } }"
+          :to="getSeasonUrl(s.id)"
         >
           <div _ngcontent-c1="" class="carousel_image_crop">
             <img
@@ -141,6 +141,12 @@ export default {
       if (src.includes("http")) return src;
       else
         return this.$store.state.base + src;
+    },
+    getSeasonUrl: function(value){
+      if(value==104)
+        return { name: 'StaticSeason', params: { id: 4000 } };
+      else
+        return { name: 'Season', params: { id: value } };
     }
   }
 };
