@@ -3,57 +3,69 @@
     <div _ngcontent-c5="" class="row item_lists">
       <!---->
       <div _ngcontent-c5="">
-        <a _ngcontent-c5="" appseasonlink="" class="disabled_href">
+        <router-link
+          _ngcontent-c5=""
+          appseasonlink=""
+          :to="{ name: 'StaticSeason', params: { id: 1900 } }"
+        >
           <div _ngcontent-c5="" class="img_hover_effect">
             <p _ngcontent-c5="" class="item_episode">全 1 集</p>
             <span _ngcontent-c5="" class=""></span>
             <img
               _ngcontent-c5=""
-              :src="getImgSrc('/static/thumbnail/list_14.jpg')"
-              alt="資本主義的極限挑戰"
+              src="/static/WebListPage_a1.png"
+              alt="不公平的遊戲：川普是如何贏的 Unfair Game: How Trump Won"
             />
           </div>
           <div _ngcontent-c5="" class="item_info">
-            <p _ngcontent-c5="" class="item_name">資本主義的極限挑戰</p>
+            <p _ngcontent-c5="" class="item_name">
+              不公平的遊戲：川普是如何贏的 Unfair Game: How Trump Won
+            </p>
 
             <p _ngcontent-c5="" class="item_description">
-              【觀看期限至9/10】永無止境的成長是資本主義的信條：更大的市場、更多的產品、新增的服務。但是這些真的能夠永遠持續下去嗎？或是我們即將衝破它的極限？如果情況確實如此，那麼接下來會發生什麼事？<br /><br />在美國、巴西、中國、德國與英國等地拍攝的《資本主義的極限挑戰》，訪問一些經濟成長擁護者，探討無止境的成長概念。其中包括巴西黃豆大亨、自動演算程式交易員、財金記者以及跨國高階主管。透過一鏡到底的拍攝模式，使受訪者暴露出前後矛盾、或是不一致的論點破綻。
-              （《資本主義的極限挑戰》片中也短暫訪問了財務專家安東尼．斯卡拉姆齊（Anthony
-              Scaramucci），他也曾擔任川普的白宮通訊主任；他自稱為「資本主義藝術家」，並且闡述了關於成長極限的不可思議的論點。）<br /><br />這部電影分為幾個章節，分別探討的主題包括國內生產總值（GDP）的不道德、有害農業、金融化、金融與現實世界經濟的脫鉤，以及自動化。各章的開頭都引用卡爾．馬克思（Karl
-              Marx）的相關論述，並涵蓋了生態經濟學家和永續發展倡導者提姆．傑克遜（Tim
-              Jackson）的精闢見解。他在片中擔任引言人角色，對一些複雜的觀念，提供清楚的解說。
+              【觀看期限至10/22】他，在普選中落後對手300萬票。他，在整個競選過程中對媒體和民眾說謊，帶領他的國家進入一個後真相時代。<br />美國總統的背後隱藏著一位神秘人物，過去十年來為了實現他的保守派政治理念，投注了數百萬美元。<br />他，掌控川普競選陣營。<br />他，主導布萊巴特新聞網，一個宣揚另類右派政治思想的新聞網站，由主張白人民族主義的前川普首席策士史蒂芬·巴農掌舵。<br />他，資助劍橋分析，一家利用大數據來了解我們所有的人，目的是要鎖定目標選民來影響民主選舉的心理測量公司。<br />川普的總統選舉宣告了這個新的數據民主時代的到來嗎？
             </p>
           </div>
-        </a>
+        </router-link>
       </div>
       <div _ngcontent-c5="">
-        <a _ngcontent-c5="" appseasonlink="" class="disabled_href">
+        <router-link
+          _ngcontent-c5=""
+          appseasonlink=""
+          :to="{ name: 'StaticSeason', params: { id: 1901 } }"
+        >
           <div _ngcontent-c5="" class="img_hover_effect">
             <p _ngcontent-c5="" class="item_episode">全 1 集</p>
             <span _ngcontent-c5="" class=""></span>
             <img
               _ngcontent-c5=""
-              :src="getImgSrc('/static/thumbnail/list_13.jpg')"
-              alt="未來學校"
+              src="/static/WebListPage_ai1.png"
+              alt="我的AI家人 Life with Robots"
             />
           </div>
           <div _ngcontent-c5="" class="item_info">
-            <p _ngcontent-c5="" class="item_name">未來學校</p>
+            <p _ngcontent-c5="" class="item_name">
+              我的AI家人 Life with Robots
+            </p>
 
             <p _ngcontent-c5="" class="item_description">
-              【觀看期限至9/11】數位時代的「教」與「學」，展露出多樣化的面貌，要「翻轉」的不只是學生、老師與父母，可能還包括整個社會。「十年樹木，百年樹人」，教育一直都被視為通往未來的「百年大計」。然而，在「十倍速」的數位時代，要進行這樣長遠的規劃卻是個巨大挑戰。面對變動不居的未來，什麼才是教育的根本？
+              【觀看期限至10/23】科技界將人工智慧視作解決問題的夢幻工具，近年來，不只是農業、製造業、醫院、交通、零售業、到處可見各式各樣的創新AI應用，最新型的機器人甚至連情感都能表現出來。現在，機器人不只侷限在各種工作場域，而且研究者也正努力要讓AI以一個全新的家人身分進到家庭裡。<br /><br />人形機器人Nao，被用來教導自閉兒的情感教育，受訪的香港心理學家蘇詠芝副教授指出，自閉兒童喜歡「可預測性」（predictability），而機器人本身表達方式的固定性，可以降低自閉兒與人直接相處的壓力，較容易進入狀況，並藉由模仿機器人，開始與真人治療師互動。人類創造了機器人，機器人的終極目標就是要「像人類一樣」，但某些時候，機器人卻能反過來成為老師，幫助孩童學習。<br /><br />機器人除了制式提供資訊，也可能替代許多需要情緒互動的情境。機器人SILBOT的臉上搭載一台平板電腦，可以表現出各式各樣的表情，它被研發出來的目的是希望能與老人家作伴、預防失智症。韓國的腦神經內科醫師金乾荷醫師，進行以SILBOT預防失智症的實驗，結果顯示，使用機器人進行訓練的組別，減少的大腦皮質，只有完全沒做訓練那組的七分之一。隨著高齡化社會來臨，機器人可能開始扮演有如家人般的新角色，不過，這也伴隨著某種隱憂，如果機器人成為了家庭的一份子，是否也會破壞家人間本該有的緊密連帶？<br /><br />A.I.機器人也許未必要「取代」家人，也可能作為媒介，成為人際關係的潤滑劑。失智症患者的情緒反應與溝通問題，經常導致失智症患者的家人疲於照護，日本和臺灣的研究人員進行了一場新的實驗，他們將機器人TELENOID交到失智症長者手上，TELENOID竟成就了奇妙的催化效果——脾氣暴躁的老人家，開始放軟聲音唱起了情歌；憂鬱的老太太歡喜地對著TELENOID說話，還為它穿衣。TELENOID好像觸動了這些老人家心中柔軟的位置，激發他們想要照顧人的心情，很有潛力在未來可做為改善失智症長者與家人間關係的催化劑。
             </p>
           </div>
-        </a>
+        </router-link>
       </div>
       <div _ngcontent-c5="">
-        <a _ngcontent-c5="" appseasonlink="" class="disabled_href">
+        <router-link
+          _ngcontent-c5=""
+          appseasonlink=""
+          :to="{ name: 'StaticSeason', params: { id: 1902 } }"
+        >
           <div _ngcontent-c5="" class="img_hover_effect">
-            <p _ngcontent-c5="" class="item_episode">更新至第 44 集</p>
+            <p _ngcontent-c5="" class="item_episode">更新至第 60 集</p>
             <span _ngcontent-c5="" class=""></span>
             <img
               _ngcontent-c5=""
-              :src="getImgSrc('/static/thumbnail/list_08.png')"
+              src="/static/WebListPage_36題愛上你_節目頁圖.png"
               alt="36題愛上你"
             />
           </div>
@@ -66,7 +78,7 @@
               Aron)的研究，兩個陌生人，以特別設計的36個問題互相詢問，可以讓親密關係昇溫，甚至可能愛上彼此。<br />同樣的原理、不同的邏輯，討厭的人，你會愛上他；喜歡的人，你會更瞭解他。現在，我們即將問出36道問題，之後～討厭的人，你會愛上他；喜歡的人，你會更瞭解他。【本節目由於版權限制，設有觀看期限，敬請把握觀看時間】
             </p>
           </div>
-        </a>
+        </router-link>
       </div>
     </div>
   </div>

@@ -12,20 +12,20 @@
           <!---->
           <li
             _ngcontent-c5
-            v-on:click="ctn1 = 1"
+            v-on:click="setRowIndex(1, 1)"
             v-bind:class="[
-              ctn1 == 1 ? ctnActiveClass : ctnDeactiveClass,
-              ctnErrorClass,
+              getRowIndex(1) == 1 ? ctnActiveClass : ctnDeactiveClass,
+              ctnErrorClass
             ]"
           >
             限時賞味
           </li>
           <li
             _ngcontent-c5
-            v-on:click="ctn1 = 2"
+            v-on:click="setRowIndex(1, 2)"
             v-bind:class="[
-              ctn1 == 2 ? ctnActiveClass : ctnDeactiveClass,
-              ctnErrorClass,
+              getRowIndex(1) == 2 ? ctnActiveClass : ctnDeactiveClass,
+              ctnErrorClass
             ]"
           >
             追劇追不完
@@ -33,11 +33,11 @@
         </ul>
       </div>
       <!---->
-      <div v-if="ctn1 == 1">
+      <div v-if="getRowIndex(1) == 1">
         <ShowList type="1" />
         <!--<%- partial('_partial/ctn1_1', null, {cache: !config.relative_link}) %>-->
       </div>
-      <div v-if="ctn1 == 2">
+      <div v-if="getRowIndex(1) == 2">
         <ShowList type="2" />
         <!--<%- partial('_partial/ctn1_2', null, {cache: !config.relative_link}) %>-->
       </div>
@@ -52,30 +52,30 @@
           <!---->
           <li
             _ngcontent-c5
-            v-on:click="ctn2 = 1"
+            v-on:click="setRowIndex(2, 1)"
             v-bind:class="[
-              ctn2 == 1 ? ctnActiveClass : ctnDeactiveClass,
-              ctnErrorClass,
+              getRowIndex(2) == 1 ? ctnActiveClass : ctnDeactiveClass,
+              ctnErrorClass
             ]"
           >
             兒少/生活
           </li>
           <li
             _ngcontent-c5
-            v-on:click="ctn2 = 2"
+            v-on:click="setRowIndex(2, 2)"
             v-bind:class="[
-              ctn2 == 2 ? ctnActiveClass : ctnDeactiveClass,
-              ctnErrorClass,
+              getRowIndex(2) == 2 ? ctnActiveClass : ctnDeactiveClass,
+              ctnErrorClass
             ]"
           >
             追劇30分
           </li>
           <li
             _ngcontent-c5
-            v-on:click="ctn2 = 3"
+            v-on:click="setRowIndex(2, 3)"
             v-bind:class="[
-              ctn2 == 3 ? ctnActiveClass : ctnDeactiveClass,
-              ctnErrorClass,
+              getRowIndex(2) == 3 ? ctnActiveClass : ctnDeactiveClass,
+              ctnErrorClass
             ]"
           >
             藝文/紀錄
@@ -83,15 +83,15 @@
         </ul>
       </div>
       <!---->
-      <div v-if="ctn2 == 1">
+      <div v-if="getRowIndex(2) == 1">
         <ShowList type="3" />
         <!--<%- partial('_partial/ctn2_1', null, {cache: !config.relative_link}) %>-->
       </div>
-      <div v-if="ctn2 == 2">
+      <div v-if="getRowIndex(2) == 2">
         <ShowList type="4" />
         <!--<%- partial('_partial/ctn2_2', null, {cache: !config.relative_link}) %>-->
       </div>
-      <div v-if="ctn2 == 3">
+      <div v-if="getRowIndex(2) == 3">
         <ShowList type="5" />
         <!--<%- partial('_partial/ctn2_3', null, {cache: !config.relative_link}) %>-->
       </div>
@@ -104,7 +104,11 @@
             <div _ngcontent-c5="" class="img_hover_effect">
               <img
                 _ngcontent-c5=""
-                :src="getImgSrc('/static/WebListPage_WebListPage_公視直播_直播列表Web.jpg')"
+                :src="
+                  getImgSrc(
+                    '/static/WebListPage_WebListPage_公視直播_直播列表Web.jpg'
+                  )
+                "
                 alt="公共電視 網路直播 PTS Live"
               />
             </div>
@@ -178,30 +182,37 @@ export default {
   components: {
     Carousel,
     Recommend,
-    ShowList,
+    ShowList
   },
-  data: function () {
+  computed: {},
+  data: function() {
     return {
       ctn1: 1,
       ctn2: 1,
       ctnActiveClass: "tabbar_active",
       ctnDeactiveClass: "",
-      ctnErrorClass: "",
+      ctnErrorClass: ""
     };
   },
   methods: {
-    toPage: function (target) {
+    toPage: function(target) {
       this.$router.push({
-        name: target,
+        name: target
       });
     },
     getImgSrc: function(src) {
       if (src.includes("http")) return src;
       else return this.$store.state.base + src;
+    },
+    setRowIndex: function(row, index) {
+      this.$store.commit("setRowVisit", [row, index]);
+    },
+    getRowIndex: function(row) {
+      if (row == 1) return this.$store.state.rowLastVisit1;
+      else if (row == 2) return this.$store.state.rowLastVisit2;
     }
-  },
+  }
 };
 </script>
 
-<style scoped>
-</style>>
+<style scoped></style>>

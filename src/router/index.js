@@ -6,6 +6,7 @@ import Home from "@/views/Home";
 import Live from "@/views/Live";
 import Payment1 from "@/views/Payment1";
 import Season from "@/views/Season";
+import StaticSeason from "@/views/StaticSeason"
 import Episode from "@/views/Episode";
 
 Vue.use(Router);
@@ -30,6 +31,11 @@ const routes = [
     path: "/season/:id",
     name: "Season",
     component: Season
+  },
+  {
+    path: "/season/:id",
+    name: "StaticSeason",
+    component: StaticSeason
   },
   {
     path: "/season/:id/:ep",
