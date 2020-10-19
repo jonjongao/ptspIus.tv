@@ -28,6 +28,9 @@
           id="navbarSupportedContent"
           class="collapse navbar-collapse"
         >
+        <span v-if="hasUnlock1">❤</span>
+        <span v-if="hasUnlock2">❤</span>
+        <span v-if="hasUnlock3">❤</span>
           <form
             v-on:submit.prevent="onSearch"
             _ngcontent-c2=""
@@ -89,6 +92,17 @@
 export default {
   name: "Header",
   props: ["loginName"],
+  computed: {
+    hasUnlock1:function(){
+      return this.$store.state.unlock1;
+    },
+    hasUnlock2:function(){
+      return this.$store.state.unlock2;
+    },
+    hasUnlock3:function(){
+      return this.$store.state.unlock3;
+    }
+  },
   data: function() {
     return {
       trySearch: ""
