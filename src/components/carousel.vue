@@ -26,45 +26,29 @@
     <div _ngcontent-c5="" class="carousel-inner">
       <div
         _ngcontent-c1=""
-        v-for="s in getCarousel"
-        :key="s.id"
-        :class="s.id == 100 ? 'carousel-item active' : 'carousel-item'"
+        v-for="(c, index) in listCarousel"
+        :key="c.id"
+        :class="index == 0 ? 'carousel-item active' : 'carousel-item'"
       >
-        <router-link
-          _ngcontent-c1=""
-          :to="getSeasonUrl(s.id)"
-        >
+        <router-link _ngcontent-c1="" :to="getSeasonUrl(c.id)">
           <div _ngcontent-c1="" class="carousel_image_crop">
             <img
               _ngcontent-c1=""
               class="d-block w-100"
-              :src="getImgSrc(s.imgSrc)"
-              :alt="s.title"
+              :src="getImgSrc(c.src)"
+              :alt="c.name"
             />
           </div>
           <div _ngcontent-c1="" class="carousel-caption">
             <div _ngcontent-c1="">
-              <h5 _ngcontent-c1="">{{ s.title }}</h5>
+              <h5 _ngcontent-c1="">{{ c.name }}</h5>
 
-              <p _ngcontent-c1="" v-html="s.caption">
-                {{ s.caption }}
+              <p _ngcontent-c1="" v-html="c.caption">
+                {{ c.caption }}
               </p>
             </div>
           </div>
         </router-link>
-        <!--
-        <a _ngcontent-c1="">
-          <div _ngcontent-c1="" class="carousel-caption">
-            <div _ngcontent-c1="">
-              <h5 _ngcontent-c1="">{{ s.title }}</h5>
-
-              <p _ngcontent-c1="" v-html="s.caption">
-                {{ s.caption }}
-              </p>
-            </div>
-          </div>
-        </a>
-        -->
       </div>
     </div>
     <a
@@ -99,54 +83,31 @@
 </template>
 
 <script>
-import ctn from "../assets/season.json";
 export default {
   name: "Carousel",
   computed: {
-    getCarousel: function() {
-      var posts = [];
-      for (var i = 0; i < this.show.length; i++) {
-        if (this.isCarousel(this.show[i].id)) {
-          posts.push(this.show[i]);
-        }
+    listCarousel: function() {
+      if ("carousel" in this.$store.state.db_home) {
+        return this.$store.state.db_home["carousel"];
       }
-      return posts;
+      return [];
     }
   },
   data: function() {
-    return {
-      show: ctn
-    };
+    return {};
   },
   methods: {
-    isCarousel: function(id) {
-      var i = parseInt(id, 10);
-      switch (i) {
-        case 100:
-        case 101:
-        case 102:
-        case 103:
-        case 104:
-          return true;
-          break;
-      }
-      return false;
-    },
     isID: function(id) {
       var i = parseInt(id, 10);
       return true;
     },
     getImgSrc: function(src) {
-
       if (src.includes("http")) return src;
-      else
-        return this.$store.state.base + src;
+      else return this.$store.state.base + src;
     },
-    getSeasonUrl: function(value){
-      if(value==104)
-        return { name: 'StaticSeason', params: { id: 4000 } };
-      else
-        return { name: 'Season', params: { id: value } };
+    getSeasonUrl: function(value) {
+      if (value == 104) return { name: "StaticSeason", params: { id: 4000 } };
+      else return { name: "Season", params: { id: value } };
     }
   }
 };

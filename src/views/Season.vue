@@ -4,7 +4,7 @@
       <div _ngcontent-c1="" class="row">
         <div _ngcontent-c1="" class="col-md-9">
           <!---->
-          <h1 _ngcontent-c1="" class="series_name">{{ getMETA.title }}</h1>
+          <h1 _ngcontent-c1="" class="series_name">{{ getMETA.name }}</h1>
         </div>
       </div>
     </div>
@@ -13,7 +13,7 @@
       <div _ngcontent-c1="" class="row">
         <div _ngcontent-c1="" class="col-md-9">
           <div _ngcontent-c1="" class="page_cover_image">
-            <img _ngcontent-c1="" :src="getImgSrc(getMETA.imgSrc)" :alt="getMETA.title" />
+            <img _ngcontent-c1="" :src="getImgSrc(getMETA.src)" :alt="getMETA.name" />
           </div>
           <div _ngcontent-c1="" class="page_action">
             <div _ngcontent-c1="">
@@ -21,7 +21,7 @@
                 {{ getMETA.date }}
               </div>
               <div _ngcontent-c1="" class="episode_num">
-                全 {{ getMETA.epNum }} 集
+                全 {{ getMETA.episode }} 集
               </div>
             </div>
             <div _ngcontent-c1="">
@@ -39,9 +39,9 @@
             <div
               _ngcontent-c1=""
               class="series_description"
-              v-html="getMETA.desc"
+              v-html="getMETA.description"
             >
-              {{ getMETA.desc }}
+              {{ getMETA.description }}
             </div>
             <!---->
             <div _ngcontent-c1="" class="series_direct">
@@ -51,7 +51,7 @@
             <div _ngcontent-c1="" class="series_actor">{{ getMETA.actor }}</div>
             <ul _ngcontent-c1="" class="series_category">
               <!---->
-              <li _ngcontent-c1="" v-for="c in getMETA.category" :key="c">
+              <li _ngcontent-c1="" v-for="(c, index) in getMETA.category" :key="index">
                 <a _ngcontent-c1="" href="javascript:void(0)">{{ c }}</a>
               </li>
             </ul>
@@ -214,29 +214,28 @@
 </template>
 
 <script>
-import ctn from "../assets/season.json";
 export default {
   name: "Season",
   components: {},
   computed: {
     getMETA: function() {
-      for (var i = 0; i < ctn.length; i++) {
-        if (ctn[i].id == this.$route.params.id) return ctn[i];
+      var db = this.$store.state.db_season;
+      for (var i = 0; i < db.length; i++) {
+        if (db[i].id == this.$route.params.id) return db[i];
       }
       return null;
     }
   },
   data: function() {
     return {
-      show: ctn
     };
   },
   methods: {
     // ! item = season.item
     getEpisodeURL: function(item) {
-      if (item.url == "javascript:void(0)" || item.url == "#")
-        return "/season/" + this.$route.params.id;
-      else
+      // if (item.url == "javascript:void(0)" || item.url == "#")
+      //   return "/season/" + this.$route.params.id;
+      // else
         return {
           name: "Episode",
           params: { id: this.getMETA.id, ep: item.id }

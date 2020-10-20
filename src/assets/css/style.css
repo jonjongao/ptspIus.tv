@@ -14,3 +14,7 @@ img {
 .btn-outline-primary a {
   color: #E7437B;
 }
+
+.unlocked {
+  background-color:#CCC;
+}
