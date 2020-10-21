@@ -261,7 +261,12 @@ export default {
         return this.getMETA;
       } else {
         console.log("child page");
-        return this.getMETA;
+        var db = this.$store.state.db_season;
+        for (var i = 0; i < db.length; i++) {
+          if (db[i].id == this.getMETA.parent) {
+            return db[i];
+          }
+        }
       }
     }
   },
@@ -272,21 +277,20 @@ export default {
   },
   methods: {
     // ! item = season.item
-    getEpisodeURL: function(item) {
-      // if (item.url == "javascript:void(0)" || item.url == "#")
-      //   return "/season/" + this.$route.params.id;
-      // else
-      return {
-        name: "Episode",
-        params: { id: this.getMETA.id, ep: item.id }
-      };
-    },
     getImgSrc: function(src) {
       if (src.includes("http")) return src;
       else return this.$store.state.base + src;
     },
-    checkClick: function(e, id) {
-      this.$router.push({ name: "Episode", params: { id: this.getParentMETA.id, ep: id } });
+    checkClick: function(e, value) {
+      if(this.$route.params.id == value)
+      {
+        console.log("avoid nav same page");
+        return;
+      }
+      this.$router.push({
+        name: "Season",
+        params: { id: value }
+      });
     },
     getUrl: function(id) {
       return "#/season/" + id;
