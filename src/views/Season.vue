@@ -246,12 +246,15 @@
 <script>
 export default {
   name: "Season",
+  props: ['id'],
   components: {},
+  created: function(){
+  },
   computed: {
     getMETA: function() {
       var db = this.$store.state.db_season;
       for (var i = 0; i < db.length; i++) {
-        if (db[i].id == this.$route.params.id) return db[i];
+        if (db[i].id == this.id) return db[i];
       }
       return null;
     },
@@ -282,7 +285,7 @@ export default {
       else return this.$store.state.base + src;
     },
     checkClick: function(e, value) {
-      if(this.$route.params.id == value)
+      if(this.id == value)
       {
         console.log("avoid nav same page");
         return;

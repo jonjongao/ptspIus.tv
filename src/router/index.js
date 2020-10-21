@@ -6,7 +6,6 @@ import Home from "@/views/Home";
 import Live from "@/views/Live";
 import Payment1 from "@/views/Payment1";
 import Season from "@/views/Season";
-import StaticSeason from "@/views/StaticSeason"
 import Episode from "@/views/Episode";
 
 Vue.use(Router);
@@ -30,7 +29,8 @@ const routes = [
   {
     path: "/season/:id",
     name: "Season",
-    component: Season
+    component: Season,
+    props: true
   },
   {
     path: "/season/:id/:ep",
@@ -41,6 +41,7 @@ const routes = [
 
 const router = new VueRouter({
   moode: "history",
+  hash: false,
   base:
     process.env.NODE_ENV === "production"
       ? process.env.PUBLIC_PATH

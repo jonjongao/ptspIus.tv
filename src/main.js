@@ -63,7 +63,7 @@ new Vue({
 
     this.$store.commit("setBaseURL", base);
 
-    console.log($cookies.keys());
+    console.log("saved cookie:"+$cookies.keys());
   },
   mounted: function() {
     this.$bus.$on("trySearch", this.trySearch);

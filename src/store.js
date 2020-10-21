@@ -17,14 +17,14 @@ const store = new Vuex.Store({
   },
   mutations: {
     setHomeDatabase(state, db) {
-      console.log(db);
       state.db_home = db;
     },
     setSeasonDatabase(state, db) {
       state.db_season = db;
     },
     setBaseURL(state, url) {
-      state.base = url;
+      // state.base = url;
+      state.base = window.location.href.replace(window.location.hash,'');
       console.log("set base url=", url);
     },
     setRowVisit(state, data) {
