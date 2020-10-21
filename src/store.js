@@ -25,6 +25,7 @@ const store = new Vuex.Store({
     setBaseURL(state, url) {
       // state.base = url;
       state.base = window.location.href.replace(window.location.hash,'');
+      console.log("current hash:"+window.location.hash);
       console.log("set base url=", url);
     },
     setRowVisit(state, data) {
