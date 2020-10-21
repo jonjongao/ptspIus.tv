@@ -1,5 +1,8 @@
 <template>
-  <main _ngcontent-c1="" class="series_page">
+  <main
+    _ngcontent-c1=""
+    v-bind:class="[isParent ? 'series_page' : 'video_page']"
+  >
     <div _ngcontent-c1="" class="container">
       <div _ngcontent-c1="" class="row">
         <div _ngcontent-c1="" class="col-md-9">
@@ -18,6 +21,16 @@
               :src="getImgSrc(getMETA.src)"
               :alt="getMETA.name"
             />
+            <iframe
+              v-if="isParent == false"
+              class="overlay"
+              width="100%"
+              height="100%"
+              src="https://www.youtube.com/embed/LGrpsZ7BsQA"
+              frameborder="0"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+              allowfullscreen
+            ></iframe>
           </div>
           <div _ngcontent-c1="" class="page_action">
             <div _ngcontent-c1="">
@@ -246,10 +259,9 @@
 <script>
 export default {
   name: "Season",
-  props: ['id'],
+  props: ["id"],
   components: {},
-  created: function(){
-  },
+  created: function() {},
   computed: {
     getMETA: function() {
       var db = this.$store.state.db_season;
@@ -258,8 +270,12 @@ export default {
       }
       return null;
     },
+    isParent: function() {
+      if (this.getMETA.parent == "") return true;
+      else return false;
+    },
     getParentMETA: function() {
-      if (this.getMETA.parent == "") {
+      if (this.isParent) {
         console.log("parent page");
         return this.getMETA;
       } else {
@@ -285,8 +301,7 @@ export default {
       else return this.$store.state.base + src;
     },
     checkClick: function(e, value) {
-      if(this.id == value)
-      {
+      if (this.id == value) {
         console.log("avoid nav same page");
         return;
       }

@@ -18,3 +18,9 @@ img {
 .unlocked {
   background-color:#CCC;
 }
+
+.page_cover_image .overlay {
+  position: absolute;
+  top: 0px;
+  left: 0px;
+}

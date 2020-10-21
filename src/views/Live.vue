@@ -12,14 +12,21 @@
         <div _ngcontent-c5="" class="col-md-9">
           <app-live-player _ngcontent-c5="" _nghost-c6="">
             <div _ngcontent-c6="" class="page_cover_image" id="videoSection">
-              <!--
-                        <div _ngcontent-c6="" class="btn_play" id="btn_play_icon">
-                        </div>
-                        <img _ngcontent-c6="" src="ptspIus.tv/image/WebListPage_WebListPage_公視直播_直播列表Web.jpg" alt="公共電視 網路直播 PTS Live">
-                        -->
+              <!-- <div _ngcontent-c6="" class="btn_play" id="btn_play_icon"></div> -->
+              <img
+                _ngcontent-c6=""
+                :src="
+                  getImgSrc(
+                    'static/WebListPage_WebListPage_公視直播_直播列表Web.jpg'
+                  )
+                "
+                alt="公共電視 網路直播 PTS Live"
+              />
+
               <iframe
-                width="825"
-                height="464"
+                class="overlay"
+                width="100%"
+                height="100%"
                 src="https://www.youtube.com/embed/LGrpsZ7BsQA"
                 frameborder="0"
                 allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
