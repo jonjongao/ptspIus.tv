@@ -106,7 +106,7 @@ export default {
       else return this.$store.state.base + src;
     },
     getSeasonUrl: function(value) {
-      if (value == 104) return { name: "StaticSeason", params: { id: 4000 } };
+      if (value == 104) return { name: "Season", params: { id: 4000 } };
       else return { name: "Season", params: { id: value } };
     }
   }

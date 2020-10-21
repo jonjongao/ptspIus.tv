@@ -100,10 +100,10 @@ new Vue({
         window.location.href = "https://jonjongao.github.io/jbv_dev/";
       } else if (text == "我是誰") {
         // ! 跳轉我是誰節目頁
-        router.push({ name: "StaticSeason", params: { id: 4100 } });
+        router.push({ name: "Season", params: { id: 4100 } });
       } else if (text == "換你幫我了") {
         // ! 跳轉沈華的第一首詩彩蛋頁面
-        router.push({ name: "StaticSeason", params: { id: 4300 } });
+        router.push({ name: "Season", params: { id: 4300 } });
       } else if (text == "cookie.clean") {
         // ! 清除cookie
         this.$cookies.remove("search");

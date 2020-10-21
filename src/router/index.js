@@ -33,11 +33,6 @@ const routes = [
     component: Season
   },
   {
-    path: "/season/:id",
-    name: "StaticSeason",
-    component: StaticSeason
-  },
-  {
     path: "/season/:id/:ep",
     name: "Episode",
     component: Episode

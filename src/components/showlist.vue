@@ -8,10 +8,11 @@
     <div v-if="this.type == 1" _ngcontent-c1="" class="row item_lists series">
       <!---->
       <div _ngcontent-c1="" v-for="s in listSeries[0].items" :key="s.id">
-        <router-link
+        <a
           _ngcontent-c1=""
           appseasonlink=""
-          :to="{ name: 'StaticSeason', params: { id: s.id } }"
+          v-on:click.prevent="checkClick($event, s.id)"
+          :href="getUrl(s.id)"
         >
           <div _ngcontent-c1="" class="img_hover_effect">
             <span _ngcontent-c1="" class=""></span>
@@ -21,7 +22,7 @@
             <p _ngcontent-c1="" class="item_name">{{ s.name }}</p>
             <p _ngcontent-c1="" class="item_episode">{{ s.episode }}</p>
           </div>
-        </router-link>
+        </a>
       </div>
     </div>
     <div v-if="this.type == 2" _ngcontent-c1="" class="row item_lists series">
@@ -47,10 +48,11 @@
     <div v-if="this.type == 3" _ngcontent-c1="" class="row item_lists series">
       <!---->
       <div _ngcontent-c1="" v-for="s in listSeries[2].items" :key="s.id">
-        <router-link
+        <a
           _ngcontent-c1=""
           appseasonlink=""
-          :to="{ name: 'StaticSeason', params: { id: s.id } }"
+          v-on:click.prevent="checkClick($event, s.id)"
+          :href="getUrl(s.id)"
         >
           <div _ngcontent-c1="" class="img_hover_effect">
             <span _ngcontent-c1="" class=""></span>
@@ -60,16 +62,17 @@
             <p _ngcontent-c1="" class="item_name">{{ s.name }}</p>
             <p _ngcontent-c1="" class="item_episode">{{ s.episode }}</p>
           </div>
-        </router-link>
+        </a>
       </div>
     </div>
     <div v-if="this.type == 4" _ngcontent-c1="" class="row item_lists series">
       <!---->
       <div _ngcontent-c1="" v-for="s in listSeries[3].items" :key="s.id">
-        <router-link
+        <a
           _ngcontent-c1=""
           appseasonlink=""
-          :to="{ name: 'StaticSeason', params: { id: s.id } }"
+          v-on:click.prevent="checkClick($event, s.id)"
+          :href="getUrl(s.id)"
         >
           <div _ngcontent-c1="" class="img_hover_effect">
             <span _ngcontent-c1="" class=""></span>
@@ -79,16 +82,17 @@
             <p _ngcontent-c1="" class="item_name">{{ s.name }}</p>
             <p _ngcontent-c1="" class="item_episode">{{ s.episode }}</p>
           </div>
-        </router-link>
+        </a>
       </div>
     </div>
     <div v-if="this.type == 5" _ngcontent-c1="" class="row item_lists series">
       <!---->
       <div _ngcontent-c1="" v-for="s in listSeries[4].items" :key="s.id">
-        <router-link
+        <a
           _ngcontent-c1=""
           appseasonlink=""
-          :to="{ name: 'StaticSeason', params: { id: s.id } }"
+          v-on:click.prevent="checkClick($event, s.id)"
+          :href="getUrl(s.id)"
         >
           <div _ngcontent-c1="" class="img_hover_effect">
             <span _ngcontent-c1="" class=""></span>
@@ -98,7 +102,7 @@
             <p _ngcontent-c1="" class="item_name">{{ s.name }}</p>
             <p _ngcontent-c1="" class="item_episode">{{ s.episode }}</p>
           </div>
-        </router-link>
+        </a>
       </div>
     </div>
     <div _ngcontent-c1="" class="row">
@@ -139,12 +143,13 @@ export default {
       else return this.$store.state.base + src;
     },
     isPass: function(id) {
-      switch (id) {
-        case 7112:
+      var i = parseInt(id);
+      switch (i) {
+        case 7061:
           return this.hasUnlock1;
-        case 7173:
+        case 7171:
           return this.hasUnlock2;
-        case 7081:
+        case 7080:
           return this.hasUnlock3;
         default:
           return true;

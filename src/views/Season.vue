@@ -13,7 +13,11 @@
       <div _ngcontent-c1="" class="row">
         <div _ngcontent-c1="" class="col-md-9">
           <div _ngcontent-c1="" class="page_cover_image">
-            <img _ngcontent-c1="" :src="getImgSrc(getMETA.src)" :alt="getMETA.name" />
+            <img
+              _ngcontent-c1=""
+              :src="getImgSrc(getMETA.src)"
+              :alt="getMETA.name"
+            />
           </div>
           <div _ngcontent-c1="" class="page_action">
             <div _ngcontent-c1="">
@@ -51,7 +55,11 @@
             <div _ngcontent-c1="" class="series_actor">{{ getMETA.actor }}</div>
             <ul _ngcontent-c1="" class="series_category">
               <!---->
-              <li _ngcontent-c1="" v-for="(c, index) in getMETA.category" :key="index">
+              <li
+                _ngcontent-c1=""
+                v-for="(c, index) in getMETA.category"
+                :key="index"
+              >
                 <a _ngcontent-c1="" href="javascript:void(0)">{{ c }}</a>
               </li>
             </ul>
@@ -70,9 +78,18 @@
               <div _ngcontent-c1="" class="series_episode_btn_bar d-block">
                 <ul _ngcontent-c1="">
                   <!---->
-                  <li _ngcontent-c1="" class="active">
-                    <a _ngcontent-c1="" href="javascript:void(0);">
-                      {{ getMETA.active[0] }}
+                  <li
+                    _ngcontent-c1=""
+                    v-bind:class="[episode_tab == index ? 'active' : '']"
+                    v-for="(i, index) in getParentMETA.active"
+                    :key="index"
+                  >
+                    <a
+                      _ngcontent-c1=""
+                      href="javascript:void(0);"
+                      v-on:click="episode_tab = index"
+                    >
+                      {{ i.label }}
                     </a>
                   </li>
                 </ul>
@@ -83,17 +100,30 @@
                 _nghost-c3=""
                 ><!----><!---->
                 <!---->
-                <div _ngcontent-c3="" v-for="i in getMETA.item" :key="i.id">
-                  <router-link _ngcontent-c3="" :to="getEpisodeURL(i)">
+                <div
+                  _ngcontent-c3=""
+                  v-for="(i, index) in getParentMETA.active[this.episode_tab]
+                    .items"
+                  :key="index"
+                >
+                  <a
+                    _ngcontent-c3=""
+                    v-on:click.prevent="checkClick($event, i.id)"
+                    :href="getUrl(i.id)"
+                  >
                     <div _ngcontent-c3="" class="img_hover_effect">
-                      <img _ngcontent-c3="" :src="getImgSrc(i.src)" :alt="i.name" />
+                      <img
+                        _ngcontent-c3=""
+                        :src="getImgSrc(i.src)"
+                        :alt="i.name"
+                      />
                     </div>
                     <div _ngcontent-c3="" class="item_info">
                       <p _ngcontent-c3="" class="item_name_override">
                         {{ i.name }}
                       </p>
                     </div>
-                  </router-link>
+                  </a>
                 </div>
               </app-season-episode-side-list>
             </div>
@@ -224,10 +254,20 @@ export default {
         if (db[i].id == this.$route.params.id) return db[i];
       }
       return null;
+    },
+    getParentMETA: function() {
+      if (this.getMETA.parent == "") {
+        console.log("parent page");
+        return this.getMETA;
+      } else {
+        console.log("child page");
+        return this.getMETA;
+      }
     }
   },
   data: function() {
     return {
+      episode_tab: 0
     };
   },
   methods: {
@@ -236,16 +276,20 @@ export default {
       // if (item.url == "javascript:void(0)" || item.url == "#")
       //   return "/season/" + this.$route.params.id;
       // else
-        return {
-          name: "Episode",
-          params: { id: this.getMETA.id, ep: item.id }
-        };
+      return {
+        name: "Episode",
+        params: { id: this.getMETA.id, ep: item.id }
+      };
     },
     getImgSrc: function(src) {
-
       if (src.includes("http")) return src;
-      else
-        return this.$store.state.base + src;
+      else return this.$store.state.base + src;
+    },
+    checkClick: function(e, id) {
+      this.$router.push({ name: "Episode", params: { id: this.getParentMETA.id, ep: id } });
+    },
+    getUrl: function(id) {
+      return "#/season/" + id;
     }
   }
 };

@@ -17,6 +17,7 @@ const store = new Vuex.Store({
   },
   mutations: {
     setHomeDatabase(state, db) {
+      console.log(db);
       state.db_home = db;
     },
     setSeasonDatabase(state, db) {
