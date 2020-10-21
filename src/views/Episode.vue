@@ -148,7 +148,6 @@
 </template>
 
 <script>
-import ctn from "../assets/season.json";
 export default {
   name: "Episode",
   components: {},
