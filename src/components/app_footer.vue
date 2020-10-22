@@ -29,7 +29,7 @@
             <h6 _ngcontent-c3="">相關連結</h6>
             <ul _ngcontent-c3="" class="footer_link">
               <li _ngcontent-c3="">
-                <a _ngcontent-c3="" href="javascript:void(0)"> 公視+服務條款</a>
+                <router-link _ngcontent-c3="" to="/terms"> 公視+服務條款</router-link>
               </li>
               <li _ngcontent-c3="">
                 <a _ngcontent-c3="" href="javascript:void(0)"> 隱私權政策</a>
@@ -46,7 +46,7 @@
                 >
               </li>
               <li _ngcontent-c3="">
-                <a _ngcontent-c3="" href="javascript:void(0)"> 關於公視+</a>
+                <router-link _ngcontent-c3="" to="/about"> 關於公視+</router-link>
               </li>
               <li _ngcontent-c3="">
                 <a _ngcontent-c3="" href="javascript:void(0)"> 其他常見問題</a>
@@ -92,7 +92,7 @@
               >
               <a
                 _ngcontent-c3=""
-                href="https://www.facebook.com/ptsplustw/"
+                href="https://www.facebook.com/DetentionTheSeries/"
                 target="_blank"
                 ><span _ngcontent-c3="" class="fb_fan_page">粉絲頁</span></a
               >

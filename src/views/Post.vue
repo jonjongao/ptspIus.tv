@@ -4,8 +4,13 @@
       <div _ngcontent-c1="" class="row justify-content-center">
         <div _ngcontent-c1="" class="col-md-12">
           <h4 _ngcontent-c1="">{{ getMETA.title }}</h4>
-          <div _ngcontent-c1="" v-html="getMETA.text">
-            <Terms/>
+          <div _ngcontent-c1="">
+            <div v-if="getMETA.component == 'About'">
+              <About />
+            </div>
+            <div v-else-if="getMETA.component == 'Terms'">
+              <Terms />
+            </div>
           </div>
         </div>
       </div>
@@ -14,32 +19,27 @@
 </template>
 
 <script>
-
-// import about from '../assets/about.md';
-import Terams from '@/components/terms.vue';
+import About from "@/components/about.vue";
+import Terms from "@/components/terms.vue";
 export default {
   name: "Post",
-  props: ["type"],
+  props: ["path"],
   components: {
-      Terams
+    About,
+    Terms
   },
   data: function() {
     return {};
   },
   computed: {
     getMETA: function() {
+      console.log("get meta");
       var db = this.$store.state.db_post;
       for (var i = 0; i < db.length; i++) {
-        if (db[i].type == this.type) return db[i];
+        if (db[i].path == this.path) return db[i];
       }
       return null;
-    },
-    // getAbout:function(){
-    //     return about;
-    // },
-    // getTerms:function(){
-    //     return terms;
-    // }
+    }
   },
   methods: {
     getImgSrc: function(src) {

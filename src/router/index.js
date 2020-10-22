@@ -39,7 +39,7 @@ const routes = [
     component: Episode
   },
   {
-    path: "/:type",
+    path: "/:path",
     name: "Post",
     component: Post,
     props:true

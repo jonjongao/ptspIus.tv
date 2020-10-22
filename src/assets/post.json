@@ -1,12 +1,12 @@
 [
     {
-        "type": "about",
+        "path": "about",
         "title": "關於公視+",
-        "text": "about.md"
+        "component": "About"
     },
     {
-        "type": "terms",
+        "path": "terms",
         "title": "公視+服務條款",
-        "text": "terms.md"
+        "component": "Terms"
     }
 ]
