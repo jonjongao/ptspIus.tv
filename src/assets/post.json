@@ -8,5 +8,10 @@
         "path": "terms",
         "title": "公視+服務條款",
         "component": "Terms"
+    },
+    {
+        "path": "xn--guw421c",
+        "title": "彩蛋",
+        "component": "Secret"
     }
 ]

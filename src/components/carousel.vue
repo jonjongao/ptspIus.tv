@@ -7,21 +7,14 @@
   >
     <ol _ngcontent-c5="" class="carousel-indicators">
       <!---->
-      <li
+      <li v-for="(c, index) in listCarousel"
+        :key="c.id"
         _ngcontent-c5=""
         data-target="#pts_carsusel"
-        class="active"
-        data-slide-to="0"
+        :class="index == 0 ? 'active' : ''"
+        :data-slide-to="index"
       ></li>
-      <li
-        _ngcontent-c5=""
-        data-target="#pts_carsusel"
-        data-slide-to="1"
-        class=""
-      ></li>
-      <li _ngcontent-c5="" data-target="#pts_carsusel" data-slide-to="2"></li>
-      <li _ngcontent-c5="" data-target="#pts_carsusel" data-slide-to="3"></li>
-      <li _ngcontent-c5="" data-target="#pts_carsusel" data-slide-to="4"></li>
+      
     </ol>
     <div _ngcontent-c5="" class="carousel-inner">
       <div
@@ -35,7 +28,7 @@
             <img
               _ngcontent-c1=""
               class="d-block w-100"
-              :src="getImgSrc(c.src)"
+              :src="c.name == '乘客' ? getCustomImgSrc(c.src) : getImgSrc(c.src)"
               :alt="c.name"
             />
           </div>
@@ -91,6 +84,15 @@ export default {
         return this.$store.state.db_home["carousel"];
       }
       return [];
+    },
+    hasUnlock1:function(){
+      return this.$store.state.unlock1;
+    },
+    hasUnlock2:function(){
+      return this.$store.state.unlock2;
+    },
+    hasUnlock3:function(){
+      return this.$store.state.unlock3;
     }
   },
   data: function() {
@@ -108,6 +110,14 @@ export default {
     getSeasonUrl: function(value) {
       if (value == 104) return { name: "Season", params: { id: 4000 } };
       else return { name: "Season", params: { id: value } };
+    },
+    getCustomImgSrc:function(src){
+      if(this.hasUnlock3)
+        return src[2];
+      else if(this.hasUnlock2)
+        return src[1];
+      else
+        return src[0];
     }
   }
 };

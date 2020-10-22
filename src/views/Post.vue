@@ -11,6 +11,9 @@
             <div v-else-if="getMETA.component == 'Terms'">
               <Terms />
             </div>
+            <div v-else-if="getMETA.component == 'Secret'">
+              <Secret />
+            </div>
           </div>
         </div>
       </div>
@@ -21,12 +24,14 @@
 <script>
 import About from "@/components/about.vue";
 import Terms from "@/components/terms.vue";
+import Secret from "@/components/secret.vue";
 export default {
   name: "Post",
   props: ["path"],
   components: {
     About,
-    Terms
+    Terms,
+    Secret
   },
   data: function() {
     return {};

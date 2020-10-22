@@ -93,17 +93,17 @@ new Vue({
       if (text == "車廂" || text == "傷心的大象") {
         // ! 跳轉車廂EP2
         //router.push({ name: "Episode", params: { id: 600, ep: "ep2" } });
-        router.push({ name: "Season", params: { id: 7279 } });
+        router.push({ name: "Season", params: { id: 7277 } });
       } else if (text == "只是傷心無法延續") {
         // ! 跳轉BBS
         console.log("跳轉BBS");
         window.location.href = "https://jonjongao.github.io/jbv_dev/";
       } else if (text == "我是誰") {
         // ! 跳轉我是誰節目頁
-        router.push({ name: "Season", params: { id: 4100 } });
+        router.push({ name: "Season", params: { id: 7256 } });
       } else if (text == "換你幫我了") {
         // ! 跳轉沈華的第一首詩彩蛋頁面
-        router.push({ name: "Season", params: { id: 4300 } });
+        router.push({ name: "Post", params: { path: 'xn--guw421c' } });
       } else if (text == "cookie.clean") {
         // ! 清除cookie
         this.$cookies.remove("search");

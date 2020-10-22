@@ -34,11 +34,11 @@
           </div>
           <div _ngcontent-c1="" class="page_action">
             <div _ngcontent-c1="">
-              <div _ngcontent-c1="" class="publish_date">
+              <div _ngcontent-c1="" class="publish_date" v-if="isParent">
                 {{ getMETA.date }}
               </div>
               <div _ngcontent-c1="" class="episode_num">
-                全 {{ getMETA.episode }} 集
+                {{ getMETA.episode }}
               </div>
             </div>
             <div _ngcontent-c1="">
@@ -264,10 +264,15 @@ export default {
   created: function() {},
   computed: {
     getMETA: function() {
+      var db2 = this.$store.state.db_season2;
+      for (var i = 0; i < db2.length; i++) {
+        if (db2[i].id == this.id) return db2[i];
+      }
       var db = this.$store.state.db_season;
       for (var i = 0; i < db.length; i++) {
         if (db[i].id == this.id) return db[i];
       }
+      console.log("can't find id:" + this.id);
       return null;
     },
     isParent: function() {
@@ -280,6 +285,10 @@ export default {
         return this.getMETA;
       } else {
         console.log("child page");
+        var db2 = this.$store.state.db_season2;
+        for (var i = 0; i < db2.length; i++) {
+          if (db2[i].id == this.getMETA.parent) return db2[i];
+        }
         var db = this.$store.state.db_season;
         for (var i = 0; i < db.length; i++) {
           if (db[i].id == this.getMETA.parent) {
