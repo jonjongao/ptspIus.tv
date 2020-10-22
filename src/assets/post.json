@@ -1,0 +1,12 @@
+[
+    {
+        "type": "about",
+        "title": "關於公視+",
+        "text": "about.md"
+    },
+    {
+        "type": "terms",
+        "title": "公視+服務條款",
+        "text": "terms.md"
+    }
+]

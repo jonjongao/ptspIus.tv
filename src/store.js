@@ -8,6 +8,7 @@ const store = new Vuex.Store({
   state: {
     db_home: {},
     db_season: {},
+    db_post: {},
     base: "/",
     rowLastVisit1: 1,
     rowLastVisit2: 1,
@@ -21,6 +22,9 @@ const store = new Vuex.Store({
     },
     setSeasonDatabase(state, db) {
       state.db_season = db;
+    },
+    setPostDatabase(state, db) {
+      state.db_post = db;
     },
     setBaseURL(state, url) {
       // state.base = url;

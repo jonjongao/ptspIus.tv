@@ -13,15 +13,18 @@
 <script>
 import home from "./assets/home.json";
 import season from "./assets/db.json";
+import post from "./assets/post.json";
 import Header from "@/components/app_header.vue";
 import Footer from "@/components/app_footer.vue";
 export default {
   db_home: home,
   db_season: season,
+  db_post: post,
   name: "App",
   created: function() {
     this.$store.commit("setHomeDatabase", this.$options.db_home);
     this.$store.commit("setSeasonDatabase", this.$options.db_season);
+    this.$store.commit("setPostDatabase", this.$options.db_post);
   },
   components: {
     Header,

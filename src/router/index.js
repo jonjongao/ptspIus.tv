@@ -7,6 +7,7 @@ import Live from "@/views/Live";
 import Payment1 from "@/views/Payment1";
 import Season from "@/views/Season";
 import Episode from "@/views/Episode";
+import Post from "@/views/Post";
 
 Vue.use(Router);
 
@@ -36,6 +37,12 @@ const routes = [
     path: "/season/:id/:ep",
     name: "Episode",
     component: Episode
+  },
+  {
+    path: "/:type",
+    name: "Post",
+    component: Post,
+    props:true
   }
 ];
 
