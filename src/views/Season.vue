@@ -122,7 +122,7 @@
                   <a
                     _ngcontent-c3=""
                     v-on:click.prevent="checkClick($event, i.id)"
-                    :href="getUrl(i.id)"
+                    :href="isLockedSeason ? 'javascript:void(0)' : getUrl(i.id)"
                   >
                     <div _ngcontent-c3="" class="img_hover_effect">
                       <img
@@ -296,6 +296,17 @@ export default {
           }
         }
       }
+    },
+    isLockedSeason: function() {
+      var i = parseInt(this.getParentMETA.id);
+      switch (i) {
+        case 7061:
+        case 7171:
+        case 7080:
+          return true;
+        default:
+          return false;
+      }
     }
   },
   data: function() {
@@ -310,6 +321,9 @@ export default {
       else return this.$store.state.base + src;
     },
     checkClick: function(e, value) {
+      if (this.isLockedSeason) {
+        return;
+      }
       if (this.id == value) {
         console.log("avoid nav same page");
         return;
