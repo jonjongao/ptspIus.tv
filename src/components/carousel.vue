@@ -113,11 +113,11 @@ export default {
     },
     getCustomImgSrc:function(src){
       if(this.hasUnlock3)
-        return src[2];
+        return this.getImgSrc(src[2]);
       else if(this.hasUnlock2)
-        return src[1];
+        return this.getImgSrc(src[1]);
       else
-        return src[0];
+        return this.getImgSrc(src[0]);
     }
   }
 };
