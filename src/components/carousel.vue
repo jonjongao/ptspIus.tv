@@ -112,12 +112,12 @@ export default {
       else return { name: "Season", params: { id: value } };
     },
     getCustomImgSrc:function(src){
-      if(this.hasUnlock3)
-        return this.getImgSrc(src[2]);
-      else if(this.hasUnlock2)
-        return this.getImgSrc(src[1]);
-      else
-        return this.getImgSrc(src[0]);
+      var pass = 0;
+      if(this.hasUnlock1) pass++;
+      if(this.hasUnlock2) pass++;
+      if(this.hasUnlock3) pass++;
+
+      return this.getImgSrc(src[pass]);
     }
   }
 };
