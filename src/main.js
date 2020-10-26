@@ -94,7 +94,7 @@ new Vue({
         // ! 跳轉車廂EP2
         //router.push({ name: "Episode", params: { id: 600, ep: "ep2" } });
         router.push({ name: "Season", params: { id: 7277 } });
-      } else if (text == "只是傷心無法延續") {
+      } else if (text == "月之川") {
         // ! 跳轉BBS
         console.log("跳轉BBS");
         window.location.href = "https://jonjongao.github.io/jbv_dev/";
