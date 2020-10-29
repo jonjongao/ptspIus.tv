@@ -206,13 +206,13 @@ export default {
   components: {},
   computed: {
     hasUnlock1: function() {
-      return this.$store.state.unlock1;
+      return this.$store.state.paymentUnlocked.includes(1);
     },
     hasUnlock2: function() {
-      return this.$store.state.unlock2;
+      return this.$store.state.paymentUnlocked.includes(2);
     },
     hasUnlock3: function() {
-      return this.$store.state.unlock3;
+      return this.$store.state.paymentUnlocked.includes(3);
     }
   },
   data: function() {
@@ -220,8 +220,9 @@ export default {
   },
   methods: {
     setUnlock: function(value) {
-      this.$store.commit("setUnlock", [value, true]);
-      this.$bus.$emit("saveUnlock", value);
+      // this.$store.commit("setUnlock", [value, true]);
+      this.$store.commit("setPaymentUnlock",value);
+      // this.$bus.$emit("saveUnlock", value);
     }
   }
 };

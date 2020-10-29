@@ -28,7 +28,7 @@
             <img
               _ngcontent-c1=""
               class="d-block w-100"
-              :src="c.name == '乘客' ? getCustomImgSrc(c.src) : getImgSrc(c.src)"
+              :src="c.id == '7111' ? getCustomImgSrc(c.src) : getImgSrc(c.src)"
               :alt="c.name"
             />
           </div>

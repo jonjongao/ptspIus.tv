@@ -81,7 +81,7 @@
         <div
           _ngcontent-c1=""
           class="col-md-3 series_and_video_sidebar"
-          style="max-height: 600px;"
+          style="max-height: 600px"
         >
           <div _ngcontent-c1="" class="series_episode">
             <div _ngcontent-c1="" class="row">
@@ -167,12 +167,12 @@
         <div class="row">
           <div
             class="ad-container-used"
-            style="margin: 0px auto;"
+            style="margin: 0px auto"
             id="div-gpt-ad-1536305061365-0"
           >
             <div
               id="google_ads_iframe_/21623531013/CP_TEST_0__container__"
-              style="border: 0pt none; width: 320px; height: 50px;"
+              style="border: 0pt none; width: 320px; height: 50px"
             ></div>
           </div>
         </div>
@@ -261,9 +261,9 @@ export default {
   name: "Season",
   props: ["id"],
   components: {},
-  created: function() {},
+  created: function () {},
   computed: {
-    getMETA: function() {
+    getMETA: function () {
       var db2 = this.$store.state.db_season2;
       for (var i = 0; i < db2.length; i++) {
         if (db2[i].id == this.id) return db2[i];
@@ -275,11 +275,22 @@ export default {
       console.log("can't find id:" + this.id);
       return null;
     },
-    isParent: function() {
+    isParent: function () {
       if (this.getMETA.parent == "") return true;
       else return false;
     },
-    getParentMETA: function() {
+    getParentMETA: function () {
+      switch (this.id) {
+        case 7260:
+          console.log("從 我是誰EP7 所謂的遠方 解鎖線索1");
+          this.$store.commit("setUnlock",[1,true]);
+          break;
+        case 7286:
+          console.log("從 車廂EP2：掙扎 解鎖線索2");
+          this.$store.commit("setUnlock",[2,true]);
+          break;
+      }
+
       if (this.isParent) {
         console.log("parent page");
         return this.getMETA;
@@ -297,7 +308,7 @@ export default {
         }
       }
     },
-    isLockedSeason: function() {
+    isLockedSeason: function () {
       var i = parseInt(this.getParentMETA.id);
       switch (i) {
         case 7061:
@@ -307,20 +318,20 @@ export default {
         default:
           return false;
       }
-    }
+    },
   },
-  data: function() {
+  data: function () {
     return {
-      episode_tab: 0
+      episode_tab: 0,
     };
   },
   methods: {
     // ! item = season.item
-    getImgSrc: function(src) {
+    getImgSrc: function (src) {
       if (src.includes("http")) return src;
       else return this.$store.state.base + src;
     },
-    checkClick: function(e, value) {
+    checkClick: function (e, value) {
       if (this.isLockedSeason) {
         return;
       }
@@ -330,13 +341,13 @@ export default {
       }
       this.$router.push({
         name: "Season",
-        params: { id: value }
+        params: { id: value },
       });
     },
-    getUrl: function(id) {
+    getUrl: function (id) {
       return "#/season/" + id;
-    }
-  }
+    },
+  },
 };
 </script>
 

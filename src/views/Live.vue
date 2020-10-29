@@ -168,6 +168,10 @@ export default {
   data: function() {
     return {};
   },
+  created:function(){
+    console.log("從 直播頁 解鎖線索3");
+    this.$store.commit("setUnlock",[3,true]);
+  },
   methods: {
     getImgSrc: function(src) {
       if (src.includes("http")) return src;

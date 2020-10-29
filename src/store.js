@@ -15,7 +15,8 @@ const store = new Vuex.Store({
     rowLastVisit2: 1,
     unlock1: false,
     unlock2: false,
-    unlock3: false
+    unlock3: false,
+    paymentUnlocked: []
   },
   mutations: {
     setHomeDatabase(state, db) {
@@ -24,7 +25,7 @@ const store = new Vuex.Store({
     setSeasonDatabase(state, db) {
       state.db_season = db;
     },
-    setExtendDatabase(state, db){
+    setExtendDatabase(state, db) {
       state.db_season2 = db;
     },
     setPostDatabase(state, db) {
@@ -52,6 +53,10 @@ const store = new Vuex.Store({
           state.unlock3 = data[1];
           break;
       }
+    },
+    setPaymentUnlock(state, value) {
+      if (state.paymentUnlocked.includes(value)) return;
+      state.paymentUnlocked.push(value);
     }
   }
 });
