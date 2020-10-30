@@ -125,13 +125,13 @@ export default {
       return [];
     },
     hasUnlock1: function() {
-      return this.$store.state.unlock1;
+      return this.$store.state.paymentUnlocked.includes(1);
     },
     hasUnlock2: function() {
-      return this.$store.state.unlock2;
+      return this.$store.state.paymentUnlocked.includes(2);
     },
     hasUnlock3: function() {
-      return this.$store.state.unlock3;
+      return this.$store.state.paymentUnlocked.includes(3);
     }
   },
   data: function() {
