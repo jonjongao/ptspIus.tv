@@ -94,7 +94,7 @@ new Vue({
         // ! 跳轉車廂EP2
         //router.push({ name: "Episode", params: { id: 600, ep: "ep2" } });
         router.push({ name: "Season", params: { id: 7277 } });
-      } else if (text == "月之川") {
+      } else if (text == "猴草路") {
         // ! 跳轉BBS
         console.log("跳轉BBS");
         window.location.href = "https://jonjongao.github.io/jbv_dev/";
@@ -103,7 +103,8 @@ new Vue({
         router.push({ name: "Season", params: { id: 7256 } });
       } else if (text == "換你幫我了") {
         // ! 跳轉沈華的第一首詩彩蛋頁面
-        router.push({ name: "Post", params: { path: 'xn--guw421c' } });
+        // router.push({ name: "Post", params: { path: 'xn--guw421c' } });
+        window.location.href = "https://imgur.com/gallery/A9FGe9G";
       } else if (text == "cookie.clean") {
         // ! 清除cookie
         this.$cookies.remove("search");

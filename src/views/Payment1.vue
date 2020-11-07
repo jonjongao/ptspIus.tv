@@ -35,7 +35,7 @@
               </p>
               <router-link
                 v-on:click.native="setUnlock(1)"
-                to="/"
+                to="/season/7061"
                 tag="button"
                 _ngcontent-c1=""
                 class="btn btn-outline-primary"
@@ -57,7 +57,7 @@
               </p>
               <router-link
                 v-on:click.native="setUnlock(2)"
-                to="/"
+                to="/season/7171"
                 tag="button"
                 _ngcontent-c1=""
                 class="btn btn-outline-primary"
@@ -79,7 +79,7 @@
               </p>
               <router-link
                 v-on:click.native="setUnlock(3)"
-                to="/"
+                to="/season/7080"
                 tag="button"
                 _ngcontent-c1=""
                 class="btn btn-outline-primary"
