@@ -26,7 +26,7 @@
               class="overlay"
               width="100%"
               height="100%"
-              src="https://www.youtube.com/embed/LGrpsZ7BsQA"
+              :src="getYt"
               frameborder="0"
               allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
               allowfullscreen
@@ -283,11 +283,11 @@ export default {
       switch (this.id) {
         case 7260:
           console.log("從 我是誰EP7 所謂的遠方 解鎖線索1");
-          this.$store.commit("setUnlock",[1,true]);
+          this.$store.commit("setUnlock", [1, true]);
           break;
         case 7286:
           console.log("從 車廂EP2：掙扎 解鎖線索2");
-          this.$store.commit("setUnlock",[2,true]);
+          this.$store.commit("setUnlock", [2, true]);
           break;
       }
 
@@ -318,6 +318,16 @@ export default {
         default:
           return false;
       }
+    },
+    getYt: function () {
+      for (var i = 0; i < this.$store.state.db_yt.length; i++) {
+        var id = parseInt(this.$store.state.db_yt[i]["id"]);
+        if (id == this.id) {
+          console.log(this.$store.state.db_yt[i]["yt_url"]);
+          return this.$store.state.db_yt[i]["yt_url"];
+        }
+      }
+      return null;
     },
   },
   data: function () {

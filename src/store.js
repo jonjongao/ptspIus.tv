@@ -10,7 +10,9 @@ const store = new Vuex.Store({
     db_season: {},
     db_season2: {},
     db_post: {},
+    db_yt: [],
     base: "/",
+    onboarding: false,
     rowLastVisit1: 1,
     rowLastVisit2: 1,
     unlock1: false,
@@ -19,17 +21,15 @@ const store = new Vuex.Store({
     paymentUnlocked: []
   },
   mutations: {
-    setHomeDatabase(state, db) {
-      state.db_home = db;
+    setOnboarding(state,value){
+      state.onboarding = value;
     },
-    setSeasonDatabase(state, db) {
-      state.db_season = db;
-    },
-    setExtendDatabase(state, db) {
-      state.db_season2 = db;
-    },
-    setPostDatabase(state, db) {
-      state.db_post = db;
+    setDBs(state, db) {
+      state.db_home = db[0];
+      state.db_season = db[1];
+      state.db_season2 = db[2];
+      state.db_post = db[3];
+      state.db_yt = db[4];
     },
     setBaseURL(state, url) {
       // state.base = url;

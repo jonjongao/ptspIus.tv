@@ -15,6 +15,7 @@ import home from "./assets/home.json";
 import season from "./assets/db.json";
 import season2 from "./assets/db2.json";
 import post from "./assets/post.json";
+import yt from "./assets/yt.json";
 import Header from "@/components/app_header.vue";
 import Footer from "@/components/app_footer.vue";
 export default {
@@ -22,12 +23,14 @@ export default {
   db_season: season,
   db_season2: season2,
   db_post: post,
+  db_yt: yt,
   name: "App",
   created: function() {
-    this.$store.commit("setHomeDatabase", this.$options.db_home);
-    this.$store.commit("setSeasonDatabase", this.$options.db_season);
-    this.$store.commit("setExtendDatabase", this.$options.db_season2);
-    this.$store.commit("setPostDatabase", this.$options.db_post);
+    this.$store.commit("setDBs", [this.$options.db_home,
+    this.$options.db_season,
+    this.$options.db_season2,
+    this.$options.db_post,
+    this.$options.db_yt]);
   },
   components: {
     Header,
