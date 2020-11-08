@@ -15,7 +15,7 @@
             v-on:click="setRowIndex(1, 1)"
             v-bind:class="[
               getRowIndex(1) == 1 ? ctnActiveClass : ctnDeactiveClass,
-              ctnErrorClass
+              ctnErrorClass,
             ]"
           >
             限時賞味
@@ -25,7 +25,7 @@
             v-on:click="setRowIndex(1, 2)"
             v-bind:class="[
               getRowIndex(1) == 2 ? ctnActiveClass : ctnDeactiveClass,
-              ctnErrorClass
+              ctnErrorClass,
             ]"
           >
             追劇追不完
@@ -55,7 +55,7 @@
             v-on:click="setRowIndex(2, 1)"
             v-bind:class="[
               getRowIndex(2) == 1 ? ctnActiveClass : ctnDeactiveClass,
-              ctnErrorClass
+              ctnErrorClass,
             ]"
           >
             兒少/生活
@@ -65,7 +65,7 @@
             v-on:click="setRowIndex(2, 2)"
             v-bind:class="[
               getRowIndex(2) == 2 ? ctnActiveClass : ctnDeactiveClass,
-              ctnErrorClass
+              ctnErrorClass,
             ]"
           >
             追劇30分
@@ -75,7 +75,7 @@
             v-on:click="setRowIndex(2, 3)"
             v-bind:class="[
               getRowIndex(2) == 3 ? ctnActiveClass : ctnDeactiveClass,
-              ctnErrorClass
+              ctnErrorClass,
             ]"
           >
             藝文/紀錄
@@ -189,36 +189,48 @@ export default {
   components: {
     Carousel,
     Recommend,
-    ShowList
+    ShowList,
+  },
+  mounted: function () {
+    if (this.$store.state.onboarding == false) {
+      this.$fire({
+        title: "搜尋吧強調",
+        text: "文案",
+        type: "info",
+      }).then((r) => {
+        // * 選擇同意
+        this.$store.commit("setOnboarding", true);
+      });
+    }
   },
   computed: {},
-  data: function() {
+  data: function () {
     return {
       ctn1: 1,
       ctn2: 1,
       ctnActiveClass: "tabbar_active",
       ctnDeactiveClass: "",
-      ctnErrorClass: ""
+      ctnErrorClass: "",
     };
   },
   methods: {
-    toPage: function(target) {
+    toPage: function (target) {
       this.$router.push({
-        name: target
+        name: target,
       });
     },
-    getImgSrc: function(src) {
+    getImgSrc: function (src) {
       if (src.includes("http")) return src;
       else return this.$store.state.base + src;
     },
-    setRowIndex: function(row, index) {
+    setRowIndex: function (row, index) {
       this.$store.commit("setRowVisit", [row, index]);
     },
-    getRowIndex: function(row) {
+    getRowIndex: function (row) {
       if (row == 1) return this.$store.state.rowLastVisit1;
       else if (row == 2) return this.$store.state.rowLastVisit2;
-    }
-  }
+    },
+  },
 };
 </script>
 

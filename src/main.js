@@ -10,6 +10,7 @@ import store from "./store";
 import "bootstrap/dist/css/bootstrap.css";
 import "bootstrap-vue/dist/bootstrap-vue.css";
 import VueCookies from "vue-cookies";
+import VueSimpleAlert from "vue-simple-alert";
 
 Vue.config.ignoredElements = [
   "app-root",
@@ -31,6 +32,7 @@ Vue.config.productionTip = false;
 Vue.use(BootstrapVue);
 Vue.use(IconsPlugin);
 Vue.use(VueCookies);
+Vue.use(VueSimpleAlert);
 
 import "./assets/css/ptsweb.css";
 import "./assets/css/style.css";
