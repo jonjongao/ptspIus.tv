@@ -3,6 +3,7 @@
 import Vue from "vue";
 import App from "./App";
 import router from "./router";
+import VueGtag from "vue-gtag";
 import { BootstrapVue, IconsPlugin } from "bootstrap-vue";
 import "./bus";
 import store from "./store";
@@ -29,6 +30,9 @@ Vue.config.ignoredElements = [
 ];
 
 Vue.config.productionTip = false;
+Vue.use(VueGtag, {
+  config: { id: "GTM-MV5F6CW" }
+});
 Vue.use(BootstrapVue);
 Vue.use(IconsPlugin);
 Vue.use(VueCookies);
