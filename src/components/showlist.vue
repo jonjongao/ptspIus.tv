@@ -116,33 +116,33 @@ export default {
   name: "ShowList",
   props: ["type"],
   components: {},
-  created: function() {},
+  created: function () {},
   computed: {
-    listSeries: function() {
+    listSeries: function () {
       if ("series" in this.$store.state.db_home) {
         return this.$store.state.db_home["series"];
       }
       return [];
     },
-    hasUnlock1: function() {
+    hasUnlock1: function () {
       return this.$store.state.paymentUnlocked.includes(1);
     },
-    hasUnlock2: function() {
+    hasUnlock2: function () {
       return this.$store.state.paymentUnlocked.includes(2);
     },
-    hasUnlock3: function() {
+    hasUnlock3: function () {
       return this.$store.state.paymentUnlocked.includes(3);
-    }
+    },
   },
-  data: function() {
+  data: function () {
     return {};
   },
   methods: {
-    getImgSrc: function(src) {
+    getImgSrc: function (src) {
       if (src.includes("http")) return src;
       else return this.$store.state.base + src;
     },
-    isPass: function(id) {
+    isPass: function (id) {
       var i = parseInt(id);
       switch (i) {
         case 7061:
@@ -156,15 +156,20 @@ export default {
       }
       return true;
     },
-    checkClick: function(e, id) {
+    checkClick: function (e, id) {
       if (this.isPass(id)) {
         this.$router.push({ name: "Season", params: { id: id } });
-      } else alert("尚未解鎖該節目!");
+      } else {
+        this.$fire({
+          text: "尚未解鎖該節目!",
+          type: "warning",
+        }).then((r) => {});
+      }
     },
-    getUrl: function(id) {
+    getUrl: function (id) {
       return "#/season/" + id;
-    }
-  }
+    },
+  },
 };
 </script>
 

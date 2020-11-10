@@ -194,8 +194,7 @@ export default {
   mounted: function () {
     if (this.$store.state.onboarding == false) {
       this.$fire({
-        title: "搜尋吧強調",
-        text: "文案",
+        text: "搜尋吧強調",
         type: "info",
       }).then((r) => {
         // * 選擇同意
