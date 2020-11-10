@@ -30,9 +30,38 @@ Vue.config.ignoredElements = [
 ];
 
 Vue.config.productionTip = false;
-Vue.use(VueGtag, {
-  config: { id: "GTM-MV5F6CW" }
-});
+Vue.use(
+  VueGtag,
+  {
+    config: { id: "GTM-MV5F6CW" },
+    pageTrackerTemplate(to) {
+      switch (to.name) {
+        case "Season":
+          return {
+            page_title: to["meta"].trackedTitle + "_" + to["params"].id,
+            page_path: to.path,
+            page_location: window.location.href
+          };
+          break;
+        case "Post":
+          return {
+            page_title: to["meta"].trackedTitle + "_" + to["params"].path,
+            page_path: to.path,
+            page_location: window.location.href
+          };
+          break;
+        default:
+          return {
+            page_title: to["meta"].trackedTitle,
+            page_path: to.path,
+            page_location: window.location.href
+          };
+          break;
+      }
+    }
+  },
+  router
+);
 Vue.use(BootstrapVue);
 Vue.use(IconsPlugin);
 Vue.use(VueCookies);
@@ -69,7 +98,7 @@ new Vue({
 
     this.$store.commit("setBaseURL", base);
 
-    console.log("saved cookie:"+$cookies.keys());
+    console.log("saved cookie:" + $cookies.keys());
   },
   mounted: function() {
     this.$bus.$on("trySearch", this.trySearch);
