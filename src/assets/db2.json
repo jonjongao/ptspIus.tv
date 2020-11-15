@@ -820,8 +820,8 @@
         "raw_url": "https://www.ptsplus.tv/season/d1cfb9d5-e26d-4145-b03c-2d666bf1f9ac/episode-type/Episode/0604fd9c-fa78-4821-9980-24faf2a39eeb",
         "parent": "7240",
         "id": "7241",
-        "name": "大地之詩 ep2",
-        "description": "【觀看期限至10/21】大地之詩 ep2",
+        "name": "翡翠之城",
+        "description": "目前正輕快地邁向民主化的緬甸，它的時間並非全然是往前走的。就在緬甸的政府軍與克欽獨立軍正對峙的現在，原本在山區採玉的財團被迫暫時撤離礦區。時間頓時凝住，一批又一批的窮人帶著簡單的鐵鍬，趕往這個暫時不屬於任何人的仙境採玉。他們一齊在天堂做了一個發財夢，其中沒有任何一人希望從這個夢中醒來。本片的導演同時是電影裡主人翁的弟弟。",
         "caption": "__equal__",
         "src": "/static/7241/WebItemPage_大地之詩2.jpg",
         "category": [
@@ -835,8 +835,8 @@
         "raw_url": "https://www.ptsplus.tv/season/d1cfb9d5-e26d-4145-b03c-2d666bf1f9ac",
         "parent": "",
         "id": "7240",
-        "name": "大地之詩",
-        "description": "法國空拍攝影師亞祖貝彤最新作品，由生命起源說起，依序介紹兩棲類、鳥類、哺乳類的出現，反思人類如何利用大自然，改變了與大自然間的關係。攝製精彩，充滿人文關懷。【本節目由於版權限制，設有觀看期限，敬請把握觀看時間】",
+        "name": "翡翠之城",
+        "description": "目前正輕快地邁向民主化的緬甸，它的時間並非全然是往前走的。就在緬甸的政府軍與克欽獨立軍正對峙的現在，原本在山區採玉的財團被迫暫時撤離礦區。時間頓時凝住，一批又一批的窮人帶著簡單的鐵鍬，趕往這個暫時不屬於任何人的仙境採玉。他們一齊在天堂做了一個發財夢，其中沒有任何一人希望從這個夢中醒來。本片的導演同時是電影裡主人翁的弟弟。",
         "caption": "__equal__",
         "src": "/static/7240/WebItemPage_1920x613.jpg",
         "date": "2019-3",
@@ -860,7 +860,7 @@
                 "label": "1-1",
                 "items": [
                     {
-                        "name": "大地之詩 ep2",
+                        "name": "翡翠之城",
                         "src": "/static/7240/WebListPage_大地之詩2.jpg",
                         "url": "javascript:void(0)",
                         "id": 7241
@@ -2240,8 +2240,8 @@
         "raw_url": "https://www.ptsplus.tv/season/2d209281-405b-41cb-8617-d8620e957f55/episode-type/Episode/258b3c71-9d1b-4955-b894-71b251ad3b3e",
         "parent": "7302",
         "id": "7303",
-        "name": "木乃伊, 魔法棒, 幽靈城堡 ep1",
-        "description": "【觀看期限至10/24】木乃伊, 魔法棒, 幽靈城堡 ep1",
+        "name": "蒸汽時代",
+        "description": "你看過會冒煙的火車嗎？早期的火車是用燃煤蒸汽推動的，所以又稱為蒸汽機關車。當蒸汽機關車奔馳在軌道上，發出 「噗噗∼慶嗆慶嗆」的聲音時，喚醒了許多人的往日回憶！",
         "caption": "__equal__",
         "src": "/static/7303/WebItemPage_02.jpg",
         "category": [
@@ -2255,8 +2255,8 @@
         "raw_url": "https://www.ptsplus.tv/season/2d209281-405b-41cb-8617-d8620e957f55",
         "parent": "",
         "id": "7302",
-        "name": "甜心兔 奇幻萬聖",
-        "description": "【觀看期限至10/24】甜心兔 奇幻萬聖",
+        "name": "蒸汽時代",
+        "description": "你看過會冒煙的火車嗎？早期的火車是用燃煤蒸汽推動的，所以又稱為蒸汽機關車。當蒸汽機關車奔馳在軌道上，發出 「噗噗∼慶嗆慶嗆」的聲音時，喚醒了許多人的往日回憶！",
         "caption": "__equal__",
         "src": "/static/7302/WebItemPage_0.jpg",
         "date": "2020-10",
@@ -2274,7 +2274,7 @@
                 "label": "1-1",
                 "items": [
                     {
-                        "name": "木乃伊, 魔法棒, 幽靈城堡 ep1",
+                        "name": "蒸汽時代",
                         "src": "/static/7302/WebListPage_02.jpg",
                         "url": "javascript:void(0)",
                         "id": 7303
