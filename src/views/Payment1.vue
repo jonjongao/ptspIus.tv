@@ -27,8 +27,7 @@
             >
               <!--<span _ngcontent-c1=""></span>-->
               <p _ngcontent-c1="" class="card_subtitle">單點節目</p>
-              <p _ngcontent-c1="" class="card_title">
-                （真話）：藏在原子筆裡的涼菸
+              <p _ngcontent-c1="" class="card_title">藏在原子筆裡的涼菸
               </p>
               <p _ngcontent-c1="" class="card_description">
                 如果是我，我會說真話，因為我也不想讓他誤會太多，但新同學總是要交個朋友。
@@ -49,8 +48,7 @@
             >
               <!--<span _ngcontent-c1=""></span>-->
               <p _ngcontent-c1="" class="card_subtitle">單點節目</p>
-              <p _ngcontent-c1="" class="card_title">
-                （謊話）：藏在鑰匙環裡的涼菸
+              <p _ngcontent-c1="" class="card_title">藏在鑰匙環裡的涼菸
               </p>
               <p _ngcontent-c1="" class="card_description">
                 如果是我，我會說謊話，因為我媽不知道我抽菸，我也不會讓他知道我抽菸。
@@ -71,11 +69,10 @@
             >
               <!--<span _ngcontent-c1=""></span>-->
               <p _ngcontent-c1="" class="card_subtitle">單點節目</p>
-              <p _ngcontent-c1="" class="card_title">
-                （半真半假）：藏在抽屜裡的涼菸
+              <p _ngcontent-c1="" class="card_title">藏在抽屜裡的涼菸
               </p>
               <p _ngcontent-c1="" class="card_description">
-                有時候真話和謊話其實聽起來並沒有差別，我只希望他也會也抽菸，有時候，我多想跟她分享我的一切
+                有時候真話和謊話其實很容易混淆，我必須仔細區分，但或許我這麼努力只希望她也會也抽菸，我多想跟她分享我的一切
               </p>
               <router-link
                 v-on:click.native="setUnlock(3)"

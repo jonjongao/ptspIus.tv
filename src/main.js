@@ -128,7 +128,7 @@ new Vue({
       if (text == "車廂" || text == "傷心的大象") {
         // ! 跳轉車廂EP2
         //router.push({ name: "Episode", params: { id: 600, ep: "ep2" } });
-        router.push({ name: "Season", params: { id: 7277 } });
+        router.push({ name: "Season", params: { id: 7286 } });
       } else if (text == "猴草路") {
         // ! 跳轉BBS
         console.log("跳轉BBS");
