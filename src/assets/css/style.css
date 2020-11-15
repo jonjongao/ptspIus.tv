@@ -24,3 +24,7 @@ img {
   top: 0px;
   left: 0px;
 }
+
+#swal2-content {
+  text-align: left;
+}

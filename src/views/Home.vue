@@ -114,19 +114,18 @@
                     '/static/WebListPage_WebListPage_公視直播_直播列表Web.jpg'
                   )
                 "
-                alt="公共電視 網路直播 PTS Live"
+                alt="金鸞之聲 網路直播 CL Live"
               />
             </router-link>
           </div>
           <div _ngcontent-c5="" class="col-md-7">
             <span _ngcontent-c5="" class="item_label"></span>
-            <p _ngcontent-c5="" class="item_name">公共電視 網路直播 PTS Live</p>
+            <p _ngcontent-c5="" class="item_name">金鸞之聲 網路直播 CL Live</p>
             <p _ngcontent-c5="" class="item_description">
-              開始時間: 2018/07/30 00:00
+              開始時間: 2020/11/30 00:00
             </p>
             <p _ngcontent-c5="" class="item_description">
-              公共電視因部分節目無網路播出權，直播時段將依授權狀況進行調整~若有造成您的不便也請多包涵！
-              網路直播節目表 https://goo.gl/4B0P3R
+              金鸞+因部分節目無網路播出權，直播時段將依居民睡眠狀況和情緒波動進行調整~若有造成您的不便也請多包涵！若您在直播中有聽到雜訊或異常片段請不用擔心，很有可能是直播主在以趣味的方式推薦您另外一個優質節目，請仔細觀看聆聽，與我們共享金鸞美好時光。
             </p>
             <p _ngcontent-c5="" class="text-right pt-md-3">
               <router-link
@@ -194,7 +193,9 @@ export default {
   mounted: function () {
     if (this.$store.state.onboarding == false) {
       this.$fire({
-        text: "搜尋吧強調",
+        title: "關於金鸞+",
+        html: "金鸞+是服務金鑾居民的優質影音串流平台，內容包含各類居民自製節目，提供您多樣的收視選擇，大幅提升您的觀影體驗。<br/><br/>使用之前，有一件事情請您再三牢記，任何找不到的節目，或是您認為重要的關鍵字，都可透過上方搜索鍵來一探究竟。<br/><br/>找到那三把記憶的鑰匙，您就會看到金鑾+悉心為您準備的獨家驚喜。",
+        textAlign: "left",
         type: "info",
       }).then((r) => {
         // * 選擇同意

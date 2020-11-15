@@ -20,14 +20,14 @@
                     'static/WebListPage_WebListPage_公視直播_直播列表Web.jpg'
                   )
                 "
-                alt="公共電視 網路直播 PTS Live"
+                alt="金鸞之聲 網路直播 CL Live"
               />
 
               <iframe
                 class="overlay"
                 width="100%"
                 height="100%"
-                src="https://www.youtube.com/embed/LGrpsZ7BsQA"
+                src="https://www.youtube.com/embed/ANmlpmRBpBo"
                 frameborder="0"
                 allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
                 allowfullscreen
@@ -64,7 +64,7 @@
                     </button>
                   </div>
                   <div _ngcontent-c6="" class="modal-body">
-                    <p _ngcontent-c6="">開始時間: 1999/07/30 00:00</p>
+                    <p _ngcontent-c6="">開始時間: 2020/11/30 00:00</p>
                   </div>
                   <div _ngcontent-c6="" class="modal-footer">
                     <button
@@ -82,7 +82,7 @@
           <div _ngcontent-c5="" class="page_action">
             <div _ngcontent-c5="">
               <div _ngcontent-c5="" class="series_description">
-                開始時間: 1999/07/30 00:00
+                開始時間: 2020/11/30 00:00
               </div>
             </div>
             <div _ngcontent-c5="">
