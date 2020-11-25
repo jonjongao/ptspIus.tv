@@ -356,7 +356,7 @@ main {
   -webkit-transform: translate(-50%, -50%);
   -ms-transform: translate(-50%, -50%);
   transform: translate(-50%, -50%);
-  background: transparent url("../image/play_white_s.png") 0 0 no-repeat;
+  /* background: transparent url("../image/play_white_s.png") 0 0 no-repeat; */
   background-size: 80px 80px;
   z-index: 10;
 }
@@ -431,7 +431,7 @@ main {
   content: "";
   width: 40px;
   height: 40px;
-  background: transparent url("../image/play_white_s.png") 0 0 no-repeat;
+  /* background: transparent url("../image/play_white_s.png") 0 0 no-repeat; */
   background-size: 40px 40px;
   z-index: 5;
   position: absolute;
@@ -909,7 +909,7 @@ ul.navbar-nav li:first-child a {
   -webkit-transform: translate(-50%, -50%);
   -ms-transform: translate(-50%, -50%);
   transform: translate(-50%, -50%);
-  background: transparent url("../image/play_white_s.png") 10px 10px no-repeat;
+  /* background: transparent url("../image/play_white_s.png") 10px 10px no-repeat; */
   background-size: 140px 140px;
   z-index: 10;
   cursor: pointer;
@@ -919,7 +919,7 @@ ul.navbar-nav li:first-child a {
 }
 
 .page_cover_image .btn_play:hover {
-  background: transparent url("../image/play_white_s.png") 0 0 no-repeat;
+  /* background: transparent url("../image/play_white_s.png") 0 0 no-repeat; */
   background-size: 160px 160px;
 }
 
