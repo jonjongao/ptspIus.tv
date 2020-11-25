@@ -114,7 +114,7 @@ main {
 
 .modal-dialog button.close {
   width: 50px;
-  background: transparent url("../static/icon_gray.png") -8px -8px no-repeat;
+  background: transparent url("../image/icon_gray.png") -8px -8px no-repeat;
   background-size: 280px 240px;
   position: absolute;
   top: 20px;
@@ -151,7 +151,7 @@ main {
   position: relative;
   overflow: hidden;
   height: 0;
-  background: #f5f5f5 url("../static/placeholder.jpg") center center no-repeat; }
+  background: #f5f5f5 url("../image/placeholder.jpg") center center no-repeat; }
   .img_hover_effect img {
     width: 100%;
     position: absolute;
@@ -260,7 +260,7 @@ main {
     -webkit-transform: translate(-50%, -50%);
     -ms-transform: translate(-50%, -50%);
     transform: translate(-50%, -50%);
-    background: transparent url("../static/play_white_s.png") 0 0 no-repeat;
+    background: transparent url("../image/play_white_s.png") 0 0 no-repeat;
     background-size: 80px 80px;
     z-index: 10; }
   .live_series.live_now .item_label::before {
@@ -308,7 +308,7 @@ main {
       content: "";
       width: 40px;
       height: 40px;
-      background: transparent url("../static/play_white_s.png") 0 0 no-repeat;
+      background: transparent url("../image/play_white_s.png") 0 0 no-repeat;
       background-size: 40px 40px;
       z-index: 5;
       position: absolute;
@@ -357,7 +357,7 @@ main {
   .breadcrumb li:first-child a {
     width: 30px;
     height: 30px;
-    background: transparent url("../static/icon_gray.png") -178px -57px no-repeat;
+    background: transparent url("../image/icon_gray.png") -178px -57px no-repeat;
     background-size: 280px 240px;
     display: inline-block; }
 
@@ -376,7 +376,7 @@ main {
     content: "";
     width: 30px;
     height: 30px;
-    background: transparent url("../static/icon_gray.png") -217px -17px no-repeat;
+    background: transparent url("../image/icon_gray.png") -217px -17px no-repeat;
     background-size: 280px 240px;
     display: inline-block; }
   .item_tag li {
@@ -430,7 +430,7 @@ ul.navbar-nav {
     content: "";
     width: 24px;
     height: 24px;
-    background: transparent url("../static/icon_pink.png") -135px -38px no-repeat;
+    background: transparent url("../image/icon_pink.png") -135px -38px no-repeat;
     background-size: 210px 180px;
     display: inline-block;
     vertical-align: center; }
@@ -461,7 +461,7 @@ ul.navbar-nav {
     position: absolute;
     top: 0;
     right: 0;
-    background: transparent url("../static/icon_pink.png") -124px -53px no-repeat;
+    background: transparent url("../image/icon_pink.png") -124px -53px no-repeat;
     background-size: 280px 240px;
     color: transparent;
     border: none; }
@@ -493,11 +493,11 @@ ul.navbar-nav {
   padding-top: 0; }
 
 .carousel-control-next-icon {
-  background: transparent url("../static/icon_white_s.png") -58px -142px no-repeat;
+  background: transparent url("../image/icon_white_s.png") -58px -142px no-repeat;
   background-size: 280px 240px; }
 
 .carousel-control-prev-icon {
-  background: transparent url("../static/icon_white_s.png") -22px -142px no-repeat;
+  background: transparent url("../image/icon_white_s.png") -22px -142px no-repeat;
   background-size: 280px 240px; }
 
 .carousel-indicators {
@@ -586,7 +586,7 @@ ul.navbar-nav {
   height: 0;
   overflow: hidden;
   padding-bottom: 31.9%;
-  background: #f5f5f5 url("../static/placeholder.jpg") center center no-repeat; }
+  background: #f5f5f5 url("../image/placeholder.jpg") center center no-repeat; }
 
 .curating_tabbar ul {
   margin: 0 auto;
@@ -662,7 +662,7 @@ ul.navbar-nav {
   width: 100%;
   height: 0;
   padding-bottom: 56.2%;
-  background: #f5f5f5 url("../static/placeholder.jpg") center center no-repeat;
+  background: #f5f5f5 url("../image/placeholder.jpg") center center no-repeat;
   overflow: hidden; }
   .page_cover_image img {
     width: 100%; }
@@ -676,7 +676,7 @@ ul.navbar-nav {
     -webkit-transform: translate(-50%, -50%);
     -ms-transform: translate(-50%, -50%);
     transform: translate(-50%, -50%);
-    background: transparent url("../static/play_white_s.png") 10px 10px no-repeat;
+    background: transparent url("../image/play_white_s.png") 10px 10px no-repeat;
     background-size: 140px 140px;
     z-index: 10;
     cursor: pointer;
@@ -684,7 +684,7 @@ ul.navbar-nav {
     -o-transition: all 0.5s;
     transition: all 0.5s; }
     .page_cover_image .btn_play:hover {
-      background: transparent url("../static/play_white_s.png") 0 0 no-repeat;
+      background: transparent url("../image/play_white_s.png") 0 0 no-repeat;
       background-size: 160px 160px; }
 
 .series_page .page_cover_image {
@@ -715,7 +715,7 @@ ul.navbar-nav {
   .page_action .play_frequency::before {
     content: "觀看人數: "; }
   .page_action .play_frequency::after {
-    background: transparent url("../static/icon_gray.png") -46px -45px no-repeat;
+    background: transparent url("../image/icon_gray.png") -46px -45px no-repeat;
     background-size: 210px 180px; }
   .page_action .live_start_time::before {
     content: "開始時間: "; }
@@ -724,34 +724,34 @@ ul.navbar-nav {
     height: 30px;
     margin: 5px; }
   .page_action .graded_0 {
-    background: transparent url("../static/graded/gsrr_0.jpg") 0 0 no-repeat;
+    background: transparent url("../image/graded/gsrr_0.jpg") 0 0 no-repeat;
     background-size: 30px 30px; }
   .page_action .graded_6 {
-    background: transparent url("../static/graded/gsrr_6.jpg") 0 0 no-repeat;
+    background: transparent url("../image/graded/gsrr_6.jpg") 0 0 no-repeat;
     background-size: 30px 30px; }
   .page_action .graded_12 {
-    background: transparent url("../static/graded/gsrr_12.jpg") 0 0 no-repeat;
+    background: transparent url("../image/graded/gsrr_12.jpg") 0 0 no-repeat;
     background-size: 30px 30px; }
   .page_action .graded_15 {
-    background: transparent url("../static/graded/gsrr_15.jpg") 0 0 no-repeat;
+    background: transparent url("../image/graded/gsrr_15.jpg") 0 0 no-repeat;
     background-size: 30px 30px; }
   .page_action .graded_18 {
-    background: transparent url("../static/graded/gsrr_18.jpg") 0 0 no-repeat;
+    background: transparent url("../image/graded/gsrr_18.jpg") 0 0 no-repeat;
     background-size: 30px 30px; }
   .page_action .btn_share, .page_action .btn_favorite {
     width: 40px;
     height: 40px;
     cursor: pointer; }
   .page_action .btn_share {
-    background: transparent url("../static/icon_gray.png") -219px -20px no-repeat;
+    background: transparent url("../image/icon_gray.png") -219px -20px no-repeat;
     background-size: 350px 300px; }
     .page_action .btn_share:hover {
-      background-image: url("../static/icon_pink.png"); }
+      background-image: url("../image/icon_pink.png"); }
   .page_action .btn_favorite {
-    background: transparent url("../static/icon_gray.png") -70px -20px no-repeat;
+    background: transparent url("../image/icon_gray.png") -70px -20px no-repeat;
     background-size: 350px 300px; }
   .page_action .btn_favorite.btn_active {
-    background: transparent url("../static/icon_pink.png") -120px -20px no-repeat;
+    background: transparent url("../image/icon_pink.png") -120px -20px no-repeat;
     background-size: 350px 300px; }
   .page_action .item_svod_tag, .page_action .item_tvod_tag {
     font-weight: 100;
@@ -1141,7 +1141,7 @@ ul.navbar-nav {
   position: absolute;
   width: 30px;
   height: 30px;
-  background: transparent url("../static/icon_pink.png") -97px -17px no-repeat;
+  background: transparent url("../image/icon_pink.png") -97px -17px no-repeat;
   background-size: 280px 240px;
   top: 5px;
   right: 10px;
@@ -1313,7 +1313,7 @@ ul.navbar-nav {
 .device_icon {
   width: 50px;
   height: 50px;
-  background: transparent url("../static/icon_device.png") -20px -20px no-repeat;
+  background: transparent url("../image/icon_device.png") -20px -20px no-repeat;
   background-size: 260px 100px;
   display: inline-block;
   margin-right: 10px; }
@@ -1653,7 +1653,7 @@ footer {
       width: 20px;
       height: 20px;
       display: inline-block;
-      background: transparent url("../static/icon_white.png") -183px -63px no-repeat;
+      background: transparent url("../image/icon_white.png") -183px -63px no-repeat;
       background-size: 280px 240px;
       position: absolute;
       top: 3px;
