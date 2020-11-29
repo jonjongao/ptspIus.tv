@@ -34,11 +34,11 @@
       </div>
       <!---->
       <div v-if="getRowIndex(1) == 1">
-        <ShowList type="1" />
+        <ShowList type="1" title="限時賞味"/>
         <!--<%- partial('_partial/ctn1_1', null, {cache: !config.relative_link}) %>-->
       </div>
-      <div v-if="getRowIndex(1) == 2">
-        <ShowList type="2" />
+      <div v-if="getRowIndex(1) == 2 || this.$store.state.isMobile">
+        <ShowList type="2" title="追劇追不完"/>
         <!--<%- partial('_partial/ctn1_2', null, {cache: !config.relative_link}) %>-->
       </div>
     </div>
@@ -84,15 +84,15 @@
       </div>
       <!---->
       <div v-if="getRowIndex(2) == 1">
-        <ShowList type="3" />
+        <ShowList type="3" title="兒少/生活"/>
         <!--<%- partial('_partial/ctn2_1', null, {cache: !config.relative_link}) %>-->
       </div>
-      <div v-if="getRowIndex(2) == 2">
-        <ShowList type="4" />
+      <div v-if="getRowIndex(2) == 2 || this.$store.state.isMobile">
+        <ShowList type="4" title="追劇30分"/>
         <!--<%- partial('_partial/ctn2_2', null, {cache: !config.relative_link}) %>-->
       </div>
-      <div v-if="getRowIndex(2) == 3">
-        <ShowList type="5" />
+      <div v-if="getRowIndex(2) == 3 || this.$store.state.isMobile">
+        <ShowList type="5" title="藝文/紀錄"/>
         <!--<%- partial('_partial/ctn2_3', null, {cache: !config.relative_link}) %>-->
       </div>
     </div>

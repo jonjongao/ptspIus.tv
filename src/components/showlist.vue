@@ -2,7 +2,7 @@
   <div _ngcontent-c1="" class="curating_block d-block">
     <div _ngcontent-c1="" class="row">
       <h3 _ngcontent-c1="">
-        <a _ngcontent-c1="" href="/banner-more/BANNER_04">限時賞味</a>
+        <a _ngcontent-c1="">{{ this.title }}</a>
       </h3>
     </div>
     <div v-if="this.type == 1" _ngcontent-c1="" class="row item_lists series">
@@ -114,7 +114,7 @@
 <script>
 export default {
   name: "ShowList",
-  props: ["type"],
+  props: ["type","title"],
   components: {},
   created: function () {},
   computed: {

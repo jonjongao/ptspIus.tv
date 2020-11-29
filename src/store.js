@@ -18,7 +18,10 @@ const store = new Vuex.Store({
     unlock1: false,
     unlock2: false,
     unlock3: false,
-    paymentUnlocked: []
+    paymentUnlocked: [],
+    width: 0,
+    height: 0,
+    isMobile: false
   },
   mutations: {
     setOnboarding(state,value){
@@ -57,6 +60,11 @@ const store = new Vuex.Store({
     setPaymentUnlock(state, value) {
       if (state.paymentUnlocked.includes(value)) return;
       state.paymentUnlocked.push(value);
+    },
+    setWindowSize(state, size) {
+      state.width = size[0];
+      state.height = size[1];
+      state.isMobile = size[2];
     }
   }
 });

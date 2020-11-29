@@ -679,12 +679,12 @@ ul.navbar-nav li:first-child a {
 
 .carousel-control-next-icon {
   /* background: transparent url("../image/icon_white_s.png") -58px -142px no-repeat; */
-  background-size: 280px 240px;
+  /* background-size: 280px 240px; */
 }
 
 .carousel-control-prev-icon {
   /* background: transparent url("../image/icon_white_s.png") -22px -142px no-repeat; */
-  background-size: 280px 240px;
+  /* background-size: 280px 240px; */
 }
 
 .carousel-indicators {

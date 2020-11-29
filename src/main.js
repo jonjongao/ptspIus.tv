@@ -99,6 +99,12 @@ new Vue({
     this.$store.commit("setBaseURL", base);
 
     console.log("saved cookie:" + $cookies.keys());
+
+    window.addEventListener("resize", this.onResize); // ! 監聽視窗縮放事件
+
+    this.$bus.$on("resize", this.onResize);
+
+    this.onResize();
   },
   mounted: function() {
     this.$bus.$on("trySearch", this.trySearch);
@@ -107,6 +113,8 @@ new Vue({
   beforeDestroy: function() {
     this.$bus.$off("trySearch", this.trySearch);
     this.$bus.$off("saveUnlock", this.saveUnlock);
+
+    this.$bus.$off("resize", this.onResize);
   },
   watch: {
     $route(to, from) {
@@ -169,6 +177,13 @@ new Vue({
       console.log("set cookie[" + key + "]=" + value);
       var t = 600; // ! 以秒為單位
       this.$cookies.set(key, value, t);
+    },
+    onResize: function (e) {
+      var w = window.innerWidth;
+      var h = window.innerHeight;
+      var m = false;
+      if (w < 768) m = true;
+      this.$store.commit("setWindowSize", [w, h, m]);
     }
   }
 });
