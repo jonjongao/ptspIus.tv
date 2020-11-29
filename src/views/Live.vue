@@ -27,7 +27,7 @@
                 class="overlay"
                 width="100%"
                 height="100%"
-                src="https://www.youtube.com/embed/ANmlpmRBpBo"
+                src="https://www.youtube.com/embed/kjf6R35sHaA?rel=0"
                 frameborder="0"
                 allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
                 allowfullscreen
@@ -121,7 +121,7 @@
                           '/static/WebListPage_WebListPage_公視直播_直播列表Web.jpg'
                         )
                       "
-                      alt="公共電視 網路直播 PTS Live"
+                      alt="金鸞文化 網路直播 PTS Live"
                     />
                   </div>
                   <div _ngcontent-c5="" class="item_info">

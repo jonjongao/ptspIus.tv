@@ -133,7 +133,7 @@ new Vue({
       console.log("current value:" + text);
       this.saveSearch(text);
 
-      if (text == "車廂" || text == "傷心的大象") {
+      if (text == "我愛你") {
         // ! 跳轉車廂EP2
         //router.push({ name: "Episode", params: { id: 600, ep: "ep2" } });
         router.push({ name: "Season", params: { id: 7286 } });

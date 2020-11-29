@@ -1,12 +1,12 @@
 [
     {
         "path": "about",
-        "title": "關於公視+",
+        "title": "關於金鸞+",
         "component": "About"
     },
     {
         "path": "terms",
-        "title": "公視+服務條款",
+        "title": "金鸞+服務條款",
         "component": "Terms"
     },
     {

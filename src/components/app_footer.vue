@@ -15,7 +15,7 @@
                   alt=""
                   :src="getImgSrc('/static/pts_logo_l.png')"
               /></router-link>
-              <h6 _ngcontent-c3="">財團法人公共電視文化事業基金會</h6>
+              <h6 _ngcontent-c3="">財團法人金鸞文化文化事業基金會</h6>
               <p _ngcontent-c3="">
                 地址：114 台北市內湖區康寧路三段 75 巷 50 號
               </p>
@@ -29,7 +29,7 @@
             <h6 _ngcontent-c3="">相關連結</h6>
             <ul _ngcontent-c3="" class="footer_link">
               <li _ngcontent-c3="">
-                <router-link _ngcontent-c3="" to="/terms"> 公視+服務條款</router-link>
+                <router-link _ngcontent-c3="" to="/terms"> 金鸞+服務條款</router-link>
               </li>
               <li _ngcontent-c3="">
                 <a _ngcontent-c3="" href="javascript:void(0)"> 隱私權政策</a>
@@ -46,7 +46,7 @@
                 >
               </li>
               <li _ngcontent-c3="">
-                <router-link _ngcontent-c3="" to="/about"> 關於公視+</router-link>
+                <router-link _ngcontent-c3="" to="/about"> 關於金鸞+</router-link>
               </li>
               <li _ngcontent-c3="">
                 <a _ngcontent-c3="" href="javascript:void(0)"> 其他常見問題</a>
@@ -73,13 +73,13 @@
                 href="https://play.google.com/store/apps/details?id=com.ptsplus.app"
                 ><img
                   _ngcontent-c3=""
-                  alt="在google play下載公視＋"
+                  alt="在google play下載金鸞＋"
                   :src="getImgSrc('/static/google-play.png')"
               /></a>
               <a _ngcontent-c3="" href="javascript:void(0)"
                 ><img
                   _ngcontent-c3=""
-                  alt="在app store下載公視＋"
+                  alt="在app store下載金鸞＋"
                   :src="getImgSrc('/static/app-store.png')"
               /></a>
             </div>
