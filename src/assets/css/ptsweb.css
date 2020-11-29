@@ -2859,7 +2859,13 @@ footer .fb_btn_qroup>a {
   .curating .curating_block .series>div:nth-child(1),
   .curating .curating_block .series>div:nth-child(2),
   .curating .curating_block .series>div:nth-child(3),
-  .curating .curating_block .series>div:nth-child(4) {
+  .curating .curating_block .series>div:nth-child(4),
+  .curating .curating_block .series>div:nth-child(5),
+  .curating .curating_block .series>div:nth-child(6),
+  .curating .curating_block .series>div:nth-child(7),
+  .curating .curating_block .series>div:nth-child(8),
+  .curating .curating_block .series>div:nth-child(9),
+  .curating .curating_block .series>div:nth-child(10) {
     display: block;
   }
 
