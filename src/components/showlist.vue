@@ -161,7 +161,7 @@ export default {
         this.$router.push({ name: "Season", params: { id: id } });
       } else {
         this.$fire({
-          text: "尚未解鎖該節目!",
+          text: "尚未購買該節目!",
           type: "warning",
         }).then((r) => {});
       }

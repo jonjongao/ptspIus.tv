@@ -137,6 +137,8 @@ new Vue({
         // ! 跳轉車廂EP2
         //router.push({ name: "Episode", params: { id: 600, ep: "ep2" } });
         router.push({ name: "Season", params: { id: 7286 } });
+      } else if (text == "國家感謝你") {
+        router.push({ name: "Season", params: { id: 8000 } });
       } else if (text == "猴草路") {
         // ! 跳轉BBS
         console.log("跳轉BBS");
@@ -178,7 +180,7 @@ new Vue({
       var t = 600; // ! 以秒為單位
       this.$cookies.set(key, value, t);
     },
-    onResize: function (e) {
+    onResize: function(e) {
       var w = window.innerWidth;
       var h = window.innerHeight;
       var m = false;
