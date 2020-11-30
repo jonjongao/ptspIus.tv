@@ -104,6 +104,30 @@ new Vue({
 
     this.$bus.$on("resize", this.onResize);
 
+    // ! 從cookie獲取線索1~3解鎖狀態
+    var uk1 = this.$cookies.get("unlock1");
+    var uk2 = this.$cookies.get("unlock2");
+    var uk3 = this.$cookies.get("unlock3");
+    console.log("unlock status:"+uk1+", "+uk2+", "+uk3);
+    // ! 將解鎖狀態實際套用到store
+    if(uk1 == 1)
+    {
+      console.log("從 cookie 解鎖線索1");
+      this.$store.commit("setUnlock",[1,true]);
+    }
+    if(uk2 == 1)
+    {
+      console.log("從 cookie 解鎖線索2");
+      this.$store.commit("setUnlock",[2,true]);
+    }
+    if(uk3 == 1)
+    {
+      console.log("從 cookie 解鎖線索3");
+      this.$store.commit("setUnlock",[3,true]);
+    }
+
+    // ! 主動觸發裝置檢測(根據視窗寬度)
+    // ! 使在寬度<768的情況下刷新頁面也能保持行動版節目頁的顯示
     this.onResize();
   },
   mounted: function() {
@@ -135,20 +159,18 @@ new Vue({
 
       if (text == "我愛你") {
         // ! 跳轉車廂EP2
-        //router.push({ name: "Episode", params: { id: 600, ep: "ep2" } });
         router.push({ name: "Season", params: { id: 7286 } });
       } else if (text == "國家感謝你") {
         router.push({ name: "Season", params: { id: 8000 } });
       } else if (text == "猴草路") {
         // ! 跳轉BBS
         console.log("跳轉BBS");
-        window.location.href = "https://jonjongao.github.io/jbv_dev/";
+        window.location.href = "https://www.clbbs.space/";
       } else if (text == "我是誰") {
         // ! 跳轉我是誰節目頁
         router.push({ name: "Season", params: { id: 7256 } });
       } else if (text == "換你幫我了") {
         // ! 跳轉沈華的第一首詩彩蛋頁面
-        // router.push({ name: "Post", params: { path: 'xn--guw421c' } });
         window.location.href = "https://imgur.com/gallery/A9FGe9G";
       } else if (text == "cookie.clean") {
         // ! 清除cookie

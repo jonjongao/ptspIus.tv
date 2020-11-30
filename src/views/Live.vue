@@ -129,35 +129,12 @@
                   </div>
                 </router-link>
               </div>
-              <!--
-                        <div _ngcontent-c5="">
-                            <a _ngcontent-c5="" href="/live/24e23618-e976-4b5a-9bc2-a42092174f25">
-                                <div _ngcontent-c5="" class="img_hover_effect">
-                                    <img _ngcontent-c5="" src="ptspIus.tv/image/WebListPage_taigi_1920X1080.jpg" alt="公視台語台 網路直播">
-                                </div>
-                                <div _ngcontent-c5="" class="item_info">
-                                    <p _ngcontent-c5="" class="item_name">公視台語台 網路直播</p>
-                                </div>
-                            </a>
-                        </div>
-                        -->
             </div>
           </div>
         </div>
       </div>
     </div>
 
-    <app-google-ad-manager _ngcontent-c5="">
-      <div class="container">
-        <div class="row">
-          <div
-            class="ad-container-used"
-            style="margin: 0 auto"
-            id="div-gpt-ad-1536305061365-0"
-          ></div>
-        </div>
-      </div>
-    </app-google-ad-manager>
   </main>
 </template>
 
@@ -171,6 +148,7 @@ export default {
   created:function(){
     console.log("從 直播頁 解鎖線索3");
     this.$store.commit("setUnlock",[3,true]);
+    this.$bus.$emit("saveUnlock", 3);
   },
   methods: {
     getImgSrc: function(src) {

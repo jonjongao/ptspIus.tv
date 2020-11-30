@@ -44,9 +44,7 @@
             <div _ngcontent-c1="">
               <span _ngcontent-c1="" class=""></span>
 
-              <a _ngcontent-c1="" href="javascript:void(0)">
-                <div _ngcontent-c1="" class="btn_share"></div>
-              </a>
+              <div _ngcontent-c1="" class="btn_share"></div>
 
               <div _ngcontent-c1="" class="btn_favorite"></div>
             </div>
@@ -162,97 +160,6 @@
       </div>
     </div>
 
-    <app-google-ad-manager _ngcontent-c1="">
-      <div class="container">
-        <div class="row">
-          <div
-            class="ad-container-used"
-            style="margin: 0px auto"
-            id="div-gpt-ad-1536305061365-0"
-          >
-            <div
-              id="google_ads_iframe_/21623531013/CP_TEST_0__container__"
-              style="border: 0pt none; width: 320px; height: 50px"
-            ></div>
-          </div>
-        </div>
-      </div>
-    </app-google-ad-manager>
-
-    <div
-      _ngcontent-c1=""
-      aria-hidden="true"
-      aria-labelledby="popupModalLabel"
-      class="modal fade"
-      id="popupModal"
-      role="dialog"
-      tabindex="-1"
-    >
-      <div _ngcontent-c1="" class="modal-dialog" role="document">
-        <div _ngcontent-c1="" class="modal-content">
-          <div _ngcontent-c1="" class="modal-header">
-            <h5 _ngcontent-c1="" class="modal-title" id="popupModalLabel">
-              我的收藏
-            </h5>
-            <button
-              _ngcontent-c1=""
-              aria-label="Close"
-              class="close"
-              data-dismiss="modal"
-              type="button"
-            >
-              <span _ngcontent-c1="" aria-hidden="true"></span>
-            </button>
-          </div>
-          <div _ngcontent-c1="" class="modal-body">
-            <p _ngcontent-c1=""></p>
-          </div>
-          <div _ngcontent-c1="" class="modal-footer">
-            <a
-              _ngcontent-c1=""
-              class="btn btn-outline-primary"
-              data-dismiss="modal"
-              type="button"
-              >確定</a
-            >
-          </div>
-        </div>
-      </div>
-    </div>
-
-    <div
-      _ngcontent-c1=""
-      aria-hidden="true"
-      aria-labelledby="popupModalLabel"
-      class="modal fade"
-      id="popupModalError"
-      role="dialog"
-      tabindex="-1"
-    >
-      <div _ngcontent-c1="" class="modal-dialog" role="document">
-        <div _ngcontent-c1="" class="modal-content">
-          <div _ngcontent-c1="" class="modal-header">
-            <h5 _ngcontent-c1="" class="modal-title" id="popupModalLabel">
-              警告
-            </h5>
-          </div>
-          <div _ngcontent-c1="" class="modal-body">
-            <p _ngcontent-c1=""></p>
-          </div>
-          <div _ngcontent-c1="" class="modal-footer">
-            <button
-              _ngcontent-c1=""
-              class="btn btn-outline-primary"
-              data-dismiss="modal"
-              data-toggle="modal"
-              type="button"
-            >
-              關閉
-            </button>
-          </div>
-        </div>
-      </div>
-    </div>
   </main>
 </template>
 
@@ -284,10 +191,12 @@ export default {
         case 7260:
           console.log("從 我是誰EP7 所謂的遠方 解鎖線索1");
           this.$store.commit("setUnlock", [1, true]);
+          this.$bus.$emit("saveUnlock", 1);
           break;
         case 7286:
           console.log("從 車廂EP2：掙扎 解鎖線索2");
           this.$store.commit("setUnlock", [2, true]);
+          this.$bus.$emit("saveUnlock", 2);
           break;
       }
 
@@ -324,7 +233,7 @@ export default {
         var id = parseInt(this.$store.state.db_yt[i]["id"]);
         if (id == this.id) {
           console.log(this.$store.state.db_yt[i]["yt_url"]);
-          return this.$store.state.db_yt[i]["yt_url"];
+          return this.$store.state.db_yt[i]["yt_url"]+"?rel=0";
         }
       }
       return null;

@@ -133,17 +133,6 @@
       </div>
     </div>
 
-    <app-google-ad-manager _ngcontent-c11="">
-      <div class="container">
-        <div class="row">
-          <div
-            class="ad-container-used"
-            style="margin: 0 auto;"
-            id="div-gpt-ad-1536305061365-0"
-          ></div>
-        </div>
-      </div>
-    </app-google-ad-manager>
   </main>
 </template>
 

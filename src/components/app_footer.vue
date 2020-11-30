@@ -15,7 +15,7 @@
                   alt=""
                   :src="getImgSrc('/static/pts_logo_l.png')"
               /></router-link>
-              <h6 _ngcontent-c3="">財團法人金鸞文化文化事業基金會</h6>
+              <h6 _ngcontent-c3="">財團法人金鸞文化事業基金會</h6>
               <p _ngcontent-c3="">
                 地址：114 台北市內湖區康寧路三段 75 巷 50 號
               </p>
@@ -29,7 +29,7 @@
             <h6 _ngcontent-c3="">相關連結</h6>
             <ul _ngcontent-c3="" class="footer_link">
               <li _ngcontent-c3="">
-                <router-link _ngcontent-c3="" to="/terms"> 金鸞+服務條款</router-link>
+                <a _ngcontent-c3="" href="https://greenwoodpoem.club/"> 翠華詩社</a>
               </li>
               <li _ngcontent-c3="">
                 <a _ngcontent-c3="" href="javascript:void(0)"> 隱私權政策</a>
@@ -87,9 +87,6 @@
           <div _ngcontent-c3="" class="col-md-2 order-md-3 order-1">
             <h6 _ngcontent-c3="">社群分享</h6>
             <div _ngcontent-c3="" class="fb_btn_qroup">
-              <a _ngcontent-c3="" href="javascript:void(0)" target="popup"
-                ><span _ngcontent-c3="" class="fb_share">分享</span></a
-              >
               <a
                 _ngcontent-c3=""
                 href="https://www.facebook.com/DetentionTheSeries/"
