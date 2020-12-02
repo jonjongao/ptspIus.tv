@@ -171,7 +171,7 @@ new Vue({
         router.push({ name: "Season", params: { id: 7256 } });
       } else if (text == "換你幫我了") {
         // ! 跳轉沈華的第一首詩彩蛋頁面
-        window.location.href = "https://imgur.com/gallery/A9FGe9G";
+        window.location.href = "https://imgur.com/B0qpUKT";
       } else if (text == "cookie.clean") {
         // ! 清除cookie
         this.$cookies.remove("search");
