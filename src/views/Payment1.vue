@@ -72,7 +72,7 @@
               <p _ngcontent-c1="" class="card_title">藏在抽屜裡的涼菸
               </p>
               <p _ngcontent-c1="" class="card_description">
-                有時候真話和謊話其實很容易混淆，我必須仔細區分，但或許我這麼努力只希望她也會也抽菸，我多想跟她分享我的一切
+                有時候真話和謊話其實很容易混淆，我必須仔細區分，但或許我這麼努力只希望她也會抽菸，我多想跟她分享我的一切
               </p>
               <router-link
                 v-on:click.native="setUnlock(3)"
