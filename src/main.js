@@ -3,6 +3,7 @@
 import Vue from "vue";
 import App from "./App";
 import router from "./router";
+import VueMeta from 'vue-meta'
 import VueGtag from "vue-gtag";
 import {
   BootstrapVue,
@@ -33,6 +34,7 @@ Vue.config.ignoredElements = [
 ];
 
 Vue.config.productionTip = false;
+Vue.use(VueMeta)
 Vue.use(
   VueGtag, {
     config: {

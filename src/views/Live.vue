@@ -141,6 +141,17 @@
 <script>
 export default {
   name: "Live",
+  metaInfo() {
+        return { 
+            title: "金鸞+｜金鸞OTT影音平台",
+            meta: [
+                { name: 'description', content: '金鸞之聲在每個時段都有居民精彩的直播秀，若您在直播中有聽到雜訊或異常片段請不用擔心，很有可能是直播主在以趣味的方式演出，請仔細觀看聆聽，與我們共享金鸞美好時光。'},
+                { property: 'og:title', content: "金鸞之聲"},
+                { property: 'og:description', content: "金鸞之聲在每個時段都有居民精彩的直播秀，若您在直播中有聽到雜訊或異常片段請不用擔心，很有可能是直播主在以趣味的方式演出，請仔細觀看聆聽，與我們共享金鸞美好時光。"},
+                { name: 'robots', content: 'index,follow'} 
+            ]
+        }
+  },
   components: {},
   data: function() {
     return {};

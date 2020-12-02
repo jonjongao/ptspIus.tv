@@ -200,6 +200,17 @@
 <script>
 export default {
   name: "Payment1",
+  metaInfo() {
+        return { 
+            title: "金鸞+｜金鸞OTT影音平台",
+            meta: [
+                { name: 'description', content: '立即購買金鸞+超值方案，即可解鎖精彩單點節目！'},
+                { property: 'og:title', content: "方案介紹"},
+                { property: 'og:description', content: "立即購買金鸞+超值方案，即可解鎖精彩單點節目！"},
+                { name: 'robots', content: 'index,follow'} 
+            ]
+        }
+  },
   components: {},
   computed: {
     hasUnlock1: function() {

@@ -25,6 +25,17 @@ export default {
   db_post: post,
   db_yt: yt,
   name: "App",
+  metaInfo() {
+        return { 
+            title: "金鸞+｜金鸞OTT影音平台",
+            meta: [
+                { name: 'description', content: '金鸞+是金鸞線上串流服務首選的OTT影音平台，公視台劇《返校》隨播線上看。金鸞OTT包含高畫質影集、金鸞之聲，精選電視劇、熱門直播、獨家彩蛋，讓你追劇不間斷。'},
+                { property: 'og:title', content: "金鸞+｜金鸞OTT影音平台"},
+                { property: 'og:description', content: "金鸞+是金鸞線上串流服務首選的OTT影音平台，公視台劇《返校》隨播線上看。金鸞OTT包含高畫質影集、金鸞之聲，精選電視劇、熱門直播、獨家彩蛋，讓你追劇不間斷。"},
+                { name: 'robots', content: 'index,follow'} 
+            ]
+        }
+  },
   created: function() {
     this.$store.commit("setDBs", [this.$options.db_home,
     this.$options.db_season,
