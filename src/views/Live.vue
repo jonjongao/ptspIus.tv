@@ -157,7 +157,7 @@ export default {
     return {};
   },
   created:function(){
-    console.log("從 直播頁 解鎖線索3");
+    // console.log("從 直播頁 解鎖線索3");
     this.$store.commit("setUnlock",[3,true]);
     this.$bus.$emit("saveUnlock", 3);
   },

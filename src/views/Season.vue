@@ -179,7 +179,7 @@ export default {
       for (var i = 0; i < db.length; i++) {
         if (db[i].id == this.id) return db[i];
       }
-      console.log("can't find id:" + this.id);
+      // console.log("can't find id:" + this.id);
       return null;
     },
     isParent: function () {
@@ -189,22 +189,22 @@ export default {
     getParentMETA: function () {
       switch (this.id) {
         case 7260:
-          console.log("從 我是誰EP7 所謂的遠方 解鎖線索1");
+          // console.log("從 我是誰EP7 所謂的遠方 解鎖線索1");
           this.$store.commit("setUnlock", [1, true]);
           this.$bus.$emit("saveUnlock", 1);
           break;
         case 7286:
-          console.log("從 車廂EP2：掙扎 解鎖線索2");
+          // console.log("從 車廂EP2：掙扎 解鎖線索2");
           this.$store.commit("setUnlock", [2, true]);
           this.$bus.$emit("saveUnlock", 2);
           break;
       }
 
       if (this.isParent) {
-        console.log("parent page");
+        // console.log("parent page");
         return this.getMETA;
       } else {
-        console.log("child page");
+        // console.log("child page");
         var db2 = this.$store.state.db_season2;
         for (var i = 0; i < db2.length; i++) {
           if (db2[i].id == this.getMETA.parent) return db2[i];
@@ -232,7 +232,7 @@ export default {
       for (var i = 0; i < this.$store.state.db_yt.length; i++) {
         var id = parseInt(this.$store.state.db_yt[i]["id"]);
         if (id == this.id) {
-          console.log(this.$store.state.db_yt[i]["yt_url"]);
+          // console.log(this.$store.state.db_yt[i]["yt_url"]);
           return this.$store.state.db_yt[i]["yt_url"]+"?rel=0";
         }
       }
@@ -255,7 +255,7 @@ export default {
         return;
       }
       if (this.id == value) {
-        console.log("avoid nav same page");
+        // console.log("avoid nav same page");
         return;
       }
       this.$router.push({

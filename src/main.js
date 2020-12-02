@@ -107,7 +107,7 @@ new Vue({
 
     this.$store.commit("setBaseURL", base);
 
-    console.log("saved cookie:" + $cookies.keys());
+    // console.log("saved cookie:" + $cookies.keys());
 
     window.addEventListener("resize", this.onResize); // ! 監聽視窗縮放事件
 
@@ -117,18 +117,18 @@ new Vue({
     var uk1 = this.$cookies.get("unlock1");
     var uk2 = this.$cookies.get("unlock2");
     var uk3 = this.$cookies.get("unlock3");
-    console.log("unlock status:" + uk1 + ", " + uk2 + ", " + uk3);
+    // console.log("unlock status:" + uk1 + ", " + uk2 + ", " + uk3);
     // ! 將解鎖狀態實際套用到store
     if (uk1 == 1) {
-      console.log("從 cookie 解鎖線索1");
+      // console.log("從 cookie 解鎖線索1");
       this.$store.commit("setUnlock", [1, true]);
     }
     if (uk2 == 1) {
-      console.log("從 cookie 解鎖線索2");
+      // console.log("從 cookie 解鎖線索2");
       this.$store.commit("setUnlock", [2, true]);
     }
     if (uk3 == 1) {
-      console.log("從 cookie 解鎖線索3");
+      // console.log("從 cookie 解鎖線索3");
       this.$store.commit("setUnlock", [3, true]);
     }
 
@@ -159,8 +159,8 @@ new Vue({
   },
   methods: {
     trySearch: function (text) {
-      console.log("prev=" + this.$cookies.get("search"));
-      console.log("current value:" + text);
+      // console.log("prev=" + this.$cookies.get("search"));
+      // console.log("current value:" + text);
       this.saveSearch(text);
 
       if (text == "我愛你") {
@@ -180,7 +180,7 @@ new Vue({
         });
       } else if (text == "猴草路") {
         // ! 跳轉BBS
-        console.log("跳轉BBS");
+        // console.log("跳轉BBS");
         window.location.href = "https://www.clbbs.space/";
       } else if (text == "我是誰") {
         // ! 跳轉我是誰節目頁
@@ -219,7 +219,7 @@ new Vue({
       }
     },
     setCookie: function (key, value) {
-      console.log("set cookie[" + key + "]=" + value);
+      // console.log("set cookie[" + key + "]=" + value);
       var t = 600; // ! 以秒為單位
       this.$cookies.set(key, value, t);
     },

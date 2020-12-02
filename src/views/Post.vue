@@ -38,7 +38,7 @@ export default {
   },
   computed: {
     getMETA: function() {
-      console.log("get meta");
+      // console.log("get meta");
       var db = this.$store.state.db_post;
       for (var i = 0; i < db.length; i++) {
         if (db[i].path == this.path) return db[i];
