@@ -4,7 +4,10 @@ import Vue from "vue";
 import App from "./App";
 import router from "./router";
 import VueGtag from "vue-gtag";
-import { BootstrapVue, IconsPlugin } from "bootstrap-vue";
+import {
+  BootstrapVue,
+  IconsPlugin
+} from "bootstrap-vue";
 import "./bus";
 import store from "./store";
 //import './assets/mobile/pttweb.css'
@@ -31,30 +34,34 @@ Vue.config.ignoredElements = [
 
 Vue.config.productionTip = false;
 Vue.use(
-  VueGtag,
-  {
-    config: { id: "GTM-MV5F6CW" },
+  VueGtag, {
+    config: {
+      id: "GTM-MV5F6CW",
+      params: {
+        send_page_view: true
+      }
+    },
     pageTrackerTemplate(to) {
       switch (to.name) {
         case "Season":
           return {
             page_title: to["meta"].trackedTitle + "_" + to["params"].id,
-            page_path: to.path,
-            page_location: window.location.href
+              page_path: to.path,
+              page_location: window.location.href
           };
           break;
         case "Post":
           return {
             page_title: to["meta"].trackedTitle + "_" + to["params"].path,
-            page_path: to.path,
-            page_location: window.location.href
+              page_path: to.path,
+              page_location: window.location.href
           };
           break;
         default:
           return {
             page_title: to["meta"].trackedTitle,
-            page_path: to.path,
-            page_location: window.location.href
+              page_path: to.path,
+              page_location: window.location.href
           };
           break;
       }
@@ -82,7 +89,7 @@ new Vue({
     App
   },
   computed: {},
-  created: function() {
+  created: function () {
     /**
      * * Vue初始化時觸發
      */
@@ -108,33 +115,30 @@ new Vue({
     var uk1 = this.$cookies.get("unlock1");
     var uk2 = this.$cookies.get("unlock2");
     var uk3 = this.$cookies.get("unlock3");
-    console.log("unlock status:"+uk1+", "+uk2+", "+uk3);
+    console.log("unlock status:" + uk1 + ", " + uk2 + ", " + uk3);
     // ! 將解鎖狀態實際套用到store
-    if(uk1 == 1)
-    {
+    if (uk1 == 1) {
       console.log("從 cookie 解鎖線索1");
-      this.$store.commit("setUnlock",[1,true]);
+      this.$store.commit("setUnlock", [1, true]);
     }
-    if(uk2 == 1)
-    {
+    if (uk2 == 1) {
       console.log("從 cookie 解鎖線索2");
-      this.$store.commit("setUnlock",[2,true]);
+      this.$store.commit("setUnlock", [2, true]);
     }
-    if(uk3 == 1)
-    {
+    if (uk3 == 1) {
       console.log("從 cookie 解鎖線索3");
-      this.$store.commit("setUnlock",[3,true]);
+      this.$store.commit("setUnlock", [3, true]);
     }
 
     // ! 主動觸發裝置檢測(根據視窗寬度)
     // ! 使在寬度<768的情況下刷新頁面也能保持行動版節目頁的顯示
     this.onResize();
   },
-  mounted: function() {
+  mounted: function () {
     this.$bus.$on("trySearch", this.trySearch);
     this.$bus.$on("saveUnlock", this.saveUnlock);
   },
-  beforeDestroy: function() {
+  beforeDestroy: function () {
     this.$bus.$off("trySearch", this.trySearch);
     this.$bus.$off("saveUnlock", this.saveUnlock);
 
@@ -152,23 +156,38 @@ new Vue({
     loginName: "琪"
   },
   methods: {
-    trySearch: function(text) {
+    trySearch: function (text) {
       console.log("prev=" + this.$cookies.get("search"));
       console.log("current value:" + text);
       this.saveSearch(text);
 
       if (text == "我愛你") {
         // ! 跳轉車廂EP2
-        router.push({ name: "Season", params: { id: 7286 } });
+        router.push({
+          name: "Season",
+          params: {
+            id: 7286
+          }
+        });
       } else if (text == "國家感謝你") {
-        router.push({ name: "Season", params: { id: 8000 } });
+        router.push({
+          name: "Season",
+          params: {
+            id: 8000
+          }
+        });
       } else if (text == "猴草路") {
         // ! 跳轉BBS
         console.log("跳轉BBS");
         window.location.href = "https://www.clbbs.space/";
       } else if (text == "我是誰") {
         // ! 跳轉我是誰節目頁
-        router.push({ name: "Season", params: { id: 7256 } });
+        router.push({
+          name: "Season",
+          params: {
+            id: 7256
+          }
+        });
       } else if (text == "換你幫我了") {
         // ! 跳轉沈華的第一首詩彩蛋頁面
         window.location.href = "https://imgur.com/B0qpUKT";
@@ -180,10 +199,10 @@ new Vue({
         this.$cookies.remove("unlock3");
       }
     },
-    saveSearch: function(value) {
+    saveSearch: function (value) {
       this.setCookie("search", value);
     },
-    saveUnlock: function(value) {
+    saveUnlock: function (value) {
       var i = parseInt(value, 10);
       switch (i) {
         case 1:
@@ -197,12 +216,12 @@ new Vue({
           break;
       }
     },
-    setCookie: function(key, value) {
+    setCookie: function (key, value) {
       console.log("set cookie[" + key + "]=" + value);
       var t = 600; // ! 以秒為單位
       this.$cookies.set(key, value, t);
     },
-    onResize: function(e) {
+    onResize: function (e) {
       var w = window.innerWidth;
       var h = window.innerHeight;
       var m = false;
