@@ -163,6 +163,12 @@ new Vue({
       // console.log("current value:" + text);
       this.saveSearch(text);
 
+      this.$gtag.event('search', {
+        'event_category': '搜尋',
+        'event_label': text,
+        'value': 0
+      });
+
       if (text == "我愛你") {
         // ! 跳轉車廂EP2
         router.push({
@@ -208,19 +214,43 @@ new Vue({
       var i = parseInt(value, 10);
       switch (i) {
         case 1:
+          if(this.$cookies.get("unlock1") == 0)
+          {
+            this.$gtag.event('purchase', {
+              'event_category': '購買方案',
+              'event_label': '方案1',
+              'value': 0
+            });
+          }
           this.setCookie("unlock1", 1);
           break;
         case 2:
+          if(this.$cookies.get("unlock1") == 0)
+          {
+            this.$gtag.event('purchase', {
+              'event_category': '購買方案',
+              'event_label': '方案2',
+              'value': 0
+            });
+          }
           this.setCookie("unlock2", 1);
           break;
         case 3:
+          if(this.$cookies.get("unlock1") == 0)
+          {
+            this.$gtag.event('purchase', {
+              'event_category': '購買方案',
+              'event_label': '方案3',
+              'value': 0
+            });
+          }
           this.setCookie("unlock3", 1);
           break;
       }
     },
     setCookie: function (key, value) {
       // console.log("set cookie[" + key + "]=" + value);
-      var t = 600; // ! 以秒為單位
+      var t = "7d"; // ! 以秒為單位
       this.$cookies.set(key, value, t);
     },
     onResize: function (e) {
