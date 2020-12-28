@@ -205,6 +205,9 @@ new Vue({
         this.$cookies.remove("unlock1");
         this.$cookies.remove("unlock2");
         this.$cookies.remove("unlock3");
+      } else if (text == "金鸞幸福遊" || text == "金鑾幸福遊") {
+        // ! 跳轉插畫3
+        window.location.href = "https://imgur.com/E8RP9tD";
       }
     },
     saveSearch: function (value) {
